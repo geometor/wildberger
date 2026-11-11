@@ -1,0 +1,32 @@
+:date: 2026-11-11
+:type: log
+:tags: rational-trigonometry, universal-geometry, chromogeometry, sympy
+
+============================================================
+Initial 28-Principle Rational Trigonometry & Universal Codex
+============================================================
+
+Launched ``geometor.wildberger`` v0.1.0, synthesizing the foundational and
+advanced principles of :person:`Norman J. Wildberger <wildberger>`'s *Divine
+Proportions: Rational Trigonometry to Universal Geometry* (:cite:`Wildberger2005`)
+and *Chromogeometry* (:cite:`Wildberger2008`) into a 28-Principle executable
+codex (:ref:`W.01 <w-01>` through :ref:`W.28 <w-28>`).
+
+Highlights
+----------
+
+- **Exact Symbolic Engine** (:mod:`geometor.wildberger.invariants`): Implemented
+  quadrance, spread, cross, twist, signed turn, Archimedes' function, quadrea,
+  Triple/Quadruple Quad & Spread functions, Euler's four-point function, spread
+  and cross polynomials, 6-proportion Taylor conics, 3D dihedral spreads,
+  rational polar coordinates :math:`[s, Q]`, and finite-field :math:`\mathbb{F}_p`
+  metric evaluation.
+- **18 Multivariate SymPy Proofs** (:mod:`geometor.wildberger.proofs`): Proved
+  the Five Main Laws, Brahmagupta & Ptolemy's cyclic theorems, Euler line and
+  Nine-Point Circle over arbitrary fields (:math:`\operatorname{char}\mathbb{F}\ne 2`),
+  Chromogeometry's Nine-Point Midpoint Theorem (:math:`N_B = \tfrac{1}{2}(C_R + C_G)`),
+  parabolic optical reflection without derivatives, and the cancellation of
+  :math:`\sqrt{5}` in all five Platonic solid dihedral spreads
+  (:math:`8/9, 1, 8/9, 4/9, 4/5`).
+- **28 Interactive Constructions**: Built exact ``geometor.model.Model``
+  dossiers with zero floating-point shortcuts and interactive dark-canvas SVGs.

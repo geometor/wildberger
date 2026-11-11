@@ -3,6 +3,8 @@
 
 # Build and documentation outputs
 docs/
+docsrc/modules/api/
+.doctrees
 build/
 dist/
 *.egg-info/
