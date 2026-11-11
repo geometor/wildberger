@@ -1,0 +1,24 @@
+# Reference source material (never commit copyrighted PDFs)
+*.pdf
+
+# Build and documentation outputs
+docs/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+
+# Scratch and temporary files
+scratch/
+*.tmp
+*.bak
+.DS_Store
