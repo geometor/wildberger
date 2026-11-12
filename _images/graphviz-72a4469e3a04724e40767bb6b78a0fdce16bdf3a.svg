@@ -1,0 +1,79 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="570pt" height="188pt" viewBox="0.00 0.00 569.50 188.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<ns0:title>dependency</ns0:title>
+
+<ns0:g id="node1" class="node">
+<ns0:title>W.05</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../topics/w-05/index.html" ns1:title="W.05\nSpread Polynomials S_n(s) &amp; Pen...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M168,-180C168,-180 12,-180 12,-180 6,-180 0,-174 0,-168 0,-168 0,-156 0,-156 0,-150 6,-144 12,-144 12,-144 168,-144 168,-144 174,-144 180,-150 180,-156 180,-156 180,-168 180,-168 180,-174 174,-180 168,-180" />
+<ns0:text text-anchor="middle" x="90" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.05</ns0:text>
+<ns0:text text-anchor="middle" x="90" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Spread Polynomials S_n(s) &amp; Pen...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>W.19</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../topics/w-19/index.html" ns1:title="W.19\nRegular Stars, Golden Pentagons...">
+<ns0:path fill="#ffff99" stroke="#d4a017" stroke-width="2" d="M358,-108C358,-108 204,-108 204,-108 198,-108 192,-102 192,-96 192,-96 192,-84 192,-84 192,-78 198,-72 204,-72 204,-72 358,-72 358,-72 364,-72 370,-78 370,-84 370,-84 370,-96 370,-96 370,-102 364,-108 358,-108" />
+<ns0:text text-anchor="middle" x="281" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.19</ns0:text>
+<ns0:text text-anchor="middle" x="281" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Regular Stars, Golden Pentagons...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>W.05-&gt;W.19</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M136.72,-143.88C164.23,-133.8 199.11,-121.01 227.68,-110.54" />
+<ns0:polygon fill="#888888" stroke="#888888" points="228.7,-112.78 234.43,-108.07 227.01,-108.18 228.7,-112.78" />
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>W.11</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../topics/w-11/index.html" ns1:title="W.11\nIsosceles, Equilateral &amp; Kepler...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M352,-180C352,-180 210,-180 210,-180 204,-180 198,-174 198,-168 198,-168 198,-156 198,-156 198,-150 204,-144 210,-144 210,-144 352,-144 352,-144 358,-144 364,-150 364,-156 364,-156 364,-168 364,-168 364,-174 358,-180 352,-180" />
+<ns0:text text-anchor="middle" x="281" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.11</ns0:text>
+<ns0:text text-anchor="middle" x="281" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Isosceles, Equilateral &amp; Kepler...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>W.11-&gt;W.19</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M281,-143.7C281,-135.14 281,-124.66 281,-115.3" />
+<ns0:polygon fill="#888888" stroke="#888888" points="283.45,-115.1 281,-108.1 278.55,-115.1 283.45,-115.1" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>W.17</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../topics/w-17/index.html" ns1:title="W.17\nCircle Geometry: Subtended Spre...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M549.5,-180C549.5,-180 394.5,-180 394.5,-180 388.5,-180 382.5,-174 382.5,-168 382.5,-168 382.5,-156 382.5,-156 382.5,-150 388.5,-144 394.5,-144 394.5,-144 549.5,-144 549.5,-144 555.5,-144 561.5,-150 561.5,-156 561.5,-156 561.5,-168 561.5,-168 561.5,-174 555.5,-180 549.5,-180" />
+<ns0:text text-anchor="middle" x="472" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.17</ns0:text>
+<ns0:text text-anchor="middle" x="472" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Circle Geometry: Subtended Spre...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>W.17-&gt;W.19</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M425.28,-143.88C397.77,-133.8 362.89,-121.01 334.32,-110.54" />
+<ns0:polygon fill="#888888" stroke="#888888" points="334.99,-108.18 327.57,-108.07 333.3,-112.78 334.99,-108.18" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>W.27</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="../topics/w-27/index.html" ns1:title="W.27\n3D Planes, De Gua's Quadrea Law...">
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M361.5,-36C361.5,-36 200.5,-36 200.5,-36 194.5,-36 188.5,-30 188.5,-24 188.5,-24 188.5,-12 188.5,-12 188.5,-6 194.5,0 200.5,0 200.5,0 361.5,0 361.5,0 367.5,0 373.5,-6 373.5,-12 373.5,-12 373.5,-24 373.5,-24 373.5,-30 367.5,-36 361.5,-36" />
+<ns0:text text-anchor="middle" x="281" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.27</ns0:text>
+<ns0:text text-anchor="middle" x="281" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">3D Planes, De Gua's Quadrea Law...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>W.19-&gt;W.27</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M281,-71.7C281,-63.14 281,-52.66 281,-43.3" />
+<ns0:polygon fill="#888888" stroke="#888888" points="283.45,-43.1 281,-36.1 278.55,-43.1 283.45,-43.1" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

@@ -1,0 +1,79 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="576pt" height="188pt" viewBox="0.00 0.00 575.50 188.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<ns0:title>dependency</ns0:title>
+
+<ns0:g id="node1" class="node">
+<ns0:title>W.06</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../topics/w-06/index.html" ns1:title="W.06\nLaw I: Pythagoras' Theorem &amp; Ri...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M164,-180C164,-180 12,-180 12,-180 6,-180 0,-174 0,-168 0,-168 0,-156 0,-156 0,-150 6,-144 12,-144 12,-144 164,-144 164,-144 170,-144 176,-150 176,-156 176,-156 176,-168 176,-168 176,-174 170,-180 164,-180" />
+<ns0:text text-anchor="middle" x="88" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.06</ns0:text>
+<ns0:text text-anchor="middle" x="88" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law I: Pythagoras' Theorem &amp; Ri...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>W.16</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../topics/w-16/index.html" ns1:title="W.16\nThe Euler Line &amp; Nine-Point Cir...">
+<ns0:path fill="#ffff99" stroke="#d4a017" stroke-width="2" d="M356.5,-108C356.5,-108 211.5,-108 211.5,-108 205.5,-108 199.5,-102 199.5,-96 199.5,-96 199.5,-84 199.5,-84 199.5,-78 205.5,-72 211.5,-72 211.5,-72 356.5,-72 356.5,-72 362.5,-72 368.5,-78 368.5,-84 368.5,-84 368.5,-96 368.5,-96 368.5,-102 362.5,-108 356.5,-108" />
+<ns0:text text-anchor="middle" x="284" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.16</ns0:text>
+<ns0:text text-anchor="middle" x="284" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">The Euler Line &amp; Nine-Point Cir...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>W.06-&gt;W.16</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M135.7,-143.97C163.92,-133.89 199.77,-121.08 229.15,-110.59" />
+<ns0:polygon fill="#888888" stroke="#888888" points="230.32,-112.77 236.09,-108.11 228.67,-108.16 230.32,-112.77" />
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>W.13</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../topics/w-13/index.html" ns1:title="W.13\nStewart's Theorem, Median Quadr...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M362,-180C362,-180 206,-180 206,-180 200,-180 194,-174 194,-168 194,-168 194,-156 194,-156 194,-150 200,-144 206,-144 206,-144 362,-144 362,-144 368,-144 374,-150 374,-156 374,-156 374,-168 374,-168 374,-174 368,-180 362,-180" />
+<ns0:text text-anchor="middle" x="284" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.13</ns0:text>
+<ns0:text text-anchor="middle" x="284" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Stewart's Theorem, Median Quadr...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>W.13-&gt;W.16</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M284,-143.7C284,-135.14 284,-124.66 284,-115.3" />
+<ns0:polygon fill="#888888" stroke="#888888" points="286.45,-115.1 284,-108.1 281.55,-115.1 286.45,-115.1" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>W.15</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../topics/w-15/index.html" ns1:title="W.15\nCircumcenter, Orthocenter &amp; Uni...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M555.5,-180C555.5,-180 404.5,-180 404.5,-180 398.5,-180 392.5,-174 392.5,-168 392.5,-168 392.5,-156 392.5,-156 392.5,-150 398.5,-144 404.5,-144 404.5,-144 555.5,-144 555.5,-144 561.5,-144 567.5,-150 567.5,-156 567.5,-156 567.5,-168 567.5,-168 567.5,-174 561.5,-180 555.5,-180" />
+<ns0:text text-anchor="middle" x="480" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.15</ns0:text>
+<ns0:text text-anchor="middle" x="480" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Circumcenter, Orthocenter &amp; Uni...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>W.15-&gt;W.16</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M432.3,-143.97C404.08,-133.89 368.23,-121.08 338.85,-110.59" />
+<ns0:polygon fill="#888888" stroke="#888888" points="339.33,-108.16 331.91,-108.11 337.68,-112.77 339.33,-108.16" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>W.23</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="../topics/w-23/index.html" ns1:title="W.23\nChromogeometry &amp; Universal Symm...">
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M368,-36C368,-36 200,-36 200,-36 194,-36 188,-30 188,-24 188,-24 188,-12 188,-12 188,-6 194,0 200,0 200,0 368,0 368,0 374,0 380,-6 380,-12 380,-12 380,-24 380,-24 380,-30 374,-36 368,-36" />
+<ns0:text text-anchor="middle" x="284" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.23</ns0:text>
+<ns0:text text-anchor="middle" x="284" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Chromogeometry &amp; Universal Symm...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>W.16-&gt;W.23</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M284,-71.7C284,-63.14 284,-52.66 284,-43.3" />
+<ns0:polygon fill="#888888" stroke="#888888" points="286.45,-43.1 284,-36.1 281.55,-43.1 286.45,-43.1" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

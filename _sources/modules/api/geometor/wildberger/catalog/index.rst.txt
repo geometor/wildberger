@@ -1,0 +1,189 @@
+geometor.wildberger.catalog
+===========================
+
+.. py:module:: geometor.wildberger.catalog
+
+.. autoapi-nested-parse::
+
+   Master catalog of the 28 Rational Trigonometry & Universal Geometry Principles.
+
+   Organizes the mathematical principles of Rational Trigonometry and Universal
+   Geometry into four parts (`W.01` through `W.28`), with constructive signatures,
+   original GEOMETOR synthesis prose, exact LaTeX identities, cross-repository
+   canon mappings, and constructive dependency DAG links.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.wildberger.catalog.PrincipleSpec
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.wildberger.catalog.get_all_principles
+   geometor.wildberger.catalog.get_principle_by_code
+   geometor.wildberger.catalog.get_dependents
+
+
+Module Contents
+---------------
+
+.. py:class:: PrincipleSpec
+
+   Specification of a single Principle Dossier (`W.01`..`W.28`).
+
+   .. attribute:: num
+
+      Integer order `1..28`.
+
+   .. attribute:: code
+
+      Canonical identifier `'W.01'`..`'W.28'`.
+
+   .. attribute:: slug
+
+      Directory slug `'w-01'`..`'w-28'`.
+
+   .. attribute:: part
+
+      Four-part thematic division name.
+
+   .. attribute:: category
+
+      Sub-domain category label.
+
+   .. attribute:: tags
+
+      Tuple of index tags.
+
+   .. attribute:: title
+
+      Principle title.
+
+   .. attribute:: subtitle
+
+      Concise descriptive subtitle.
+
+   .. attribute:: enunciation
+
+      Formal mathematical statement for `.. enunciation::`.
+
+   .. attribute:: signature_given
+
+      Tuple of `given` declarations for `.. signature::`.
+
+   .. attribute:: signature_steps
+
+      Tuple of constructive/algebraic steps for `.. signature::`.
+
+   .. attribute:: synthesis
+
+      Tuple of original GEOMETOR synthesis paragraphs (RST).
+
+   .. attribute:: math_blocks
+
+      Tuple of LaTeX display math strings for `.. math::`.
+
+   .. attribute:: canon_links
+
+      Tuple of `(label, rst_value)` cross-repository canon rows.
+
+   .. attribute:: depends_on
+
+      Tuple of upstream `'W.NN'` codes in the dependency DAG.
+
+
+   .. py:attribute:: num
+      :type:  int
+
+
+   .. py:attribute:: code
+      :type:  str
+
+
+   .. py:attribute:: slug
+      :type:  str
+
+
+   .. py:attribute:: part
+      :type:  str
+
+
+   .. py:attribute:: category
+      :type:  str
+
+
+   .. py:attribute:: tags
+      :type:  tuple[str, ...]
+
+
+   .. py:attribute:: title
+      :type:  str
+
+
+   .. py:attribute:: subtitle
+      :type:  str
+
+
+   .. py:attribute:: enunciation
+      :type:  str
+
+
+   .. py:attribute:: signature_given
+      :type:  tuple[str, ...]
+
+
+   .. py:attribute:: signature_steps
+      :type:  tuple[str, ...]
+
+
+   .. py:attribute:: synthesis
+      :type:  tuple[str, ...]
+
+
+   .. py:attribute:: math_blocks
+      :type:  tuple[str, ...]
+
+
+   .. py:attribute:: canon_links
+      :type:  tuple[tuple[str, str], ...]
+
+
+   .. py:attribute:: depends_on
+      :type:  tuple[str, ...]
+
+
+.. py:function:: get_all_principles() -> tuple[PrincipleSpec, ...]
+
+   Return all 28 `PrincipleSpec` entries ordered from `W.01` to `W.28`.
+
+   :returns: Tuple of 28 `PrincipleSpec` objects.
+
+
+.. py:function:: get_principle_by_code(code: str) -> PrincipleSpec
+
+   Look up a `PrincipleSpec` by canonical code (`'W.01'`) or slug (`'w-01'`).
+
+   :param code: Canonical code or directory slug.
+
+   :returns: Matching `PrincipleSpec`.
+
+   :raises KeyError: If no principle matches `code`.
+
+
+.. py:function:: get_dependents(code: str) -> list[PrincipleSpec]
+
+   Return all downstream principles that directly depend on `code`.
+
+   :param code: Upstream canonical code `'W.NN'`.
+
+   :returns: Ordered list of downstream `PrincipleSpec` items.
+
+

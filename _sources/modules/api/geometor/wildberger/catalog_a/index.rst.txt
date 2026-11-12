@@ -1,0 +1,45 @@
+geometor.wildberger.catalog_a
+=============================
+
+.. py:module:: geometor.wildberger.catalog_a
+
+.. autoapi-nested-parse::
+
+   Catalog definitions for Principles `W.01` through `W.14` (Parts I, II & early III).
+
+   Covers foundational planar line proportions, reflections, quadrance, spread,
+   spread polynomials (including Pentagonal Golden Spreads), the Five Fundamental
+   Laws of Rational Trigonometry, Kepler's Golden Right Triangle, vertex bisectors
+   and incenters, Stewart's/median laws, and Menelaus/Ceva quadrance theorems.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.wildberger.catalog_a.PART_I
+   geometor.wildberger.catalog_a.PART_II
+   geometor.wildberger.catalog_a.PART_III
+   geometor.wildberger.catalog_a.PRINCIPLES_A
+
+
+Module Contents
+---------------
+
+.. py:data:: PART_I
+   :value: 'Part I: Preliminaries & Foundational Invariants'
+
+
+.. py:data:: PART_II
+   :value: 'Part II: The Five Fundamental Laws'
+
+
+.. py:data:: PART_III
+   :value: 'Part III: Universal Triangle, Conic & Chromogeometry'
+
+
+.. py:data:: PRINCIPLES_A
+   :type:  tuple[geometor.wildberger.catalog.PrincipleSpec, ...]
+

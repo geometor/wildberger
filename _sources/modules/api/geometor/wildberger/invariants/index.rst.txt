@@ -1,0 +1,1035 @@
+geometor.wildberger.invariants
+==============================
+
+.. py:module:: geometor.wildberger.invariants
+
+.. autoapi-nested-parse::
+
+   Exact algebraic invariants for Rational Trigonometry and Universal Geometry.
+
+   Implements quadrance, spread, cross, twist, quadrea (Archimedes' function),
+   spread polynomials, projective line and conic proportions, 3D dihedral spreads,
+   cross-ratio quadrance/spread invariants, finite-field arithmetic over GF(p),
+   and universal symmetric bilinear metric forms (Blue, Red, and Green
+   Chromogeometry) using 100% exact SymPy symbolic expressions.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.wildberger.invariants.CoordScalar
+   geometor.wildberger.invariants.Point2DInput
+   geometor.wildberger.invariants.Point3DInput
+   geometor.wildberger.invariants.BLUE_METRIC
+   geometor.wildberger.invariants.RED_METRIC
+   geometor.wildberger.invariants.GREEN_METRIC
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.wildberger.invariants.MetricForm
+   geometor.wildberger.invariants.LineProportion
+   geometor.wildberger.invariants.ConicProportion
+   geometor.wildberger.invariants.TriangleInvariants
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.wildberger.invariants.to_vec2
+   geometor.wildberger.invariants.to_vec3
+   geometor.wildberger.invariants.mod_div
+   geometor.wildberger.invariants.collinear_det
+   geometor.wildberger.invariants.concurrent_det
+   geometor.wildberger.invariants.point_rotation
+   geometor.wildberger.invariants.affine_combination
+   geometor.wildberger.invariants.midpoint
+   geometor.wildberger.invariants.quadrance
+   geometor.wildberger.invariants.point_to_line_quadrance
+   geometor.wildberger.invariants.perpendicular_bisector
+   geometor.wildberger.invariants.cross
+   geometor.wildberger.invariants.spread
+   geometor.wildberger.invariants.twist
+   geometor.wildberger.invariants.signed_turn
+   geometor.wildberger.invariants.vertex_spread
+   geometor.wildberger.invariants.vertex_cross
+   geometor.wildberger.invariants.archimedes
+   geometor.wildberger.invariants.quadrea
+   geometor.wildberger.invariants.triple_spread_function
+   geometor.wildberger.invariants.triple_cross_function
+   geometor.wildberger.invariants.quadruple_quad_function
+   geometor.wildberger.invariants.quadruple_spread_function
+   geometor.wildberger.invariants.euler_four_point_function
+   geometor.wildberger.invariants.spread_polynomial
+   geometor.wildberger.invariants.cross_polynomial
+   geometor.wildberger.invariants.spread_sequence_mod_p
+   geometor.wildberger.invariants.compute_triangle_invariants
+   geometor.wildberger.invariants.quadrance_3d
+   geometor.wildberger.invariants.plane_normal
+   geometor.wildberger.invariants.dihedral_spread
+   geometor.wildberger.invariants.collinear_cross_ratio_quadrance
+   geometor.wildberger.invariants.pencil_cross_ratio_spread
+   geometor.wildberger.invariants.rational_polar_coords
+
+
+Module Contents
+---------------
+
+.. py:type:: CoordScalar
+   :canonical: sp.Expr | int
+
+
+.. py:type:: Point2DInput
+   :canonical: tuple[CoordScalar, CoordScalar] | spg.Point2D | sp.Matrix
+
+
+.. py:type:: Point3DInput
+   :canonical: tuple[CoordScalar, CoordScalar, CoordScalar] | spg.Point3D | sp.Matrix
+
+
+.. py:function:: to_vec2(pt: Point2DInput) -> tuple[sympy.Expr, sympy.Expr]
+
+   Extract an exact 2D coordinate pair `(x, y)` from a supported point input.
+
+   :param pt: A 2-tuple, `sympy.geometry.Point2D`, or 2x1 `sympy.Matrix`.
+
+   :returns: Tuple of exact SymPy expressions `(x, y)`.
+
+
+.. py:function:: to_vec3(pt: Point3DInput) -> tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+   Extract an exact 3D coordinate triple `(x, y, z)` from a supported point input.
+
+   :param pt: A 3-tuple, `sympy.geometry.Point3D`, or 3x1 `sympy.Matrix`.
+
+   :returns: Tuple of exact SymPy expressions `(x, y, z)`.
+
+
+.. py:function:: mod_div(num: CoordScalar, den: CoordScalar, p: int) -> sympy.Integer
+
+   Compute exact modular division `num * den^(-1) mod p` over GF(p).
+
+   :param num: Numerator integer or SymPy integer expression.
+   :param den: Denominator integer (must be non-zero modulo `p`).
+   :param p: Odd prime modulus (`p > 2`).
+
+   :returns: Canonical residue in `{0, 1, ..., p - 1}` as `sp.Integer`.
+
+   :raises ValueError: If `p <= 2` or `den == 0 (mod p)`.
+
+
+.. py:class:: MetricForm
+
+   Symmetric bilinear form `B(u, v) = u^T M v` for Universal Geometry.
+
+   .. attribute:: name
+
+      Human-readable metric name (e.g., `'Blue'`, `'Red'`, `'Green'`).
+
+   .. attribute:: matrix
+
+      Exact 2x2 symmetric `sympy.Matrix`.
+
+   .. attribute:: modulus
+
+      Optional odd prime `p` to evaluate arithmetic in `GF(p)`.
+
+
+   .. py:attribute:: name
+      :type:  str
+
+
+   .. py:attribute:: matrix
+      :type:  sympy.Matrix
+
+
+   .. py:attribute:: modulus
+      :type:  int | None
+      :value: None
+
+
+
+   .. py:method:: reduce_scalar(val: sympy.Expr) -> sympy.Expr
+
+      Reduce a scalar symbolically or modulo `self.modulus` if over GF(p).
+
+      :param val: Exact SymPy scalar expression.
+
+      :returns: Simplified exact expression or `sp.Integer` residue modulo `p`.
+
+
+
+   .. py:method:: bilinear(u: tuple[sympy.Expr, sympy.Expr], v: tuple[sympy.Expr, sympy.Expr]) -> sympy.Expr
+
+      Evaluate the symmetric bilinear form `u^T M v`.
+
+      :param u: First 2D displacement vector `(ux, uy)`.
+      :param v: Second 2D displacement vector `(vx, vy)`.
+
+      :returns: Exact scalar `B(u, v)`.
+
+
+
+   .. py:method:: quadratic(u: tuple[sympy.Expr, sympy.Expr]) -> sympy.Expr
+
+      Evaluate the quadratic form `Q(u) = u^T M u`.
+
+      :param u: 2D displacement vector `(ux, uy)`.
+
+      :returns: Exact quadrance of vector `u`.
+
+
+
+   .. py:method:: with_modulus(p: int) -> MetricForm
+
+      Return a copy of this metric evaluated over the finite field `GF(p)`.
+
+      :param p: Odd prime modulus (`p > 2`).
+
+      :returns: New `MetricForm` over `GF(p)`.
+
+
+
+.. py:data:: BLUE_METRIC
+
+.. py:data:: RED_METRIC
+
+.. py:data:: GREEN_METRIC
+
+.. py:class:: LineProportion(a: CoordScalar, b: CoordScalar, c: CoordScalar)
+
+   Planar line `<a : b : c>` representing `a*x + b*y + c = 0`.
+
+   .. attribute:: a
+
+      Coefficient of `x`.
+
+   .. attribute:: b
+
+      Coefficient of `y`.
+
+   .. attribute:: c
+
+      Constant term.
+
+
+   .. py:attribute:: a
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: b
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: c
+      :type:  sympy.Expr
+
+
+   .. py:method:: from_points(p1: Point2DInput, p2: Point2DInput) -> LineProportion
+      :classmethod:
+
+
+      Construct the unique line `<y1 - y2 : x2 - x1 : x1*y2 - x2*y1>` through `p1, p2`.
+
+      :param p1: First point `[x1, y1]`.
+      :param p2: Second point `[x2, y2]`.
+
+      :returns: `LineProportion` passing through `p1` and `p2`.
+
+
+
+   .. py:method:: direction() -> tuple[sympy.Expr, sympy.Expr]
+
+      Return a tangent direction vector `(-b, a)` along the line.
+
+      :returns: Direction vector `(-b, a)`.
+
+
+
+   .. py:method:: contains(pt: Point2DInput, modulus: int | None = None) -> bool
+
+      Check whether point `pt` lies on the line.
+
+      :param pt: Point `[x, y]`.
+      :param modulus: Optional prime modulus `p` for `GF(p)`.
+
+      :returns: True if `a*x + b*y + c == 0`.
+
+
+
+   .. py:method:: is_parallel(other: LineProportion, modulus: int | None = None) -> bool
+
+      Check whether two lines are parallel (`a1*b2 - a2*b1 == 0`).
+
+      :param other: Second line proportion.
+      :param modulus: Optional prime modulus `p`.
+
+      :returns: True if parallel.
+
+
+
+   .. py:method:: is_perpendicular(other: LineProportion, metric: MetricForm = BLUE_METRIC) -> bool
+
+      Check whether two lines are perpendicular under `metric`.
+
+      :param other: Second line proportion.
+      :param metric: Symmetric bilinear metric form (defaults to Euclidean Blue).
+
+      :returns: True if `B(dir(self), dir(other)) == 0`.
+
+
+
+   .. py:method:: is_null(metric: MetricForm = BLUE_METRIC) -> bool
+
+      Check whether this line is a null (isotropic) line under `metric`.
+
+      :param metric: Symmetric bilinear metric form.
+
+      :returns: True if `Q_M(direction) == 0`.
+
+
+
+   .. py:method:: meet(other: LineProportion, modulus: int | None = None) -> tuple[sympy.Expr, sympy.Expr]
+
+      Compute the intersection point of two non-parallel lines.
+
+      :param other: Intersecting line proportion.
+      :param modulus: Optional prime modulus `p` for `GF(p)`.
+
+      :returns: Exact intersection point `(x, y)`.
+
+      :raises ValueError: If the lines are parallel.
+
+
+
+   .. py:method:: parallel_through(pt: Point2DInput) -> LineProportion
+
+      Construct the unique line parallel to `self` passing through `pt`.
+
+      :param pt: Point `[x0, y0]`.
+
+      :returns: Parallel `LineProportion` `<a : b : -(a*x0 + b*y0)>`.
+
+
+
+   .. py:method:: altitude_from(pt: Point2DInput, metric: MetricForm = BLUE_METRIC) -> LineProportion
+
+      Construct the altitude line from `pt` perpendicular to `self` under `metric`.
+
+      :param pt: Point `[x0, y0]`.
+      :param metric: Symmetric bilinear metric form.
+
+      :returns: `LineProportion` through `pt` orthogonal to `self` under `metric`.
+
+
+
+   .. py:method:: foot_of_altitude(pt: Point2DInput, metric: MetricForm = BLUE_METRIC) -> tuple[sympy.Expr, sympy.Expr]
+
+      Compute the foot `F` of the altitude from `pt` onto non-null line `self`.
+
+      :param pt: Point `[x0, y0]`.
+      :param metric: Symmetric bilinear metric form.
+
+      :returns: Exact coordinates `(fx, fy)` of the foot of the altitude.
+
+
+
+   .. py:method:: reflect_point(pt: Point2DInput, metric: MetricForm = BLUE_METRIC) -> tuple[sympy.Expr, sympy.Expr]
+
+      Reflect point `pt` across non-null line `self` (`sigma_l(A) = 2*F - A`).
+
+      :param pt: Point `[x0, y0]`.
+      :param metric: Symmetric bilinear metric form.
+
+      :returns: Reflected point `(rx, ry)`.
+
+
+
+   .. py:method:: reflect_line(other: LineProportion) -> LineProportion
+
+      Reflect line `other` across Euclidean non-null line `self` (`Sigma_l(m)`).
+
+      Uses Wildberger's Reflection of a Line in a Line Theorem (Theorem 15):
+      no square roots or trigonometric functions required.
+
+      :param other: Line `<a2 : b2 : c2>` to reflect across `self = <a1 : b1 : c1>`.
+
+      :returns: Reflected `LineProportion`.
+
+
+
+.. py:class:: ConicProportion(d: CoordScalar, e: CoordScalar, f: CoordScalar, a: CoordScalar, b: CoordScalar, c: CoordScalar)
+
+   Planar conic `<d : e : f : a : b : c>` for `d*x^2 + e*x*y + f*y^2 + a*x + b*y + c = 0`.
+
+   .. attribute:: d
+
+      Coefficient of `x^2`.
+
+   .. attribute:: e
+
+      Coefficient of `x*y`.
+
+   .. attribute:: f
+
+      Coefficient of `y^2`.
+
+   .. attribute:: a
+
+      Coefficient of `x`.
+
+   .. attribute:: b
+
+      Coefficient of `y`.
+
+   .. attribute:: c
+
+      Constant term.
+
+
+   .. py:attribute:: d
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: e
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: f
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: a
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: b
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: c
+      :type:  sympy.Expr
+
+
+   .. py:method:: evaluate(pt: Point2DInput) -> sympy.Expr
+
+      Evaluate `d*x^2 + e*x*y + f*y^2 + a*x + b*y + c` at `pt`.
+
+      :param pt: Point `[x, y]`.
+
+      :returns: Exact value of the quadratic polynomial at `pt`.
+
+
+
+   .. py:method:: center(modulus: int | None = None) -> tuple[sympy.Expr, sympy.Expr]
+
+      Compute the unique center `[(2af - be)/(e^2 - 4df), (2bd - ae)/(e^2 - 4df)]`.
+
+      :param modulus: Optional prime modulus `p` for `GF(p)`.
+
+      :returns: Center coordinates `(cx, cy)`.
+
+      :raises ValueError: If `e^2 - 4*d*f == 0` (parabolic/ribbon case without unique center).
+
+
+
+   .. py:method:: translate(shift: Point2DInput) -> ConicProportion
+
+      Translate conic by `shift = [u, v]` (`tau_B(q)` from Theorem 118).
+
+      :param shift: Translation vector `[u, v]`.
+
+      :returns: Translated `ConicProportion`.
+
+
+
+   .. py:method:: taylor_conic(pt: Point2DInput) -> ConicProportion
+
+      Compute the standard Taylor conic `q_A = tau_A^(-1)(q)` at point `pt` on `q`.
+
+      :param pt: Point `[x0, y0]` lying on the conic.
+
+      :returns: Standard `ConicProportion` with constant term `0` when `pt` lies on `q`.
+
+
+
+   .. py:method:: tangent_at(pt: Point2DInput) -> LineProportion
+
+      Compute the algebraic tangent line `T_A^(1)(q)` at a non-singular point `pt` on `q`.
+
+      Implements Wildberger's calculus-free Tangent to a Conic Theorem (Theorem 119):
+      `<a + 2*d*x0 + e*y0 : b + e*x0 + 2*f*y0 : a*x0 + b*y0 + 2*c>`.
+
+      :param pt: Non-singular point `[x0, y0]` on `q`.
+
+      :returns: Tangent `LineProportion` at `pt`.
+
+
+
+   .. py:method:: from_circle(center: Point2DInput, k_quad: CoordScalar) -> ConicProportion
+      :classmethod:
+
+
+      Construct the circle `Q(X, C) = K` as a 6-proportion conic.
+
+      :param center: Circle center `[u, v]`.
+      :param k_quad: Circle quadrance `K`.
+
+      :returns: `ConicProportion` `<1 : 0 : 1 : -2u : -2v : u^2 + v^2 - K>`.
+
+
+
+   .. py:method:: from_ribbon(line: LineProportion, k_quad: CoordScalar) -> ConicProportion
+      :classmethod:
+
+
+      Construct the ribbon `Q(X, l) = K` around non-null `line`.
+
+      :param line: Axis line `<a : b : c>`.
+      :param k_quad: Ribbon quadrance `K`.
+
+      :returns: `ConicProportion` for `(a*x + b*y + c)^2 - K*(a^2 + b^2) = 0`.
+
+
+
+   .. py:method:: from_parabola(focus: Point2DInput, directrix: LineProportion) -> ConicProportion
+      :classmethod:
+
+
+      Construct the parabola `Q(X, F) = Q(X, l)` from focus and directrix.
+
+      :param focus: Focus point `[u, v]`.
+      :param directrix: Non-null directrix `<a : b : c>` not containing `focus`.
+
+      :returns: `ConicProportion` from Theorem 101.
+
+
+
+   .. py:method:: from_quadrola(f1: Point2DInput, f2: Point2DInput, k_quad: CoordScalar) -> ConicProportion
+      :classmethod:
+
+
+      Construct the quadrola `A(Q(X, F1), Q(X, F2), K) = 0` unifying ellipses & hyperbolas.
+
+      :param f1: First focus `[u1, v1]`.
+      :param f2: Second focus `[u2, v2]`.
+      :param k_quad: Associated quadrance `K`.
+
+      :returns: `ConicProportion` of degree 2 in `(x, y)` (Exercise 15.11).
+
+
+
+   .. py:method:: from_grammola(l1: LineProportion, l2: LineProportion, k_quad: CoordScalar) -> ConicProportion
+      :classmethod:
+
+
+      Construct the grammola `Q(X, l1) + Q(X, l2) = K` from two diagonal lines.
+
+      :param l1: First non-null diagonal line.
+      :param l2: Second non-null diagonal line.
+      :param k_quad: Grammola quadrance `K`.
+
+      :returns: `ConicProportion` representing `Q(X, l1) + Q(X, l2) - K = 0`.
+
+
+
+.. py:function:: collinear_det(p1: Point2DInput, p2: Point2DInput, p3: Point2DInput) -> sympy.Expr
+
+   Compute the collinearity determinant `x1*y2 - x1*y3 + x2*y3 - x3*y2 + x3*y1 - x2*y1`.
+
+   Vanishes if and only if `p1, p2, p3` are collinear (Theorem 3), and equals
+   twice the signed Euclidean area of oriented triangle `p1 p2 p3`.
+
+   :param p1: First point `[x1, y1]`.
+   :param p2: Second point `[x2, y2]`.
+   :param p3: Third point `[x3, y3]`.
+
+   :returns: Exact determinant expression.
+
+
+.. py:function:: concurrent_det(l1: LineProportion, l2: LineProportion, l3: LineProportion) -> sympy.Expr
+
+   Compute the concurrency determinant of three planar lines (Theorem 4).
+
+   :param l1: First line `<a1 : b1 : c1>`.
+   :param l2: Second line `<a2 : b2 : c2>`.
+   :param l3: Third line `<a3 : b3 : c3>`.
+
+   :returns: Exact 3x3 determinant `det([[a1, b1, c1], [a2, b2, c2], [a3, b3, c3]])`.
+
+
+.. py:function:: point_rotation(pt: Point2DInput, center: Point2DInput) -> tuple[sympy.Expr, sympy.Expr]
+
+   Apply central half-turn rotation `rho_C([x, y]) = [2u - x, 2v - y]` in `center`.
+
+   :param pt: Point `[x, y]` to rotate.
+   :param center: Center of rotation `C = [u, v]`.
+
+   :returns: Rotated point `(2u - x, 2v - y)`.
+
+
+.. py:function:: affine_combination(p1: Point2DInput, p2: Point2DInput, lam: CoordScalar) -> tuple[sympy.Expr, sympy.Expr]
+
+   Compute the affine combination `(1 - lam)*p1 + lam*p2`.
+
+   :param p1: First point.
+   :param p2: Second point.
+   :param lam: Affine ratio parameter `lambda`.
+
+   :returns: Exact point `((1 - lam)*x1 + lam*x2, (1 - lam)*y1 + lam*y2)`.
+
+
+.. py:function:: midpoint(p1: Point2DInput, p2: Point2DInput) -> tuple[sympy.Expr, sympy.Expr]
+
+   Compute the exact midpoint `(p1 + p2) / 2` of a side.
+
+   :param p1: First endpoint.
+   :param p2: Second endpoint.
+
+   :returns: Exact midpoint coordinates.
+
+
+.. py:function:: quadrance(p1: Point2DInput, p2: Point2DInput, metric: MetricForm = BLUE_METRIC) -> sympy.Expr
+
+   Compute the quadrance `Q_M(p1, p2)` between two planar points under `metric`.
+
+   For the default Euclidean Blue metric, `Q(p1, p2) = (x2 - x1)^2 + (y2 - y1)^2`.
+
+   :param p1: First point `[x1, y1]`.
+   :param p2: Second point `[x2, y2]`.
+   :param metric: Symmetric bilinear metric form (Blue, Red, Green, or custom).
+
+   :returns: Exact quadrance expression.
+
+
+.. py:function:: point_to_line_quadrance(pt: Point2DInput, line: LineProportion) -> sympy.Expr
+
+   Compute the Euclidean quadrance `Q(A0, l) = (a*x0 + b*y0 + c)^2 / (a^2 + b^2)` (Theorem 25).
+
+   :param pt: Point `[x0, y0]`.
+   :param line: Non-null line `<a : b : c>`.
+
+   :returns: Exact quadrance from `pt` to `line`.
+
+
+.. py:function:: perpendicular_bisector(p1: Point2DInput, p2: Point2DInput, metric: MetricForm = BLUE_METRIC) -> LineProportion
+
+   Construct the perpendicular bisector locus `Q_M(X, p1) = Q_M(X, p2)` (Theorem 12/24).
+
+   :param p1: First point `[x1, y1]`.
+   :param p2: Second point `[x2, y2]`.
+   :param metric: Symmetric bilinear metric form.
+
+   :returns: `LineProportion` of the perpendicular bisector under `metric`.
+
+
+.. py:function:: cross(l1: LineProportion, l2: LineProportion, metric: MetricForm = BLUE_METRIC) -> sympy.Expr
+
+   Compute the cross `c_M(l1, l2) = B(u, v)^2 / (Q_M(u) * Q_M(v))` between two non-null lines.
+
+   :param l1: First non-null line.
+   :param l2: Second non-null line.
+   :param metric: Symmetric bilinear metric form.
+
+   :returns: Exact cross invariant `c = 1 - s`.
+
+
+.. py:function:: spread(l1: LineProportion, l2: LineProportion, metric: MetricForm = BLUE_METRIC) -> sympy.Expr
+
+   Compute the spread `s_M(l1, l2) = 1 - c_M(l1, l2)` between two non-null lines.
+
+   For Euclidean Blue geometry:
+   `s(l1, l2) = (a1*b2 - a2*b1)^2 / ((a1^2 + b1^2)*(a2^2 + b2^2))`.
+
+   :param l1: First non-null line.
+   :param l2: Second non-null line.
+   :param metric: Symmetric bilinear metric form.
+
+   :returns: Exact spread invariant `s`.
+
+
+.. py:function:: twist(l1: LineProportion, l2: LineProportion, metric: MetricForm = BLUE_METRIC) -> sympy.Expr
+
+   Compute the twist `t_M(l1, l2) = s_M(l1, l2) / c_M(l1, l2)` between non-perpendicular lines.
+
+   :param l1: First non-null line.
+   :param l2: Second non-null line (not orthogonal to `l1`).
+   :param metric: Symmetric bilinear metric form.
+
+   :returns: Exact twist invariant `t = s / c`.
+
+
+.. py:function:: signed_turn(l1: LineProportion, l2: LineProportion) -> sympy.Expr
+
+   Compute Wildberger's oriented turn `u(l1, l2) = (a1*b2 - a2*b1) / (a1*a2 + b1*b2)`.
+
+   Satisfies `u(l1, l2)^2 = t(l1, l2)` (the twist) and the rational tangent-addition
+   Triple Turn Formula `u1 + u2 + u3 = u1 * u2 * u3` when `l1, l2, l3` cycle!
+
+   :param l1: First oriented line.
+   :param l2: Second oriented line.
+
+   :returns: Exact signed turn expression.
+
+
+.. py:function:: vertex_spread(vertex: Point2DInput, p1: Point2DInput, p2: Point2DInput, metric: MetricForm = BLUE_METRIC) -> sympy.Expr
+
+   Compute the spread at `vertex` between lines `(vertex, p1)` and `(vertex, p2)`.
+
+   :param vertex: Common vertex point `A`.
+   :param p1: First arm point `B`.
+   :param p2: Second arm point `C`.
+   :param metric: Symmetric bilinear metric form.
+
+   :returns: Exact vertex spread `s_A`.
+
+
+.. py:function:: vertex_cross(vertex: Point2DInput, p1: Point2DInput, p2: Point2DInput, metric: MetricForm = BLUE_METRIC) -> sympy.Expr
+
+   Compute the cross at `vertex` between lines `(vertex, p1)` and `(vertex, p2)`.
+
+   :param vertex: Common vertex point `A`.
+   :param p1: First arm point `B`.
+   :param p2: Second arm point `C`.
+   :param metric: Symmetric bilinear metric form.
+
+   :returns: Exact vertex cross `c_A = 1 - s_A`.
+
+
+.. py:function:: archimedes(q1: CoordScalar, q2: CoordScalar, q3: CoordScalar) -> sympy.Expr
+
+   Evaluate Archimedes' function `A(Q1, Q2, Q3) = (Q1 + Q2 + Q3)^2 - 2*(Q1^2 + Q2^2 + Q3^2)`.
+
+   :param q1: First quadrance.
+   :param q2: Second quadrance.
+   :param q3: Third quadrance.
+
+   :returns: Exact value of `A(Q1, Q2, Q3)`.
+
+
+.. py:function:: quadrea(p1: Point2DInput, p2: Point2DInput, p3: Point2DInput, metric: MetricForm = BLUE_METRIC) -> sympy.Expr
+
+   Compute the quadrea `A_M` of triangle `p1 p2 p3` (`16 * Area^2` in Euclidean metric).
+
+   :param p1: First vertex `A1`.
+   :param p2: Second vertex `A2`.
+   :param p3: Third vertex `A3`.
+   :param metric: Symmetric bilinear metric form.
+
+   :returns: Exact quadrea `A(Q1, Q2, Q3)`.
+
+
+.. py:function:: triple_spread_function(s1: CoordScalar, s2: CoordScalar, s3: CoordScalar) -> sympy.Expr
+
+   Evaluate the Triple Spread polynomial `S(s1, s2, s3) = (s1+s2+s3)^2 - 2(s1^2+s2^2+s3^2) - 4*s1*s2*s3`.
+
+   Vanishes whenever `s1, s2, s3` are the spreads formed by three coplanar lines.
+
+   :param s1: First spread.
+   :param s2: Second spread.
+   :param s3: Third spread.
+
+   :returns: Exact polynomial value (zero for valid spread triples).
+
+
+.. py:function:: triple_cross_function(c1: CoordScalar, c2: CoordScalar, c3: CoordScalar) -> sympy.Expr
+
+   Evaluate the Triple Cross polynomial `(c1 + c2 + c3 - 1)^2 - 4*c1*c2*c3` (Theorem 49).
+
+   :param c1: First cross `1 - s1`.
+   :param c2: Second cross `1 - s2`.
+   :param c3: Third cross `1 - s3`.
+
+   :returns: Exact polynomial value (zero for valid cross triples).
+
+
+.. py:function:: quadruple_quad_function(q1: CoordScalar, q2: CoordScalar, q3: CoordScalar, q4: CoordScalar) -> sympy.Expr
+
+   Evaluate Wildberger's Quadruple Quad polynomial `Q(a, b, c, d)` (Theorem 31).
+
+   `Q(a,b,c,d) = ((a+b+c+d)^2 - 2(a^2+b^2+c^2+d^2))^2 - 64*a*b*c*d`.
+   Vanishes for four collinear point quadrances OR when a cyclic quadrilateral
+   has zero cyclic quadrea (degenerate case).
+
+   :param q1: First quadrance.
+   :param q2: Second quadrance.
+   :param q3: Third quadrance.
+   :param q4: Fourth quadrance.
+
+   :returns: Exact polynomial value.
+
+
+.. py:function:: quadruple_spread_function(s1: CoordScalar, s2: CoordScalar, s3: CoordScalar, s4: CoordScalar) -> sympy.Expr
+
+   Evaluate the self-dual Quadruple Spread / Cross function `R(a, b, c, d)` (Theorems 54 & 55).
+
+   Satisfies the remarkable symmetry `R(a, b, c, d) == R(1-a, 1-b, 1-c, 1-d)`!
+
+   :param s1: Spread `s_12`.
+   :param s2: Spread `s_23`.
+   :param s3: Spread `s_34`.
+   :param s4: Spread `s_14`.
+
+   :returns: Exact polynomial residual.
+
+
+.. py:function:: euler_four_point_function(q1: CoordScalar, q2: CoordScalar, q3: CoordScalar, p1: CoordScalar, p2: CoordScalar, p3: CoordScalar) -> sympy.Expr
+
+   Evaluate Euler's Four-Point planar Cayley-Menger relation `E(Q1, Q2, Q3, P1, P2, P3)` (Theorem 115).
+
+   Vanishes for the six pairwise quadrances of ANY four coplanar points `A1, A2, A3, A4`,
+   where `Q1=Q(A2,A3), Q2=Q(A1,A3), Q3=Q(A1,A2)` and `P1=Q(A1,A4), P2=Q(A2,A4), P3=Q(A3,A4)`.
+
+   :param q1: `Q(A2, A3)`.
+   :param q2: `Q(A1, A3)`.
+   :param q3: `Q(A1, A2)`.
+   :param p1: `Q(A1, A4)`.
+   :param p2: `Q(A2, A4)`.
+   :param p3: `Q(A3, A4)`.
+
+   :returns: Exact polynomial value (zero for any four coplanar points).
+
+
+.. py:function:: spread_polynomial(n: int, s: CoordScalar) -> sympy.Expr
+
+   Compute Wildberger's n-th Spread Polynomial `S_n(s)`.
+
+   Defined over Z[s] by `S_0(s) = 0`, `S_1(s) = s`, and
+   `S_n(s) = 2*(1 - 2*s)*S_{n-1}(s) - S_{n-2}(s) + 2*s`.
+
+   :param n: Non-negative degree index.
+   :param s: Spread variable or exact value.
+
+   :returns: Expanded exact polynomial expression `S_n(s)`.
+
+   :raises ValueError: If `n < 0`.
+
+
+.. py:function:: cross_polynomial(n: int, c: CoordScalar) -> sympy.Expr
+
+   Compute Wildberger's n-th Cross Polynomial `C_n(c) = 1 - S_n(1 - c)` (Section 8.7).
+
+   :param n: Non-negative degree index.
+   :param c: Cross variable or exact value `c = 1 - s`.
+
+   :returns: Expanded exact polynomial expression `C_n(c)`.
+
+
+.. py:function:: spread_sequence_mod_p(s_val: int, p: int, max_steps: int = 100) -> list[int]
+
+   Compute the cyclic spread polynomial orbit `[S_0(s), S_1(s), ..., S_{k-1}(s)]` in `GF(p)`.
+
+   :param s_val: Initial spread residue in `GF(p)`.
+   :param p: Odd prime modulus.
+   :param max_steps: Upper bound on sequence length before stopping.
+
+   :returns: Cyclic spread sequence `[0, s_1, s_2, ..., s_{n-1}]` up to first return to `0`.
+
+
+.. py:class:: TriangleInvariants
+
+   Complete bundle of exact Rational Trigonometry invariants and centers of a triangle.
+
+   .. attribute:: q1
+
+      Quadrance `Q(A2, A3)` opposite `A1`.
+
+   .. attribute:: q2
+
+      Quadrance `Q(A1, A3)` opposite `A2`.
+
+   .. attribute:: q3
+
+      Quadrance `Q(A1, A2)` opposite `A3`.
+
+   .. attribute:: s1
+
+      Spread at vertex `A1`.
+
+   .. attribute:: s2
+
+      Spread at vertex `A2`.
+
+   .. attribute:: s3
+
+      Spread at vertex `A3`.
+
+   .. attribute:: quadrea
+
+      Triangle quadrea `A(Q1, Q2, Q3)`.
+
+   .. attribute:: centroid
+
+      Universal centroid `G = (A1 + A2 + A3)/3` (`X(2)`).
+
+   .. attribute:: circumcenter
+
+      Metric circumcenter `C_M` (`X(3)` in Blue).
+
+   .. attribute:: circumquadrance
+
+      Metric circumquadrance `K_M = Q1*Q2*Q3 / A_M`.
+
+   .. attribute:: orthocenter
+
+      Metric orthocenter `O_M` (`X(4)` in Blue).
+
+   .. attribute:: nine_point_center
+
+      Metric nine-point center `N_M = (C_M + O_M)/2` (`X(5)` in Blue).
+
+   .. attribute:: nine_point_quadrance
+
+      Metric nine-point quadrance `K_9 = K_M / 4`.
+
+
+   .. py:attribute:: q1
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: q2
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: q3
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: s1
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: s2
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: s3
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: quadrea
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: centroid
+      :type:  tuple[sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: circumcenter
+      :type:  tuple[sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: circumquadrance
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: orthocenter
+      :type:  tuple[sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: nine_point_center
+      :type:  tuple[sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: nine_point_quadrance
+      :type:  sympy.Expr
+
+
+.. py:function:: compute_triangle_invariants(p1: Point2DInput, p2: Point2DInput, p3: Point2DInput, metric: MetricForm = BLUE_METRIC) -> TriangleInvariants
+
+   Compute exact quadrances, spreads, quadrea, and central points of `p1 p2 p3` under `metric`.
+
+   Uses Wildberger's universal affine barycentric formulas (Theorems 84, 87, 116, 117),
+   valid over any field (`char != 2, 3`) and any non-degenerate symmetric bilinear form!
+
+   :param p1: First vertex `A1 = [x1, y1]`.
+   :param p2: Second vertex `A2 = [x2, y2]`.
+   :param p3: Third vertex `A3 = [x3, y3]`.
+   :param metric: Symmetric bilinear metric form (defaults to Blue Euclidean).
+
+   :returns: Populated `TriangleInvariants` dataclass.
+
+
+.. py:function:: quadrance_3d(p1: Point3DInput, p2: Point3DInput) -> sympy.Expr
+
+   Compute exact 3D Euclidean quadrance `(x2-x1)^2 + (y2-y1)^2 + (z2-z1)^2`.
+
+   :param p1: First 3D point.
+   :param p2: Second 3D point.
+
+   :returns: Exact 3D quadrance expression.
+
+
+.. py:function:: plane_normal(p1: Point3DInput, p2: Point3DInput, p3: Point3DInput) -> tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+   Compute an exact normal vector `(p2 - p1) x (p3 - p1)` to plane `p1 p2 p3`.
+
+   :param p1: First point in plane.
+   :param p2: Second point in plane.
+   :param p3: Third point in plane.
+
+   :returns: Exact 3D normal vector `(nx, ny, nz)`.
+
+
+.. py:function:: dihedral_spread(n1: Point3DInput, n2: Point3DInput) -> sympy.Expr
+
+   Compute the dihedral (face/wedge) spread `S = 1 - (n1 . n2)^2 / ((n1.n1)*(n2.n2))` between two planes.
+
+   :param n1: Normal vector to the first plane.
+   :param n2: Normal vector to the second plane.
+
+   :returns: Exact dihedral spread `S` in `[0, 1]`.
+
+
+.. py:function:: collinear_cross_ratio_quadrance(a: Point2DInput, b: Point2DInput, c: Point2DInput, d: Point2DInput) -> sympy.Expr
+
+   Compute the squared projective cross-ratio `(A, B; C, D)^2 = Q(A,C)*Q(B,D) / (Q(A,D)*Q(B,C))`.
+
+   Equals `1` whenever `(A, B; C, D) = -1` is a harmonic range (with `C != D`)!
+
+   :param a: First collinear point `A`.
+   :param b: Second collinear point `B`.
+   :param c: Third collinear point `C`.
+   :param d: Fourth collinear point `D`.
+
+   :returns: Exact quadrance cross-ratio `(A, B; C, D)^2`.
+
+
+.. py:function:: pencil_cross_ratio_spread(origin: Point2DInput, a: Point2DInput, b: Point2DInput, c: Point2DInput, d: Point2DInput) -> sympy.Expr
+
+   Compute the projective spread cross-ratio of four concurrent rays through `origin`.
+
+   `CR_s(OA, OB; OC, OD) = (s(OA, OC) * s(OB, OD)) / (s(OA, OD) * s(OB, OC))`.
+   Equals `collinear_cross_ratio_quadrance(A, B, C, D)` for any transversal cutting
+   the four rays at `A, B, C, D`!
+
+   :param origin: Pencil vertex `O`.
+   :param a: Point on first ray `OA`.
+   :param b: Point on second ray `OB`.
+   :param c: Point on third ray `OC`.
+   :param d: Point on fourth ray `OD`.
+
+   :returns: Exact spread cross-ratio invariant.
+
+
+.. py:function:: rational_polar_coords(x: CoordScalar, y: CoordScalar) -> tuple[sympy.Expr, sympy.Expr]
+
+   Convert Cartesian `[x, y]` to Wildberger's rational polar coordinates `[s, Q]`.
+
+   Uses `s = x^2 / (x^2 + y^2)` (polar spread to the y-axis) and `Q = x^2 + y^2`
+   (Section 27.1).
+
+   :param x: Cartesian x-coordinate.
+   :param y: Cartesian y-coordinate.
+
+   :returns: Tuple `(s, Q)` of exact polar spread and quadrance.
+
+

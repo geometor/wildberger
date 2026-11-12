@@ -1,0 +1,60 @@
+geometor.wildberger.apparatus
+=============================
+
+.. py:module:: geometor.wildberger.apparatus
+
+.. autoapi-nested-parse::
+
+   Scholarly apparatus generator (`glossary.rst`, `persons.rst`, `bibliography.rst`).
+
+   Maintains canonical definitions for Rational Trigonometry & Universal Geometry
+   terms, historical geometers, and bibliographic sources cited across the 28
+   principles of the GEOMETOR Wildberger Codex.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.wildberger.apparatus.GLOSSARY_ENTRIES
+   geometor.wildberger.apparatus.PERSONS_ENTRIES
+   geometor.wildberger.apparatus.BIBLIOGRAPHY_ENTRIES
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.wildberger.apparatus.write_apparatus_files
+
+
+Module Contents
+---------------
+
+.. py:data:: GLOSSARY_ENTRIES
+   :type:  tuple[tuple[tuple[str, ...], str], ...]
+   :value: ((('quadrance',), 'The exact quadratic separation :math:`Q(A_1, A_2) = (x_2 - x_1)^2 + (y_2 -...
+
+
+.. py:data:: PERSONS_ENTRIES
+   :type:  tuple[tuple[str, str, str], ...]
+   :value: (('wildberger', 'Norman J. Wildberger (b. 1955)', 'Canadian-Australian mathematician at UNSW...
+
+
+.. py:data:: BIBLIOGRAPHY_ENTRIES
+   :type:  tuple[tuple[str, str], ...]
+   :value: (('Wildberger2005', 'Wildberger, Norman J. *Divine Proportions: Rational Trigonometry to...
+
+
+.. py:function:: write_apparatus_files(docsrc_dir: pathlib.Path) -> list[pathlib.Path]
+
+   Write `glossary.rst`, `persons.rst`, and `bibliography.rst` into `docsrc_dir`.
+
+   :param docsrc_dir: Target `docsrc/` directory path.
+
+   :returns: List of written file paths.
+
+

@@ -1,0 +1,853 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>W.15 Circumcenter, Orthocenter &amp; Universal Affine Barycentrics &mdash; Principles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • wildberger</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">wildberger</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Principles</a>
+        </li>
+        <li>
+          <a href="../../usage/index.html"  >Usage</a>
+        </li>
+        <li>
+          <a href="../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../persons.html"  >Persons</a>
+        </li>
+        <li>
+          <a href="../../bibliography.html"  >Bibliography</a>
+        </li>
+        <li>
+          <a href="../../log/index.html"  >Log</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; wildberger</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">Principles</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../w-14/index.html" title="W.14 Menelaus, Ceva &amp; The Alternate Spreads Theorem">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">Overview</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="code.html">Code</a>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../w-16/index.html" title="W.16 The Euler Line &amp; Nine-Point Circle Over Arbitrary Fields"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="w-15-circumcenter-orthocenter-universal-affine-barycentrics">
+        <span id="w-15"></span><h1>W.15 Circumcenter, Orthocenter &amp; Universal Affine Barycentrics<a class="headerlink" href="#w-15-circumcenter-orthocenter-universal-affine-barycentrics" title="Link to this heading">¶</a></h1>
+        <p><em>Radical-Free Coordinates for X(3), X(4), and Orthic Bisector Symmetry</em></p>
+        <div class="enunciation">Every non-null triangle A_1 A_2 A_3 over a field F (char F != 2) has a unique circumcenter C at the intersection of its side perpendicular bisectors and a unique orthocenter O at the intersection of its altitudes, with affine barycentric weights beta_i = Q_i*(Q_j + Q_k - Q_i)/(2*A) for C and gamma_i = (Q_i + Q_j - Q_k)*(Q_k + Q_i - Q_j)/(2*A) for O.</div>
+        <figure class="align-center" id="id1">
+        <a class="reference internal image-reference" href="../../_images/w-15.svg"><svg xmlns="http://www.w3.org/2000/svg" class="wildberger-diagram" viewBox="-4.0500 -15.1750 22.1000 22.1000">
+          <style>
+        svg.wildberger-diagram {
+            background-color: #111318;
+            border: 1px solid #2e3440;
+            border-radius: 6px;
+            width: 100%;
+            height: auto;
+            max-height: 560px;
+            display: block;
+            margin: 0.6rem auto;
+            user-select: none;
+            overflow: hidden;
+            cursor: grab;
+        }
+        svg.wildberger-diagram:active {
+            cursor: grabbing;
+        }
+        @media (prefers-color-scheme: light) {
+            svg.wildberger-diagram {
+                background-color: #fbfbfd;
+                border-color: #d8dee9;
+            }
+            svg.wildberger-diagram .Point {
+                stroke: #fbfbfd !important;
+            }
+            svg.wildberger-diagram .Point.given {
+                fill: #1a1d24 !important;
+            }
+            svg.wildberger-diagram .label-halo {
+                stroke: #fbfbfd !important;
+            }
+            svg.wildberger-diagram .label-fill {
+                fill: #1a1d24 !important;
+            }
+            svg.wildberger-diagram .Line,
+            svg.wildberger-diagram .Segment {
+                stroke: #4c566a;
+            }
+            svg.wildberger-diagram .callout-box {
+                fill: rgba(255, 255, 255, 0.90);
+            }
+            svg.wildberger-diagram .callout-text {
+                fill: #1a1d24;
+            }
+        }
+        .Line, .Segment {
+            stroke: #9aa5b4;
+            stroke-linecap: round;
+            vector-effect: non-scaling-stroke;
+            stroke-width: 1.3px;
+            fill: none;
+            opacity: 0.82;
+            transition: stroke-width 0.15s ease, opacity 0.15s ease, filter 0.15s ease;
+        }
+        .Circle, .Curve {
+            stroke: #c678dd;
+            vector-effect: non-scaling-stroke;
+            stroke-width: 1.45px;
+            fill: none;
+            opacity: 0.86;
+            transition: stroke-width 0.15s ease, opacity 0.15s ease, filter 0.15s ease;
+        }
+        .Polygon {
+            fill: rgba(97, 175, 239, 0.09);
+            stroke: #61afef;
+            vector-effect: non-scaling-stroke;
+            stroke-width: 1.85px;
+            stroke-linejoin: round;
+            transition: stroke-width 0.15s ease, fill-opacity 0.15s ease;
+        }
+        .Polygon.golden {
+            fill: rgba(229, 192, 123, 0.14);
+            stroke: #e5c07b;
+        }
+        .Point {
+            fill: #e5c07b;
+            stroke: #111318;
+            vector-effect: non-scaling-stroke;
+            stroke-width: 1.4px;
+            transition: r 0.15s ease, filter 0.15s ease;
+        }
+        .Point.given {
+            fill: #ffffff;
+        }
+        .Point.focus, .Point.center, .Point.target {
+            fill: #00e5ff;
+        }
+        .Point.golden {
+            fill: #f0c674;
+        }
+        .Point.midpoint, .Point.foot {
+            fill: #98c379;
+        }
+        .Point.metric-blue, .Line.metric-blue, .Segment.metric-blue, .Circle.metric-blue {
+            stroke: #61afef;
+        }
+        .Point.metric-blue {
+            fill: #61afef;
+        }
+        .Point.metric-red, .Line.metric-red, .Segment.metric-red, .Circle.metric-red, .Curve.metric-red {
+            stroke: #e06c75;
+        }
+        .Point.metric-red {
+            fill: #e06c75;
+        }
+        .Point.metric-green, .Line.metric-green, .Segment.metric-green, .Circle.metric-green, .Curve.metric-green {
+            stroke: #98c379;
+        }
+        .Point.metric-green {
+            fill: #98c379;
+        }
+        .Line.guide, .Circle.guide, .Segment.guide, .Curve.guide {
+            stroke-dasharray: 4 4;
+            opacity: 0.44;
+            stroke-width: 0.95px;
+        }
+        .Line.euler, .Segment.euler, .Line.axis, .Segment.axis {
+            stroke: #e06c75;
+            stroke-width: 1.85px;
+            opacity: 0.92;
+        }
+        .Line.altitude, .Segment.altitude, .Line.median, .Segment.median, .Line.bisector, .Segment.bisector {
+            stroke: #98c379;
+            stroke-width: 1.45px;
+            opacity: 0.88;
+        }
+        .Line.golden, .Segment.golden, .Circle.golden, .Curve.golden {
+            stroke: #e5c07b;
+            stroke-width: 1.8px;
+        }
+        .Circle.circumcircle {
+            stroke: #e06c75;
+            stroke-width: 1.55px;
+        }
+        .Circle.ninepoint {
+            stroke: #61afef;
+            stroke-width: 1.65px;
+        }
+        .Circle.incircle {
+            stroke: #e5c07b;
+            stroke-width: 1.55px;
+        }
+        .callout-box {
+            fill: rgba(24, 28, 36, 0.86);
+            stroke: #61afef;
+            vector-effect: non-scaling-stroke;
+            stroke-width: 1px;
+        }
+        .callout-box.spread-box {
+            stroke: #e5c07b;
+            rx: 3px;
+        }
+        .callout-text {
+            fill: #eceff4;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+            font-weight: 600;
+            text-anchor: middle;
+            dominant-baseline: central;
+            pointer-events: none;
+        }
+        .element-group {
+            cursor: pointer;
+        }
+        .element-group.svg-hovered .Line,
+        .element-group.svg-hovered .Segment,
+        .element-group.svg-hovered .Circle,
+        .element-group.svg-hovered .Curve,
+        .element-group.svg-hovered .Polygon {
+            stroke: #00e5ff !important;
+            stroke-width: 2.8px !important;
+            opacity: 1.0 !important;
+            filter: drop-shadow(0 0 5px rgba(0, 229, 255, 0.75));
+        }
+        .element-group.svg-hovered .Point {
+            fill: #00e5ff !important;
+            filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.9));
+        }
+        .geom-ref {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-weight: 600;
+            padding: 0.05em 0.3em;
+            border-radius: 3px;
+            background: rgba(97, 175, 239, 0.14);
+            color: #61afef;
+            cursor: pointer;
+            transition: background-color 0.15s ease, color 0.15s ease;
+        }
+        .geom-ref:hover, .geom-ref.ref-hovered {
+            background: #00e5ff;
+            color: #111318;
+        }
+        .svg-control-btn {
+            cursor: pointer;
+        }
+        .svg-control-btn rect {
+            fill: rgba(30, 34, 42, 0.85);
+            stroke: #5c6370;
+            stroke-width: 1px;
+            vector-effect: non-scaling-stroke;
+            rx: 3px;
+        }
+        .svg-control-btn:hover rect {
+            fill: rgba(55, 62, 76, 0.95);
+            stroke: #00e5ff;
+        }
+        .svg-control-btn text {
+            fill: #e5e9f0;
+            font-family: sans-serif;
+            font-weight: 600;
+            text-anchor: middle;
+            dominant-baseline: central;
+            pointer-events: none;
+        }
+        svg.hide-labels .labels-layer,
+        svg.hide-labels .callouts-layer {
+            display: none;
+        }
+        svg.hide-guides .guide {
+            display: none;
+        }
+        </style>
+          <g class="svg-viewport">
+            <g class="polygons-layer">
+            <g class="element-group" data-ref="t"><polygon class="Polygon " points="0.0000,-0.0000 14.0000,-0.0000 5.0000,-12.0000"><title>t</title></polygon></g>
+            <g class="element-group" data-ref="t_orth"><polygon class="Polygon golden" points="8.9600,-6.7200 2.0710,-4.9704 5.0000,-0.0000"><title>t_orth</title></polygon></g>
+            </g>
+            <g class="circles-layer">
+            <g class="element-group" data-ref="c_circ"><circle class="Circle circumcircle" cx="7.0000" cy="-4.1250" r="8.1250" data-quadrance="4225/64"><title>c_circ (Q = 4225/64)</title></circle></g>
+            </g>
+            <g class="curves-layer">
+            </g>
+            <g class="lines-layer">
+            <g class="element-group" data-ref="/ A_1 F_1 /"><line class="Segment altitude" x1="0.0000" y1="-0.0000" x2="8.9600" y2="-6.7200" data-quadrance="3136/25"><title>/ A_1 F_1 / (Q = 3136/25)</title></line></g>
+            <g class="element-group" data-ref="/ A_2 F_2 /"><line class="Segment altitude" x1="14.0000" y1="-0.0000" x2="2.0710" y2="-4.9704" data-quadrance="28224/169"><title>/ A_2 F_2 / (Q = 28224/169)</title></line></g>
+            <g class="element-group" data-ref="/ A_3 F_3 /"><line class="Segment altitude" x1="5.0000" y1="-12.0000" x2="5.0000" y2="-0.0000" data-quadrance="144"><title>/ A_3 F_3 / (Q = 144)</title></line></g>
+            </g>
+            <g class="points-layer">
+            <g class="element-group" data-ref="A_1"><circle class="Point given" cx="0.0000" cy="-0.0000" r="0.3338" data-latex-xy="(0, 0)" data-exact-xy="[0, 0]"><title>A_1 = [0, 0]</title></circle></g>
+            <g class="element-group" data-ref="A_2"><circle class="Point given" cx="14.0000" cy="-0.0000" r="0.3338" data-latex-xy="(14, 0)" data-exact-xy="[14, 0]"><title>A_2 = [14, 0]</title></circle></g>
+            <g class="element-group" data-ref="A_3"><circle class="Point given" cx="5.0000" cy="-12.0000" r="0.3338" data-latex-xy="(5, 12)" data-exact-xy="[5, 12]"><title>A_3 = [5, 12]</title></circle></g>
+            <g class="element-group" data-ref="C"><circle class="Point center metric-red" cx="7.0000" cy="-4.1250" r="0.3338" data-latex-xy="(7, \frac{33}{8})" data-exact-xy="[7, 33/8]"><title>C = [7, 33/8]</title></circle></g>
+            <g class="element-group" data-ref="O"><circle class="Point center golden" cx="5.0000" cy="-3.7500" r="0.3338" data-latex-xy="(5, \frac{15}{4})" data-exact-xy="[5, 15/4]"><title>O = [5, 15/4]</title></circle></g>
+            <g class="element-group" data-ref="F_1"><circle class="Point foot" cx="8.9600" cy="-6.7200" r="0.2608" data-latex-xy="(\frac{224}{25}, \frac{168}{25})" data-exact-xy="[224/25, 168/25]"><title>F_1 = [224/25, 168/25]</title></circle></g>
+            <g class="element-group" data-ref="F_2"><circle class="Point foot" cx="2.0710" cy="-4.9704" r="0.2608" data-latex-xy="(\frac{350}{169}, \frac{840}{169})" data-exact-xy="[350/169, 840/169]"><title>F_2 = [350/169, 840/169]</title></circle></g>
+            <g class="element-group" data-ref="F_3"><circle class="Point foot" cx="5.0000" cy="-0.0000" r="0.2608" data-latex-xy="(5, 0)" data-exact-xy="[5, 0]"><title>F_3 = [5, 0]</title></circle></g>
+            </g>
+            <g class="callouts-layer">
+            <g class="element-group" data-ref="C"><rect class="callout-box" x="7.7218" y="-4.5191" width="4.5563" height="0.7882" /><text class="callout-text" x="10.0000" y="-4.1250" font-size="0.5085">C = [7, 33/8]</text></g>
+            <g class="element-group" data-ref="O"><rect class="callout-box spread-box" x="0.7218" y="-6.1441" width="4.5563" height="0.7882" /><text class="callout-text" x="3.0000" y="-5.7500" font-size="0.5085">O = [5, 15/4]</text></g>
+            </g>
+            <g class="labels-layer">
+            <g class="element-group" data-ref="A_1"><text class="label-halo" x="0.4303" y="-0.3781" font-family="sans-serif" font-size="0.6520" font-weight="600" stroke="#111318" stroke-width="0.1630" stroke-linejoin="round" fill="none">A<tspan dy="0.3em" font-size="74%">1</tspan></text><text class="label-fill" x="0.4303" y="-0.3781" font-family="sans-serif" font-size="0.6520" font-weight="600" fill="#f0f4f8">A<tspan dy="0.3em" font-size="74%">1</tspan></text></g>
+            <g class="element-group" data-ref="A_2"><text class="label-halo" x="14.4303" y="-0.3781" font-family="sans-serif" font-size="0.6520" font-weight="600" stroke="#111318" stroke-width="0.1630" stroke-linejoin="round" fill="none">A<tspan dy="0.3em" font-size="74%">2</tspan></text><text class="label-fill" x="14.4303" y="-0.3781" font-family="sans-serif" font-size="0.6520" font-weight="600" fill="#f0f4f8">A<tspan dy="0.3em" font-size="74%">2</tspan></text></g>
+            <g class="element-group" data-ref="A_3"><text class="label-halo" x="5.4303" y="-12.3781" font-family="sans-serif" font-size="0.6520" font-weight="600" stroke="#111318" stroke-width="0.1630" stroke-linejoin="round" fill="none">A<tspan dy="0.3em" font-size="74%">3</tspan></text><text class="label-fill" x="5.4303" y="-12.3781" font-family="sans-serif" font-size="0.6520" font-weight="600" fill="#f0f4f8">A<tspan dy="0.3em" font-size="74%">3</tspan></text></g>
+            <g class="element-group" data-ref="C"><text class="label-halo" x="7.4303" y="-4.5031" font-family="sans-serif" font-size="0.6520" font-weight="600" stroke="#111318" stroke-width="0.1630" stroke-linejoin="round" fill="none">C</text><text class="label-fill" x="7.4303" y="-4.5031" font-family="sans-serif" font-size="0.6520" font-weight="600" fill="#f0f4f8">C</text></g>
+            <g class="element-group" data-ref="O"><text class="label-halo" x="5.4303" y="-4.1281" font-family="sans-serif" font-size="0.6520" font-weight="600" stroke="#111318" stroke-width="0.1630" stroke-linejoin="round" fill="none">O</text><text class="label-fill" x="5.4303" y="-4.1281" font-family="sans-serif" font-size="0.6520" font-weight="600" fill="#f0f4f8">O</text></g>
+            <g class="element-group" data-ref="F_1"><text class="label-halo" x="9.3903" y="-7.0981" font-family="sans-serif" font-size="0.6520" font-weight="600" stroke="#111318" stroke-width="0.1630" stroke-linejoin="round" fill="none">F<tspan dy="0.3em" font-size="74%">1</tspan></text><text class="label-fill" x="9.3903" y="-7.0981" font-family="sans-serif" font-size="0.6520" font-weight="600" fill="#f0f4f8">F<tspan dy="0.3em" font-size="74%">1</tspan></text></g>
+            <g class="element-group" data-ref="F_2"><text class="label-halo" x="2.5013" y="-5.3485" font-family="sans-serif" font-size="0.6520" font-weight="600" stroke="#111318" stroke-width="0.1630" stroke-linejoin="round" fill="none">F<tspan dy="0.3em" font-size="74%">2</tspan></text><text class="label-fill" x="2.5013" y="-5.3485" font-family="sans-serif" font-size="0.6520" font-weight="600" fill="#f0f4f8">F<tspan dy="0.3em" font-size="74%">2</tspan></text></g>
+            <g class="element-group" data-ref="F_3"><text class="label-halo" x="5.4303" y="-0.3781" font-family="sans-serif" font-size="0.6520" font-weight="600" stroke="#111318" stroke-width="0.1630" stroke-linejoin="round" fill="none">F<tspan dy="0.3em" font-size="74%">3</tspan></text><text class="label-fill" x="5.4303" y="-0.3781" font-family="sans-serif" font-size="0.6520" font-weight="600" fill="#f0f4f8">F<tspan dy="0.3em" font-size="74%">3</tspan></text></g>
+            </g>
+          </g>
+          <g class="svg-controls">
+            <g class="svg-control-btn" data-action="zoom-in"><rect x="9.9375" y="-14.9244" width="1.4387" height="0.9282" /><text x="10.6569" y="-14.4603" style="font-size:0.4177px">+</text></g>
+            <g class="svg-control-btn" data-action="zoom-out"><rect x="11.5433" y="-14.9244" width="1.4387" height="0.9282" /><text x="12.2627" y="-14.4603" style="font-size:0.4177px">−</text></g>
+            <g class="svg-control-btn" data-action="reset"><rect x="13.1491" y="-14.9244" width="1.4387" height="0.9282" /><text x="13.8685" y="-14.4603" style="font-size:0.4177px">⟲</text></g>
+            <g class="svg-control-btn" data-action="labels"><rect x="14.7549" y="-14.9244" width="1.4387" height="0.9282" /><text x="15.4742" y="-14.4603" style="font-size:0.4177px">Lbl</text></g>
+            <g class="svg-control-btn" data-action="guides"><rect x="16.3607" y="-14.9244" width="1.4387" height="0.9282" /><text x="17.0800" y="-14.4603" style="font-size:0.4177px">Gde</text></g>
+          </g>
+          <script>
+        (function() {
+          if (window.__wildbergerSvgInit) return;
+          window.__wildbergerSvgInit = true;
+
+          function initDiagram(svg) {
+            if (svg.dataset.initialized) return;
+            svg.dataset.initialized = "true";
+            const vp = svg.querySelector(".svg-viewport");
+            if (!vp) return;
+
+            let scale = 1, tx = 0, ty = 0;
+            let dragging = false, startX = 0, startY = 0;
+
+            function applyTransform() {
+              vp.setAttribute("transform", `translate(${tx},${ty}) scale(${scale})`);
+            }
+
+            svg.addEventListener("wheel", function(e) {
+              e.preventDefault();
+              const rect = svg.getBoundingClientRect();
+              const vb = svg.viewBox.baseVal;
+              const mx = vb.x + ((e.clientX - rect.left) / rect.width) * vb.width;
+              const my = vb.y + ((e.clientY - rect.top) / rect.height) * vb.height;
+              const factor = e.deltaY > 0 ? 1 / 1.15 : 1.15;
+              const newScale = Math.min(Math.max(scale * factor, 0.25), 12);
+              tx = mx - (mx - tx) * (newScale / scale);
+              ty = my - (my - ty) * (newScale / scale);
+              scale = newScale;
+              applyTransform();
+            }, { passive: false });
+
+            svg.addEventListener("mousedown", function(e) {
+              if (e.target.closest(".svg-controls")) return;
+              dragging = true;
+              startX = e.clientX;
+              startY = e.clientY;
+            });
+
+            window.addEventListener("mousemove", function(e) {
+              if (!dragging) return;
+              const rect = svg.getBoundingClientRect();
+              const vb = svg.viewBox.baseVal;
+              const dx = ((e.clientX - startX) / rect.width) * vb.width;
+              const dy = ((e.clientY - startY) / rect.height) * vb.height;
+              startX = e.clientX;
+              startY = e.clientY;
+              tx += dx;
+              ty += dy;
+              applyTransform();
+            });
+
+            window.addEventListener("mouseup", function() {
+              dragging = false;
+            });
+
+            svg.querySelectorAll(".svg-control-btn").forEach(function(btn) {
+              btn.addEventListener("click", function(e) {
+                e.stopPropagation();
+                const action = btn.dataset.action;
+                if (action === "zoom-in") { scale = Math.min(scale * 1.25, 12); applyTransform(); }
+                else if (action === "zoom-out") { scale = Math.max(scale / 1.25, 0.25); applyTransform(); }
+                else if (action === "reset") { scale = 1; tx = 0; ty = 0; applyTransform(); }
+                else if (action === "labels") { svg.classList.toggle("hide-labels"); }
+                else if (action === "guides") { svg.classList.toggle("hide-guides"); }
+              });
+            });
+          }
+
+          function setupHoverSync() {
+            document.querySelectorAll("svg.wildberger-diagram").forEach(initDiagram);
+
+            document.addEventListener("mouseover", function(e) {
+              const refEl = e.target.closest("[data-ref]");
+              if (!refEl) return;
+              const ref = refEl.dataset.ref;
+              if (!ref) return;
+              document.querySelectorAll(`.element-group[data-ref="${CSS.escape(ref)}"]`).forEach(el => el.classList.add("svg-hovered"));
+              document.querySelectorAll(`.geom-ref[data-ref="${CSS.escape(ref)}"]`).forEach(el => el.classList.add("ref-hovered"));
+            });
+
+            document.addEventListener("mouseout", function(e) {
+              const refEl = e.target.closest("[data-ref]");
+              if (!refEl) return;
+              const ref = refEl.dataset.ref;
+              if (!ref) return;
+              document.querySelectorAll(`.element-group[data-ref="${CSS.escape(ref)}"]`).forEach(el => el.classList.remove("svg-hovered"));
+              document.querySelectorAll(`.geom-ref[data-ref="${CSS.escape(ref)}"]`).forEach(el => el.classList.remove("ref-hovered"));
+            });
+          }
+
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", setupHoverSync);
+          } else {
+            setupHoverSync();
+          }
+        })();
+        </script>
+        </svg>
+
+        </a>
+        <figcaption>
+        <p><span class="caption-text">Interactive GEOMETOR construction for <strong>W.15 (Circumcenter, Orthocenter &amp; Universal Affine Barycentrics)</strong>. Hover any geometric label in the text or figure to highlight the corresponding element.</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+        </figcaption>
+        </figure>
+        <div class="geom-signature geom-signature-signature">
+        <p>A_1 : Point
+        A_2 : Point
+        A_3 : Point
+        =====
+        t = polygon(A_1, A_2, A_3)
+        C = circumcenter(A_1, A_2, A_3)
+        c_circ = circle(C, A_1)
+        F_1 = foot(A_1, line(A_2, A_3))
+        F_2 = foot(A_2, line(A_1, A_3))
+        F_3 = foot(A_3, line(A_1, A_2))
+        O = meet(line(A_1, F_1), line(A_2, F_2))
+        t_orth = polygon(F_1, F_2, F_3)</p>
+        </div>
+        <section class="level-2" id="mathematical-synthesis">
+        <h2>Mathematical Synthesis<a class="headerlink" href="#mathematical-synthesis" title="Link to this heading">¶</a></h2>
+        <p>Unlike the <a class="term-ref glossary-term" id="occ-term-incenter-1" href="../../glossary.html#term-incenter" data-term="incenter" title="Term: incenter">incenter</a>—which requires square vertices—both the <a class="term-ref glossary-term" id="occ-term-circumcenter-1" href="../../glossary.html#term-circumcenter" data-term="circumcenter" title="Term: circumcenter">circumcenter</a> <span class="geom-ref" data-ref="C" title="C">C</span> (<span class="math notranslate nohighlight">\(X(3)\)</span>) and the <a class="term-ref glossary-term" id="occ-term-orthocenter-1" href="../../glossary.html#term-orthocenter" data-term="orthocenter" title="Term: orthocenter">orthocenter</a> <span class="geom-ref" data-ref="O" title="O">O</span> (<span class="math notranslate nohighlight">\(X(4)\)</span>) are <strong>universally rational</strong> in the vertex coordinates of any non-null triangle <span class="geom-ref" data-ref="t" title="t">t</span> (<a class="citation-ref" id="occ-cite-wildberger2005-1" href="../../bibliography.html#cite-wildberger2005" data-cite="wildberger2005" title="Citation: wildberger2005">Wildberger2005</a>). Their homogeneous barycentric weights depend exclusively on the Conway-style dot-product factors <span class="math notranslate nohighlight">\(2 S_i = Q_j + Q_k - Q_i\)</span> normalized by <span class="math notranslate nohighlight">\(2\mathcal{A}\)</span>, linking directly to <span class="xref std std-ref">F.14 Conway Notation</span> and <span class="xref std std-ref">F.52 Homogeneous Barycentric Coordinates</span>.</p>
+        <p>Dropping altitudes to feet <span class="geom-ref" data-ref="F_1" title="F_1">F1</span>, <span class="geom-ref" data-ref="F_2" title="F_2">F2</span>, <span class="geom-ref" data-ref="F_3" title="F_3">F3</span> forms the <strong>orthic triangle</strong> <span class="geom-ref" data-ref="t_orth" title="t_orth">torth</span>, whose altitudes bisect its vertex spreads (<strong>Orthic Triangle Theorem</strong>): the altitudes of <span class="geom-ref" data-ref="t" title="t">t</span> are <a class="term-ref glossary-term" id="occ-term-vertex-bisector-1" href="../../glossary.html#term-vertex-bisector" data-term="vertex-bisector" title="Term: vertex-bisector">vertex bisector</a> lines of <span class="geom-ref" data-ref="t_orth" title="t_orth">torth</span>, making <span class="geom-ref" data-ref="O" title="O">O</span> an incenter/excenter of <span class="geom-ref" data-ref="t_orth" title="t_orth">torth</span> even over fields where <span class="geom-ref" data-ref="t" title="t">t</span> itself has no rational incenter! Moreover, reflecting <span class="geom-ref" data-ref="O" title="O">O</span> across each sideline lands directly on the circumcircle <span class="geom-ref" data-ref="c_circ" title="c_circ">ccirc</span>.</p>
+        </section>
+        <section class="level-2" id="key-algebraic-identities">
+        <h2>Key Algebraic Identities<a class="headerlink" href="#key-algebraic-identities" title="Link to this heading">¶</a></h2>
+        <div class="math notranslate nohighlight">
+        \[C = \sum_{i=1}^{3} \frac{Q_i(Q_j + Q_k - Q_i)}{2\mathcal{A}}\, A_i, \qquad O = \sum_{i=1}^{3} \frac{(Q_i + Q_j - Q_k)(Q_k + Q_i - Q_j)}{2\mathcal{A}}\, A_i\]</div>
+        <div class="math notranslate nohighlight">
+        \[Q(O, A_3) = 4 K (1 - s_3), \qquad s(F_3 F_1, F_3 A_3) = s(F_3 F_2, F_3 A_3) = 1 - s_3\]</div>
+        </section>
+        <section class="level-2" id="symbolic-sympy-verification">
+        <h2>Symbolic <code class="docutils literal notranslate"><span class="pre">SymPy</span></code> Verification<a class="headerlink" href="#symbolic-sympy-verification" title="Link to this heading">¶</a></h2>
+        <table class="docutils align-default">
+        <colgroup>
+        <col style="width: 36.0%" />
+        <col style="width: 36.0%" />
+        <col style="width: 28.0%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p>Invariant / Theorem Check</p></th>
+        <th class="head"><p>Exact <code class="docutils literal notranslate"><span class="pre">SymPy</span></code> Value</p></th>
+        <th class="head"><p>Verification Status</p></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Circumcenter</span> <span class="pre">C</span> <span class="pre">=</span> <span class="pre">X(3)</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">[7,</span> <span class="pre">33/8]</span></code></p></td>
+        <td><p>K = 4225/64</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Orthocenter</span> <span class="pre">O</span> <span class="pre">=</span> <span class="pre">X(4)</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">[5,</span> <span class="pre">15/4]</span></code></p></td>
+        <td><p>Concurrent altitudes</p></td>
+        </tr>
+        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Orthocenter</span> <span class="pre">quadrance</span> <span class="pre">Q(O,</span> <span class="pre">A_3)</span> <span class="pre">=</span> <span class="pre">4*K*(1</span> <span class="pre">-</span> <span class="pre">s_3)</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">1089/16</span> <span class="pre">==</span> <span class="pre">1089/16</span></code></p></td>
+        <td><p>Exact rational identity</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Orthic</span> <span class="pre">bisector</span> <span class="pre">law</span> <span class="pre">s(F_3</span> <span class="pre">F_1,</span> <span class="pre">F_3</span> <span class="pre">A_3)</span> <span class="pre">==</span> <span class="pre">s(F_3</span> <span class="pre">F_2,</span> <span class="pre">F_3</span> <span class="pre">A_3)</span></code></p></td>
+        <td><p><code class="docutils literal notranslate"><span class="pre">1089/4225</span> <span class="pre">==</span> <span class="pre">1089/4225</span> <span class="pre">=</span> <span class="pre">1</span> <span class="pre">-</span> <span class="pre">s_3</span></code></p></td>
+        <td><p>Theorem 86 verified</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="cross-repository-canon">
+        <h2>Cross-Repository Canon<a class="headerlink" href="#cross-repository-canon" title="Link to this heading">¶</a></h2>
+        <table class="docutils align-default">
+        <colgroup>
+        <col style="width: 28.0%" />
+        <col style="width: 72.0%" />
+        </colgroup>
+        <tbody>
+        <tr class="row-odd"><td><p><strong>Executable Demonstration</strong></p></td>
+        <td><p><a class="reference internal" href="code.html"><span class="doc">W.15 Circumcenter, Orthocenter &amp; Universal Affine Barycentrics — Code</span></a> (Standalone <code class="docutils literal notranslate"><span class="pre">model.py</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">w-15.svg</span></code>)</p></td>
+        </tr>
+        <tr class="row-even"><td><p><strong>Thematic Part</strong></p></td>
+        <td><p>Part III: Universal Triangle, Conic &amp; Chromogeometry</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>Euclid’s Elements</strong></p></td>
+        <td><p><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/05/index.html#iv-5" title="(in geometor • euclid v0.3.6)"><span class="xref std std-ref">IV.5</span></a> (Circumscribing a circle about a triangle, <a class="citation-ref" id="occ-cite-euclidelements-1" href="../../bibliography.html#cite-euclidelements" data-cite="euclidelements" title="Citation: euclidelements">EuclidElements</a>)</p></td>
+        </tr>
+        <tr class="row-even"><td><p><strong>GEOMETOR Elements</strong></p></td>
+        <td><p><a class="reference external" href="https://geometor.github.io/elements/elements2/G.3/index.html#g-3" title="(in GEOMETOR • elements v0.4.0)"><span>G.3 extremities of a segment</span></a>, <a class="reference external" href="https://geometor.github.io/elements/elements2/G.4/index.html#g-4" title="(in GEOMETOR • elements v0.4.0)"><span>G.4 segment</span></a>, <a class="reference external" href="https://geometor.github.io/elements/elements2/G.7/index.html#g-7" title="(in GEOMETOR • elements v0.4.0)"><span>G.7 plane surface</span></a></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>GEOMETOR Fundamentals</strong></p></td>
+        <td><p><span class="xref std std-ref">F.11 Circumcenter</span>, <span class="xref std std-ref">F.36 Orthic Triangle</span>, <span class="xref std std-ref">F.52 Homogeneous Barycentric Coordinates</span></p></td>
+        </tr>
+        <tr class="row-even"><td><p><strong>ETC Reference</strong></p></td>
+        <td><p>Circumcenter <code class="docutils literal notranslate"><span class="pre">X(3)</span></code> &amp; Orthocenter <code class="docutils literal notranslate"><span class="pre">X(4)</span></code> (<a class="citation-ref" id="occ-cite-kimberling1998-1" href="../../bibliography.html#cite-kimberling1998" data-cite="kimberling1998" title="Citation: kimberling1998">Kimberling1998</a>)</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="constructive-dependency-graph">
+        <h2>Constructive Dependency Graph<a class="headerlink" href="#constructive-dependency-graph" title="Link to this heading">¶</a></h2>
+        <div class="graphviz"><object data="../../_images/graphviz-f6f894bc71174ccb12be053f80d80d9b478d6d1a.svg" type="image/svg+xml" class="graphviz">
+        <p class="warning">digraph dependency {
+            rankdir=TB;
+            bgcolor=&quot;transparent&quot;;
+            node [fontname=&quot;Helvetica,Arial,sans-serif&quot;, fontsize=10, shape=box, style=&quot;rounded,filled&quot;, margin=&quot;0.15,0.08&quot;];
+            edge [color=&quot;#888888&quot;, arrowsize=0.7];
+            &quot;W.01&quot; [label=&quot;W.01\nPlanar Points, Line Proportions...&quot;, fillcolor=&quot;#d8dee9&quot;, color=&quot;#4c566a&quot;, URL=&quot;../w-01/index.html&quot;];
+            &quot;W.03&quot; [label=&quot;W.03\nQuadrance, Midpoints &amp; Point-to...&quot;, fillcolor=&quot;#d8dee9&quot;, color=&quot;#4c566a&quot;, URL=&quot;../w-03/index.html&quot;];
+            &quot;W.08&quot; [label=&quot;W.08\nLaw III: The Spread Law &amp; Exten...&quot;, fillcolor=&quot;#d8dee9&quot;, color=&quot;#4c566a&quot;, URL=&quot;../w-08/index.html&quot;];
+            &quot;W.09&quot; [label=&quot;W.09\nLaw IV: The Cross Law &amp; Quadrea...&quot;, fillcolor=&quot;#d8dee9&quot;, color=&quot;#4c566a&quot;, URL=&quot;../w-09/index.html&quot;];
+            &quot;W.15&quot; [label=&quot;W.15\nCircumcenter, Orthocenter &amp; Uni...&quot;, fillcolor=&quot;#ffff99&quot;, color=&quot;#d4a017&quot;, penwidth=2.0, URL=&quot;../w-15/index.html&quot;];
+            &quot;W.16&quot; [label=&quot;W.16\nThe Euler Line &amp; Nine-Point Cir...&quot;, fillcolor=&quot;#e5e9f0&quot;, color=&quot;#777777&quot;, URL=&quot;../w-16/index.html&quot;];
+            &quot;W.01&quot; -&gt; &quot;W.15&quot;;
+            &quot;W.03&quot; -&gt; &quot;W.15&quot;;
+            &quot;W.08&quot; -&gt; &quot;W.15&quot;;
+            &quot;W.09&quot; -&gt; &quot;W.15&quot;;
+            &quot;W.15&quot; -&gt; &quot;W.16&quot;;
+        }</p></object></div>
+        <p><strong>Depends on</strong>: <a class="reference internal" href="../w-01/index.html#w-01"><span class="std std-ref">W.01 Planar Points, Line Proportions &amp; Incidence Determinants</span></a>, <a class="reference internal" href="../w-03/index.html#w-03"><span class="std std-ref">W.03 Quadrance, Midpoints &amp; Point-to-Line Separation</span></a>, <a class="reference internal" href="../w-08/index.html#w-08"><span class="std std-ref">W.08 Law III: The Spread Law &amp; Extended Circumquadrance Law</span></a>, <a class="reference internal" href="../w-09/index.html#w-09"><span class="std std-ref">W.09 Law IV: The Cross Law &amp; Quadrea-Spread Identity</span></a></p>
+        <p><strong>Required for</strong>: <a class="reference internal" href="../w-16/index.html#w-16"><span class="std std-ref">W.16 The Euler Line &amp; Nine-Point Circle Over Arbitrary Fields</span></a></p>
+        <div class="toctree-wrapper compound">
+        </div>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+
+        <div class="meta">
+          <span class="category">
+            <a href="../../categories/Triangle%20Centers%20%26%20Classical%20Lines.html">Triangle Centers & Classical Lines</a>
+          </span>
+          <span class="tags">
+            <a href="../../tags/circumcenter.html">circumcenter</a>
+            <a href="../../tags/orthocenter.html">orthocenter</a>
+            <a href="../../tags/orthic%20triangle.html">orthic triangle</a>
+            <a href="../../tags/barycentric.html">barycentric</a>
+            <a href="../../tags/Conway%20notation.html">Conway notation</a>
+          </span>
+        </div>
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../w-14/index.html" title="W.14 Menelaus, Ceva &amp; The Alternate Spreads Theorem">&larr; <span class="nav-label">W.14 Menelaus, Ceva & The Alternate Spreads Theorem</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">Principles</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../w-16/index.html" title="W.16 The Euler Line &amp; Nine-Point Circle Over Arbitrary Fields"><span class="nav-label">W.16 The Euler Line & Nine-Point Circle Over Arbitrary Fields</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../log/26.315-initial-codex.html">Initial 28-Principle Rational Trigonometry & Universal Codex</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-tags">
+      <h3>Tags</h3>
+      <ul>
+        <li><a href="../../tags/Alternate%20Spreads.html">Alternate Spreads</a></li>
+        <li><a href="../../tags/alternate%20spreads.html">alternate spreads</a></li>
+        <li><a href="../../tags/altitude.html">altitude</a></li>
+        <li><a href="../../tags/angle%20sum.html">angle sum</a></li>
+        <li><a href="../../tags/Apollonius.html">Apollonius</a></li>
+        <li><a href="../../tags/Archimedes.html">Archimedes</a></li>
+        <li><a href="../../tags/barycentric.html">barycentric</a></li>
+        <li><a href="../../tags/blue%20metric.html">blue metric</a></li>
+        <li><a href="../../tags/Brahmagupta.html">Brahmagupta</a></li>
+        <li><a href="../../tags/cardioid.html">cardioid</a></li>
+        <li><a href="../../tags/centroid.html">centroid</a></li>
+        <li><a href="../../tags/Ceva%E2%80%99s%20theorem.html">Ceva’s theorem</a></li>
+        <li><a href="../../tags/cevians.html">cevians</a></li>
+        <li><a href="../../tags/Chebyshev.html">Chebyshev</a></li>
+        <li><a href="../../tags/Chromogeometry.html">Chromogeometry</a></li>
+        <li><a href="../../tags/chromogeometry.html">chromogeometry</a></li>
+        <li><a href="../../tags/circumcenter.html">circumcenter</a></li>
+        <li><a href="../../tags/circumquadrance.html">circumquadrance</a></li>
+        <li><a href="../../tags/collinearity.html">collinearity</a></li>
+        <li><a href="../../tags/complementary%20spreads.html">complementary spreads</a></li>
+        <li><a href="../../tags/concurrency.html">concurrency</a></li>
+        <li><a href="../../tags/conic.html">conic</a></li>
+        <li><a href="../../tags/Conway%20notation.html">Conway notation</a></li>
+        <li><a href="../../tags/cosine%20law.html">cosine law</a></li>
+        <li><a href="../../tags/cross.html">cross</a></li>
+        <li><a href="../../tags/Cross%20Law.html">Cross Law</a></li>
+        <li><a href="../../tags/cross-ratio.html">cross-ratio</a></li>
+        <li><a href="../../tags/cyclic%20quadrilateral.html">cyclic quadrilateral</a></li>
+        <li><a href="../../tags/De%20Gua.html">De Gua</a></li>
+        <li><a href="../../tags/determinants.html">determinants</a></li>
+        <li><a href="../../tags/dihedral%20spread.html">dihedral spread</a></li>
+        <li><a href="../../tags/dodecahedron.html">dodecahedron</a></li>
+        <li><a href="../../tags/Egyptian%20triangle.html">Egyptian triangle</a></li>
+        <li><a href="../../tags/ellipson.html">ellipson</a></li>
+        <li><a href="../../tags/equilateral.html">equilateral</a></li>
+        <li><a href="../../tags/Euler%20four-point.html">Euler four-point</a></li>
+        <li><a href="../../tags/Euler%20line.html">Euler line</a></li>
+        <li><a href="../../tags/excenters.html">excenters</a></li>
+        <li><a href="../../tags/extended%20spread%20law.html">extended spread law</a></li>
+        <li><a href="../../tags/Feuerbach.html">Feuerbach</a></li>
+        <li><a href="../../tags/finite%20field.html">finite field</a></li>
+        <li><a href="../../tags/finite%20fields.html">finite fields</a></li>
+        <li><a href="../../tags/focus-directrix.html">focus-directrix</a></li>
+        <li><a href="../../tags/folium%20of%20Descartes.html">folium of Descartes</a></li>
+        <li><a href="../../tags/GF%2819%29.html">GF(19)</a></li>
+        <li><a href="../../tags/golden%20ratio.html">golden ratio</a></li>
+        <li><a href="../../tags/grammola.html">grammola</a></li>
+        <li><a href="../../tags/green%20metric.html">green metric</a></li>
+        <li><a href="../../tags/Hansen%E2%80%99s%20problem.html">Hansen’s problem</a></li>
+        <li><a href="../../tags/harmonic%20range.html">harmonic range</a></li>
+        <li><a href="../../tags/Heron.html">Heron</a></li>
+        <li><a href="../../tags/icosahedron.html">icosahedron</a></li>
+        <li><a href="../../tags/incenter.html">incenter</a></li>
+        <li><a href="../../tags/inquadrance.html">inquadrance</a></li>
+        <li><a href="../../tags/inscribed%20spread.html">inscribed spread</a></li>
+        <li><a href="../../tags/isometries.html">isometries</a></li>
+        <li><a href="../../tags/isosceles.html">isosceles</a></li>
+        <li><a href="../../tags/Kepler%20triangle.html">Kepler triangle</a></li>
+        <li><a href="../../tags/lemniscate.html">lemniscate</a></li>
+        <li><a href="../../tags/lineations.html">lineations</a></li>
+        <li><a href="../../tags/lines.html">lines</a></li>
+        <li><a href="../../tags/logistic%20map.html">logistic map</a></li>
+        <li><a href="../../tags/medial%20triangle.html">medial triangle</a></li>
+        <li><a href="../../tags/medians.html">medians</a></li>
+        <li><a href="../../tags/Menelaus%E2%80%99%20theorem.html">Menelaus’ theorem</a></li>
+        <li><a href="../../tags/midpoint.html">midpoint</a></li>
+        <li><a href="../../tags/Minkowski.html">Minkowski</a></li>
+        <li><a href="../../tags/nine-point%20center.html">nine-point center</a></li>
+        <li><a href="../../tags/nine-point%20circle.html">nine-point circle</a></li>
+        <li><a href="../../tags/null%20line.html">null line</a></li>
+        <li><a href="../../tags/optics.html">optics</a></li>
+        <li><a href="../../tags/orthic%20triangle.html">orthic triangle</a></li>
+        <li><a href="../../tags/orthocenter.html">orthocenter</a></li>
+        <li><a href="../../tags/Pappus.html">Pappus</a></li>
+        <li><a href="../../tags/parabola.html">parabola</a></li>
+        <li><a href="../../tags/parabola%20reflection.html">parabola reflection</a></li>
+        <li><a href="../../tags/parallelogram.html">parallelogram</a></li>
+        <li><a href="../../tags/pentagon.html">pentagon</a></li>
+        <li><a href="../../tags/pentagram.html">pentagram</a></li>
+        <li><a href="../../tags/perpendicular%20bisector.html">perpendicular bisector</a></li>
+        <li><a href="../../tags/perspectivity.html">perspectivity</a></li>
+        <li><a href="../../tags/Platonic%20solids.html">Platonic solids</a></li>
+        <li><a href="../../tags/Pons%20Asinorum.html">Pons Asinorum</a></li>
+        <li><a href="../../tags/power%20of%20a%20point.html">power of a point</a></li>
+        <li><a href="../../tags/projectile%20motion.html">projectile motion</a></li>
+        <li><a href="../../tags/projective%20invariance.html">projective invariance</a></li>
+        <li><a href="../../tags/proportions.html">proportions</a></li>
+        <li><a href="../../tags/Ptolemy.html">Ptolemy</a></li>
+        <li><a href="../../tags/Pythagoras.html">Pythagoras</a></li>
+        <li><a href="../../tags/QQQ.html">QQQ</a></li>
+        <li><a href="../../tags/QQS.html">QQS</a></li>
+        <li><a href="../../tags/QSS.html">QSS</a></li>
+        <li><a href="../../tags/quadrance.html">quadrance</a></li>
+        <li><a href="../../tags/quadrea.html">quadrea</a></li>
+        <li><a href="../../tags/quadrea%20spread.html">quadrea spread</a></li>
+        <li><a href="../../tags/quadrola.html">quadrola</a></li>
+        <li><a href="../../tags/quadrola%20reflection.html">quadrola reflection</a></li>
+        <li><a href="../../tags/Quadruple%20Quad%20Formula.html">Quadruple Quad Formula</a></li>
+        <li><a href="../../tags/quadruple%20spread.html">quadruple spread</a></li>
+        <li><a href="../../tags/rational%20circle.html">rational circle</a></li>
+        <li><a href="../../tags/rational%20polar.html">rational polar</a></li>
+        <li><a href="../../tags/rational-trigonometry.html">rational-trigonometry</a></li>
+        <li><a href="../../tags/red%20metric.html">red metric</a></li>
+        <li><a href="../../tags/reflections.html">reflections</a></li>
+        <li><a href="../../tags/refraction.html">refraction</a></li>
+        <li><a href="../../tags/Regiomontanus.html">Regiomontanus</a></li>
+        <li><a href="../../tags/regular%20pentagon.html">regular pentagon</a></li>
+        <li><a href="../../tags/resection.html">resection</a></li>
+        <li><a href="../../tags/ribbon.html">ribbon</a></li>
+        <li><a href="../../tags/right%20midpoint.html">right midpoint</a></li>
+        <li><a href="../../tags/right%20triangle.html">right triangle</a></li>
+        <li><a href="../../tags/rotations.html">rotations</a></li>
+        <li><a href="../../tags/sine%20law.html">sine law</a></li>
+        <li><a href="../../tags/Snellius-Pothenot.html">Snellius-Pothenot</a></li>
+        <li><a href="../../tags/Snell%E2%80%99s%20law.html">Snell’s law</a></li>
+        <li><a href="../../tags/special%20relativity.html">special relativity</a></li>
+        <li><a href="../../tags/spread.html">spread</a></li>
+        <li><a href="../../tags/Spread%20Law.html">Spread Law</a></li>
+        <li><a href="../../tags/spread%20polynomials.html">spread polynomials</a></li>
+        <li><a href="../../tags/spread%20sequence.html">spread sequence</a></li>
+        <li><a href="../../tags/SQQ.html">SQQ</a></li>
+        <li><a href="../../tags/square%20vertex.html">square vertex</a></li>
+        <li><a href="../../tags/stereographic.html">stereographic</a></li>
+        <li><a href="../../tags/Stewart%E2%80%99s%20theorem.html">Stewart’s theorem</a></li>
+        <li><a href="../../tags/surveying.html">surveying</a></li>
+        <li><a href="../../tags/symmetry.html">symmetry</a></li>
+        <li><a href="../../tags/sympy.html">sympy</a></li>
+        <li><a href="../../tags/tangent.html">tangent</a></li>
+        <li><a href="../../tags/Taylor%20conic.html">Taylor conic</a></li>
+        <li><a href="../../tags/tetrahedron.html">tetrahedron</a></li>
+        <li><a href="../../tags/Thales.html">Thales</a></li>
+        <li><a href="../../tags/transversal.html">transversal</a></li>
+        <li><a href="../../tags/triangulation.html">triangulation</a></li>
+        <li><a href="../../tags/triple%20cross.html">triple cross</a></li>
+        <li><a href="../../tags/Triple%20Quad%20Formula.html">Triple Quad Formula</a></li>
+        <li><a href="../../tags/Triple%20Spread%20Formula.html">Triple Spread Formula</a></li>
+        <li><a href="../../tags/turn.html">turn</a></li>
+        <li><a href="../../tags/twist.html">twist</a></li>
+        <li><a href="../../tags/universal-geometry.html">universal-geometry</a></li>
+        <li><a href="../../tags/vertex%20bisector.html">vertex bisector</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-categories">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="../../categories/3D%20Solid%20Geometry%20%26%20The%20Five%20Platonic%20Solids.html">3D Solid Geometry & The Five Platonic Solids</a></li>
+        <li><a href="../../categories/Affine%20%26%20Projective%20Incidence.html">Affine & Projective Incidence</a></li>
+        <li><a href="../../categories/Algebraic%20Mechanics.html">Algebraic Mechanics</a></li>
+        <li><a href="../../categories/Algebraic%20Tangents%20%26%20Optical%20Reflection.html">Algebraic Tangents & Optical Reflection</a></li>
+        <li><a href="../../categories/Cevians%20%26%20Medians.html">Cevians & Medians</a></li>
+        <li><a href="../../categories/Circle%20Geometry%20%26%20Rational%20Parametrization.html">Circle Geometry & Rational Parametrization</a></li>
+        <li><a href="../../categories/Cyclic%20Polygons%20%26%20Four-Point%20Invariants.html">Cyclic Polygons & Four-Point Invariants</a></li>
+        <li><a href="../../categories/Foundational%20Quadratic%20Invariants.html">Foundational Quadratic Invariants</a></li>
+        <li><a href="../../categories/Geodetic%20Resection%20%26%20Two-Station%20Surveying.html">Geodetic Resection & Two-Station Surveying</a></li>
+        <li><a href="../../categories/Golden%20Stars%20%26%20Finite%20Fields.html">Golden Stars & Finite Fields</a></li>
+        <li><a href="../../categories/Isometries%20%26%20Lineations.html">Isometries & Lineations</a></li>
+        <li><a href="../../categories/Metrical%20Conics%20%26%20Quadratic%20Loci.html">Metrical Conics & Quadratic Loci</a></li>
+        <li><a href="../../categories/Optics%20%26%20Relativity.html">Optics & Relativity</a></li>
+        <li><a href="../../categories/Polynomial%20Families%20%26%20Golden%20Proportion.html">Polynomial Families & Golden Proportion</a></li>
+        <li><a href="../../categories/Practical%20Triangle%20Solvers%20%26%20Surveying.html">Practical Triangle Solvers & Surveying</a></li>
+        <li><a href="../../categories/Projective%20%26%20Cevian%20Proportions.html">Projective & Cevian Proportions</a></li>
+        <li><a href="../../categories/Projective%20Geometry%20%26%20Harmonic%20Ranges.html">Projective Geometry & Harmonic Ranges</a></li>
+        <li><a href="../../categories/Proportions.html">Proportions</a></li>
+        <li><a href="../../categories/Rational%20Polar%20Coordinates%20%26%20Algebraic%20Surfaces.html">Rational Polar Coordinates & Algebraic Surfaces</a></li>
+        <li><a href="../../categories/Regular%20Polygons.html">Regular Polygons</a></li>
+        <li><a href="../../categories/Special%20%26%20Golden%20Triangles.html">Special & Golden Triangles</a></li>
+        <li><a href="../../categories/The%20Five%20Fundamental%20Laws.html">The Five Fundamental Laws</a></li>
+        <li><a href="../../categories/Triangle%20Centers%20%26%20Classical%20Circles.html">Triangle Centers & Classical Circles</a></li>
+        <li><a href="../../categories/Triangle%20Centers%20%26%20Classical%20Lines.html">Triangle Centers & Classical Lines</a></li>
+        <li><a href="../../categories/Triangle%20Centers%20%26%20Number%20Theory.html">Triangle Centers & Number Theory</a></li>
+        <li><a href="../../categories/Universal%20Bilinear%20Forms%20%26%20Chromogeometry.html">Universal Bilinear Forms & Chromogeometry</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../types/log.html">log</a></li>
+        <li><a href="../../types/topic.html">topic</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../changelog.html"  >changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

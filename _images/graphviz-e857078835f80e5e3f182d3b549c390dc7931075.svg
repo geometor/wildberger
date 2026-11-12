@@ -1,0 +1,79 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="742pt" height="116pt" viewBox="0.00 0.00 742.00 116.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112)">
+<ns0:title>dependency</ns0:title>
+
+<ns0:g id="node1" class="node">
+<ns0:title>W.02</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../topics/w-02/index.html" ns1:title="W.02\nLineations, Central Rotations &amp;...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M156,-108C156,-108 12,-108 12,-108 6,-108 0,-102 0,-96 0,-96 0,-84 0,-84 0,-78 6,-72 12,-72 12,-72 156,-72 156,-72 162,-72 168,-78 168,-84 168,-84 168,-96 168,-96 168,-102 162,-108 156,-108" />
+<ns0:text text-anchor="middle" x="84" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.02</ns0:text>
+<ns0:text text-anchor="middle" x="84" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Lineations, Central Rotations &amp;...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>W.12</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="../topics/w-12/index.html" ns1:title="W.12\nVertex Bisectors, Square Vertic...">
+<ns0:path fill="#ffff99" stroke="#d4a017" stroke-width="2" d="M441,-36C441,-36 297,-36 297,-36 291,-36 285,-30 285,-24 285,-24 285,-12 285,-12 285,-6 291,0 297,0 297,0 441,0 441,0 447,0 453,-6 453,-12 453,-12 453,-24 453,-24 453,-30 447,-36 441,-36" />
+<ns0:text text-anchor="middle" x="369" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.12</ns0:text>
+<ns0:text text-anchor="middle" x="369" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Vertex Bisectors, Square Vertic...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>W.02-&gt;W.12</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M153.35,-71.97C195.43,-61.63 249.17,-48.43 292.48,-37.8" />
+<ns0:polygon fill="#888888" stroke="#888888" points="293.12,-40.16 299.33,-36.11 291.95,-35.4 293.12,-40.16" />
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>W.03</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../topics/w-03/index.html" ns1:title="W.03\nQuadrance, Midpoints &amp; Point-to...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M347.5,-108C347.5,-108 198.5,-108 198.5,-108 192.5,-108 186.5,-102 186.5,-96 186.5,-96 186.5,-84 186.5,-84 186.5,-78 192.5,-72 198.5,-72 198.5,-72 347.5,-72 347.5,-72 353.5,-72 359.5,-78 359.5,-84 359.5,-84 359.5,-96 359.5,-96 359.5,-102 353.5,-108 347.5,-108" />
+<ns0:text text-anchor="middle" x="273" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.03</ns0:text>
+<ns0:text text-anchor="middle" x="273" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Quadrance, Midpoints &amp; Point-to...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>W.03-&gt;W.12</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M296.73,-71.7C309.75,-62.2 326,-50.35 339.8,-40.29" />
+<ns0:polygon fill="#888888" stroke="#888888" points="341.33,-42.21 345.54,-36.1 338.44,-38.25 341.33,-42.21" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>W.04</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../topics/w-04/index.html" ns1:title="W.04\nSpread, Cross, Twist &amp; Line Sep...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M540,-108C540,-108 390,-108 390,-108 384,-108 378,-102 378,-96 378,-96 378,-84 378,-84 378,-78 384,-72 390,-72 390,-72 540,-72 540,-72 546,-72 552,-78 552,-84 552,-84 552,-96 552,-96 552,-102 546,-108 540,-108" />
+<ns0:text text-anchor="middle" x="465" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.04</ns0:text>
+<ns0:text text-anchor="middle" x="465" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Spread, Cross, Twist &amp; Line Sep...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>W.04-&gt;W.12</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M441.27,-71.7C428.25,-62.2 412,-50.35 398.2,-40.29" />
+<ns0:polygon fill="#888888" stroke="#888888" points="399.56,-38.25 392.46,-36.1 396.67,-42.21 399.56,-38.25" />
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>W.10</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../topics/w-10/index.html" ns1:title="W.10\nLaw V: Triple Spread, Triple Cr...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M722,-108C722,-108 582,-108 582,-108 576,-108 570,-102 570,-96 570,-96 570,-84 570,-84 570,-78 576,-72 582,-72 582,-72 722,-72 722,-72 728,-72 734,-78 734,-84 734,-84 734,-96 734,-96 734,-102 728,-108 722,-108" />
+<ns0:text text-anchor="middle" x="652" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.10</ns0:text>
+<ns0:text text-anchor="middle" x="652" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law V: Triple Spread, Triple Cr...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>W.10-&gt;W.12</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M583.13,-71.97C541.36,-61.63 487.99,-48.43 444.99,-37.8" />
+<ns0:polygon fill="#888888" stroke="#888888" points="445.56,-35.41 438.18,-36.11 444.38,-40.17 445.56,-35.41" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

@@ -1,0 +1,42 @@
+geometor.wildberger.catalog_b
+=============================
+
+.. py:module:: geometor.wildberger.catalog_b
+
+.. autoapi-nested-parse::
+
+   Catalog definitions for Principles `W.15` through `W.28` (Parts III & IV).
+
+   Covers circumcenters and orthocenters, the Euler line and nine-point circle,
+   rational circle geometry and cyclic quadrilaterals, regular polygons and golden
+   stars, metrical conics and Taylor tangents, projective cross-ratios,
+   Chromogeometry (Blue/Red/Green metrics), triangle/surveying solvers (including
+   Snellius-Pothenot and Hansen's problem), algebraic physics, 3D Platonic dihedral
+   spreads, and rational polar curves / the ellipson.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.wildberger.catalog_b.PART_III
+   geometor.wildberger.catalog_b.PART_IV
+   geometor.wildberger.catalog_b.PRINCIPLES_B
+
+
+Module Contents
+---------------
+
+.. py:data:: PART_III
+   :value: 'Part III: Universal Triangle, Conic & Chromogeometry'
+
+
+.. py:data:: PART_IV
+   :value: 'Part IV: Practical Solvers, 3D Platonic Geometry & Polar Curves'
+
+
+.. py:data:: PRINCIPLES_B
+   :type:  tuple[geometor.wildberger.catalog.PrincipleSpec, ...]
+

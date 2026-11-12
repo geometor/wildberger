@@ -1,0 +1,35 @@
+geometor.wildberger.topics
+==========================
+
+.. py:module:: geometor.wildberger.topics
+
+.. autoapi-nested-parse::
+
+   Codex generator for the 28 Rational Trigonometry Principle Dossiers (`w-01`..`w-28`).
+
+   Generates standalone executable `model.py` scripts, interactive `w-NN.svg`
+   diagrams, Sphinx `index.rst` and `code.rst` dossiers, the master
+   `docsrc/topics/index.rst` book collection, and the scholarly apparatus files.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.wildberger.topics.build_codex
+
+
+Module Contents
+---------------
+
+.. py:function:: build_codex(repo_root: pathlib.Path) -> list[pathlib.Path]
+
+   Generate all 28 topic dossiers, SVGs, `model.py` scripts, and apparatus RSTs.
+
+   :param repo_root: Repository root (`/home/phi/PROJECTS/geometor/wildberger`).
+
+   :returns: List of all generated file paths.
+
+

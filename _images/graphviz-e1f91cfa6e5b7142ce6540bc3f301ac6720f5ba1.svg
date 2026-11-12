@@ -1,0 +1,95 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="947pt" height="116pt" viewBox="0.00 0.00 947.00 116.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112)">
+<ns0:title>dependency</ns0:title>
+
+<ns0:g id="node1" class="node">
+<ns0:title>W.05</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../topics/w-05/index.html" ns1:title="W.05\nSpread Polynomials S_n(s) &amp; Pen...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M168,-108C168,-108 12,-108 12,-108 6,-108 0,-102 0,-96 0,-96 0,-84 0,-84 0,-78 6,-72 12,-72 12,-72 168,-72 168,-72 174,-72 180,-78 180,-84 180,-84 180,-96 180,-96 180,-102 174,-108 168,-108" />
+<ns0:text text-anchor="middle" x="90" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.05</ns0:text>
+<ns0:text text-anchor="middle" x="90" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Spread Polynomials S_n(s) &amp; Pen...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node6" class="node">
+<ns0:title>W.27</ns0:title>
+<ns0:g id="a_node6"><ns0:a ns1:href="../topics/w-27/index.html" ns1:title="W.27\n3D Planes, De Gua's Quadrea Law...">
+<ns0:path fill="#ffff99" stroke="#d4a017" stroke-width="2" d="M555.5,-36C555.5,-36 394.5,-36 394.5,-36 388.5,-36 382.5,-30 382.5,-24 382.5,-24 382.5,-12 382.5,-12 382.5,-6 388.5,0 394.5,0 394.5,0 555.5,0 555.5,0 561.5,0 567.5,-6 567.5,-12 567.5,-12 567.5,-24 567.5,-24 567.5,-30 561.5,-36 555.5,-36" />
+<ns0:text text-anchor="middle" x="475" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.27</ns0:text>
+<ns0:text text-anchor="middle" x="475" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">3D Planes, De Gua's Quadrea Law...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>W.05-&gt;W.27</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M180.27,-72.59C238.8,-61.95 315.09,-48.07 375.39,-37.11" />
+<ns0:polygon fill="#888888" stroke="#888888" points="375.84,-39.52 382.29,-35.86 374.96,-34.7 375.84,-39.52" />
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>W.06</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../topics/w-06/index.html" ns1:title="W.06\nLaw I: Pythagoras' Theorem &amp; Ri...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M362,-108C362,-108 210,-108 210,-108 204,-108 198,-102 198,-96 198,-96 198,-84 198,-84 198,-78 204,-72 210,-72 210,-72 362,-72 362,-72 368,-72 374,-78 374,-84 374,-84 374,-96 374,-96 374,-102 368,-108 362,-108" />
+<ns0:text text-anchor="middle" x="286" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.06</ns0:text>
+<ns0:text text-anchor="middle" x="286" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law I: Pythagoras' Theorem &amp; Ri...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>W.06-&gt;W.27</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M332.23,-71.88C359.45,-61.8 393.97,-49.01 422.24,-38.54" />
+<ns0:polygon fill="#888888" stroke="#888888" points="423.2,-40.8 428.92,-36.07 421.5,-36.2 423.2,-40.8" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>W.07</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../topics/w-07/index.html" ns1:title="W.07\nLaw II: Triple Quad Formula, Ar...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M546.5,-108C546.5,-108 403.5,-108 403.5,-108 397.5,-108 391.5,-102 391.5,-96 391.5,-96 391.5,-84 391.5,-84 391.5,-78 397.5,-72 403.5,-72 403.5,-72 546.5,-72 546.5,-72 552.5,-72 558.5,-78 558.5,-84 558.5,-84 558.5,-96 558.5,-96 558.5,-102 552.5,-108 546.5,-108" />
+<ns0:text text-anchor="middle" x="475" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.07</ns0:text>
+<ns0:text text-anchor="middle" x="475" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law II: Triple Quad Formula, Ar...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>W.07-&gt;W.27</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M475,-71.7C475,-63.14 475,-52.66 475,-43.3" />
+<ns0:polygon fill="#888888" stroke="#888888" points="477.45,-43.1 475,-36.1 472.55,-43.1 477.45,-43.1" />
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>W.11</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../topics/w-11/index.html" ns1:title="W.11\nIsosceles, Equilateral &amp; Kepler...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M731,-108C731,-108 589,-108 589,-108 583,-108 577,-102 577,-96 577,-96 577,-84 577,-84 577,-78 583,-72 589,-72 589,-72 731,-72 731,-72 737,-72 743,-78 743,-84 743,-84 743,-96 743,-96 743,-102 737,-108 731,-108" />
+<ns0:text text-anchor="middle" x="660" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.11</ns0:text>
+<ns0:text text-anchor="middle" x="660" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Isosceles, Equilateral &amp; Kepler...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>W.11-&gt;W.27</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M614.74,-71.88C588.22,-61.84 554.6,-49.12 526.99,-38.67" />
+<ns0:polygon fill="#888888" stroke="#888888" points="527.52,-36.25 520.11,-36.07 525.79,-40.84 527.52,-36.25" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>W.19</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="../topics/w-19/index.html" ns1:title="W.19\nRegular Stars, Golden Pentagons...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M927,-108C927,-108 773,-108 773,-108 767,-108 761,-102 761,-96 761,-96 761,-84 761,-84 761,-78 767,-72 773,-72 773,-72 927,-72 927,-72 933,-72 939,-78 939,-84 939,-84 939,-96 939,-96 939,-102 933,-108 927,-108" />
+<ns0:text text-anchor="middle" x="850" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.19</ns0:text>
+<ns0:text text-anchor="middle" x="850" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Regular Stars, Golden Pentagons...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge5" class="edge">
+<ns0:title>W.19-&gt;W.27</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M760.65,-72.32C704.24,-61.79 631.31,-48.18 573.27,-37.34" />
+<ns0:polygon fill="#888888" stroke="#888888" points="573.6,-34.91 566.27,-36.04 572.7,-39.73 573.6,-34.91" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

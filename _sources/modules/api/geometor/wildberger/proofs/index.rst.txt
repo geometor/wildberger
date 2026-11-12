@@ -1,0 +1,293 @@
+geometor.wildberger.proofs
+==========================
+
+.. py:module:: geometor.wildberger.proofs
+
+.. autoapi-nested-parse::
+
+   Symbolic SymPy theorem provers for Rational Trigonometry and Universal Geometry.
+
+   Every prover constructs an algebraic identity in general symbolic indeterminates
+   (or over algebraic number fields Q(phi) and finite fields GF(p)), simplifies the
+   difference `LHS - RHS` to exact polynomial `0` without floating-point shortcuts,
+   and returns a structured `ProofCertificate`.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.wildberger.proofs.ProofCertificate
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.wildberger.proofs.prove_pythagoras
+   geometor.wildberger.proofs.prove_triple_quad
+   geometor.wildberger.proofs.prove_cross_law
+   geometor.wildberger.proofs.prove_spread_law
+   geometor.wildberger.proofs.prove_triple_spread
+   geometor.wildberger.proofs.prove_universal_laws
+   geometor.wildberger.proofs.prove_spread_polynomial_composition
+   geometor.wildberger.proofs.prove_kepler_golden_triangle
+   geometor.wildberger.proofs.prove_stewart_and_apollonius
+   geometor.wildberger.proofs.prove_menelaus_and_ceva
+   geometor.wildberger.proofs.prove_euler_nine_point
+   geometor.wildberger.proofs.prove_chromogeometry_theorems
+   geometor.wildberger.proofs.prove_parabola_and_quadrola_reflection
+   geometor.wildberger.proofs.prove_cross_ratio_invariance
+   geometor.wildberger.proofs.prove_euler_four_point_and_ptolemy
+   geometor.wildberger.proofs.prove_platonic_dihedral_spreads
+   geometor.wildberger.proofs.prove_finite_field_universal_geometry
+   geometor.wildberger.proofs.prove_rational_polar_and_ellipson
+   geometor.wildberger.proofs.verify_all_proofs
+
+
+Module Contents
+---------------
+
+.. py:class:: ProofCertificate
+
+   Symbolic verification certificate for a Rational Trigonometry theorem.
+
+   .. attribute:: theorem_id
+
+      Short identifier of the theorem proof.
+
+   .. attribute:: title
+
+      Human-readable theorem title.
+
+   .. attribute:: statement
+
+      Concise algebraic statement proved.
+
+   .. attribute:: lhs
+
+      Symbolic left-hand side expression.
+
+   .. attribute:: rhs
+
+      Symbolic right-hand side expression.
+
+   .. attribute:: residual
+
+      Simplified `lhs - rhs` (must equal exact `0`).
+
+   .. attribute:: verified
+
+      True if `residual == 0` and all auxiliary checks hold.
+
+   .. attribute:: witness
+
+      Concrete exact rational, golden, or finite-field instantiation.
+
+
+   .. py:attribute:: theorem_id
+      :type:  str
+
+
+   .. py:attribute:: title
+      :type:  str
+
+
+   .. py:attribute:: statement
+      :type:  str
+
+
+   .. py:attribute:: lhs
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: rhs
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: residual
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: verified
+      :type:  bool
+
+
+   .. py:attribute:: witness
+      :type:  dict[str, str]
+
+
+.. py:function:: prove_pythagoras() -> ProofCertificate
+
+   Prove Pythagoras' Theorem (`Q1 + Q2 = Q3 <=> s3 = 1`) symbolically.
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_triple_quad() -> ProofCertificate
+
+   Prove the Triple Quad Formula and Quadrea determinant identity `A = 16 * Area^2`.
+
+   Proves for general planar points `A1, A2, A3` that
+   `A(Q1, Q2, Q3) == 4 * det(A1, A2, A3)^2`, vanishing iff `A1, A2, A3` are collinear.
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_cross_law() -> ProofCertificate
+
+   Prove the Cross Law `(Q1 + Q2 - Q3)^2 = 4 * Q1 * Q2 * (1 - s3)` symbolically.
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_spread_law() -> ProofCertificate
+
+   Prove the Spread Law and Extended Circumquadrance Law `s_i / Q_i = A / (4*Q1*Q2*Q3) = 1 / (4*K)`.
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_triple_spread() -> ProofCertificate
+
+   Prove the Triple Spread Formula for three arbitrary planar lines `<ai : bi : ci>`.
+
+   Also verifies the Quadruple Spread/Cross self-duality `R(a,b,c,d) == R(1-a,1-b,1-c,1-d)`.
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_universal_laws(metric_matrix: sympy.Matrix | None = None) -> ProofCertificate
+
+   Prove all 5 Fundamental Laws over an arbitrary symmetric bilinear form `M = [[alpha, beta], [beta, gamma]]`.
+
+   :param metric_matrix: Optional custom 2x2 symmetric `sp.Matrix`. Defaults to symbolic
+                         `[[alpha, beta], [beta, gamma]]`.
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_spread_polynomial_composition(max_n: int = 6) -> ProofCertificate
+
+   Prove Spread Polynomial composition `S_n(S_m(s)) = S_{nm}(s)`, recursion, and Pentagonal Golden Spreads.
+
+   :param max_n: Maximum degree index `n, m` to verify composition across (`default 6`).
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_kepler_golden_triangle() -> ProofCertificate
+
+   Prove exact quadrance and spread identities of Kepler's Golden Right Triangle.
+
+   In classical geometry, Kepler's triangle has irrational nested-radical side
+   lengths `(1, sqrt(phi), phi)`. In Rational Trigonometry, its quadrances are
+   purely powers of `phi` (`Q = (1, phi, phi^2)`) and its spreads are
+   `(1/phi^2, 1/phi, 1) = (2 - phi, phi - 1, 1)`!
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_stewart_and_apollonius() -> ProofCertificate
+
+   Prove Stewart's Theorem in Quadrances (Theorem 75) and Apollonius' Median Formula (Theorem 76).
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_menelaus_and_ceva() -> ProofCertificate
+
+   Prove Menelaus' Theorem (Theorem 78) and Ceva's Theorem (Theorem 80) in quadrances.
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_euler_nine_point() -> ProofCertificate
+
+   Prove the Euler Line (`G = 2/3 C + 1/3 O`) and Nine-Point Circle (`K_9 = K/4`) symbolically.
+
+   By affine translational equivariance (`tau_{-A_3}`), placing `A_3 = [0, 0]` with free
+   symbolic vertices `A_1 = [x_1, y_1], A_2 = [x_2, y_2]` establishes the theorem over
+   every field `F` (`char F != 2, 3`).
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_chromogeometry_theorems() -> ProofCertificate
+
+   Prove Wildberger's Chromogeometry Parallelogram & Medial Nine-Point Theorem symbolically.
+
+   Proves for ANY planar triangle `A1 A2 A3` (via translational frame `A_3 = [0, 0]`)
+   across Blue (`dx^2 + dy^2`), Red (`dx^2 - dy^2`), and Green (`2*dx*dy`) geometries:
+   1. `N_B = (C_R + C_G) / 2`, `N_R = (C_B + C_G) / 2`, `N_G = (C_B + C_R) / 2`!
+   2. `C_B + O_B = C_R + C_G` (so `C_B C_R O_B C_G` is always a parallelogram)!
+   3. All three Euler lines `C_B O_B`, `C_R O_R`, `C_G O_G` concur at Centroid `G`!
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_parabola_and_quadrola_reflection() -> ProofCertificate
+
+   Prove the Parabola Reflection Theorem (`s(k, AF) = s(k, n)`) and Quadrola Reflection Property.
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_cross_ratio_invariance() -> ProofCertificate
+
+   Prove Projective Cross-Ratio Invariance between Collinear Quadrances and Pencil Spreads.
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_euler_four_point_and_ptolemy() -> ProofCertificate
+
+   Prove Euler's Four-Point Relation (`E = 0`) and Ptolemy's Theorem in Quadrances.
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_platonic_dihedral_spreads() -> ProofCertificate
+
+   Prove from 3D coordinates and 2D sections that all 5 Platonic solids have purely rational dihedral spreads!
+
+   Exact Face (Dihedral) Spreads (Chapter 26):
+   - Regular Tetrahedron:  S = 8/9
+   - Cube (Hexahedron):    S = 1
+   - Regular Octahedron:   S = 8/9
+   - Regular Icosahedron:  S = 4/9
+   - Regular Dodecahedron: S = 4/5
+
+   Even for the Golden Ratio polyhedra (Icosahedron and Dodecahedron), `sqrt(5)`
+   cancels completely in the quadratic dihedral spread! Also proves 3D Pythagoras
+   (De Gua's Theorem in Quadreas): `A_ABC = A_OAB + A_OBC + A_OCA`.
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_finite_field_universal_geometry(p: int = 17) -> ProofCertificate
+
+   Verify Universal Geometry over finite fields `GF(17)` (Null Nine-Point Circle) and `GF(19)` (Regular Pentagon).
+
+   :param p: Prime modulus for the primary Nine-Point Circle test (`default 17`, Wildberger Example 18.1).
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: prove_rational_polar_and_ellipson() -> ProofCertificate
+
+   Prove rational polar identities (`[s, Q]`) for Bernoulli's Lemniscate, Descartes' Folium, and the Ellipson slice.
+
+   :returns: Verified `ProofCertificate`.
+
+
+.. py:function:: verify_all_proofs() -> list[ProofCertificate]
+
+   Execute the complete suite of symbolic SymPy theorem provers.
+
+   :returns: List of `ProofCertificate` instances across all foundational laws and domains.
+
+

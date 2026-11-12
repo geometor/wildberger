@@ -1,0 +1,191 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="1531pt" height="188pt" viewBox="0.00 0.00 1530.50 188.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<ns0:title>dependency</ns0:title>
+
+<ns0:g id="node1" class="node">
+<ns0:title>W.04</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../topics/w-04/index.html" ns1:title="W.04\nSpread, Cross, Twist &amp; Line Sep...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M624,-180C624,-180 474,-180 474,-180 468,-180 462,-174 462,-168 462,-168 462,-156 462,-156 462,-150 468,-144 474,-144 474,-144 624,-144 624,-144 630,-144 636,-150 636,-156 636,-156 636,-168 636,-168 636,-174 630,-180 624,-180" />
+<ns0:text text-anchor="middle" x="549" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.04</ns0:text>
+<ns0:text text-anchor="middle" x="549" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Spread, Cross, Twist &amp; Line Sep...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>W.08</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../topics/w-08/index.html" ns1:title="W.08\nLaw III: The Spread Law &amp; Exten...">
+<ns0:path fill="#ffff99" stroke="#d4a017" stroke-width="2" d="M818,-108C818,-108 666,-108 666,-108 660,-108 654,-102 654,-96 654,-96 654,-84 654,-84 654,-78 660,-72 666,-72 666,-72 818,-72 818,-72 824,-72 830,-78 830,-84 830,-84 830,-96 830,-96 830,-102 824,-108 818,-108" />
+<ns0:text text-anchor="middle" x="742" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.08</ns0:text>
+<ns0:text text-anchor="middle" x="742" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law III: The Spread Law &amp; Exten...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>W.04-&gt;W.08</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M596.21,-143.88C624,-133.8 659.25,-121.01 688.13,-110.54" />
+<ns0:polygon fill="#888888" stroke="#888888" points="689.2,-112.76 694.94,-108.07 687.52,-108.15 689.2,-112.76" />
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>W.06</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../topics/w-06/index.html" ns1:title="W.06\nLaw I: Pythagoras' Theorem &amp; Ri...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M818,-180C818,-180 666,-180 666,-180 660,-180 654,-174 654,-168 654,-168 654,-156 654,-156 654,-150 660,-144 666,-144 666,-144 818,-144 818,-144 824,-144 830,-150 830,-156 830,-156 830,-168 830,-168 830,-174 824,-180 818,-180" />
+<ns0:text text-anchor="middle" x="742" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.06</ns0:text>
+<ns0:text text-anchor="middle" x="742" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law I: Pythagoras' Theorem &amp; Ri...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>W.06-&gt;W.08</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M742,-143.7C742,-135.14 742,-124.66 742,-115.3" />
+<ns0:polygon fill="#888888" stroke="#888888" points="744.45,-115.1 742,-108.1 739.55,-115.1 744.45,-115.1" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>W.07</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../topics/w-07/index.html" ns1:title="W.07\nLaw II: Triple Quad Formula, Ar...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M1002.5,-180C1002.5,-180 859.5,-180 859.5,-180 853.5,-180 847.5,-174 847.5,-168 847.5,-168 847.5,-156 847.5,-156 847.5,-150 853.5,-144 859.5,-144 859.5,-144 1002.5,-144 1002.5,-144 1008.5,-144 1014.5,-150 1014.5,-156 1014.5,-156 1014.5,-168 1014.5,-168 1014.5,-174 1008.5,-180 1002.5,-180" />
+<ns0:text text-anchor="middle" x="931" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.07</ns0:text>
+<ns0:text text-anchor="middle" x="931" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law II: Triple Quad Formula, Ar...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>W.07-&gt;W.08</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M884.77,-143.88C857.55,-133.8 823.03,-121.01 794.76,-110.54" />
+<ns0:polygon fill="#888888" stroke="#888888" points="795.5,-108.2 788.08,-108.07 793.8,-112.8 795.5,-108.2" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>W.10</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="../topics/w-10/index.html" ns1:title="W.10\nLaw V: Triple Spread, Triple Cr...">
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M152,-36C152,-36 12,-36 12,-36 6,-36 0,-30 0,-24 0,-24 0,-12 0,-12 0,-6 6,0 12,0 12,0 152,0 152,0 158,0 164,-6 164,-12 164,-12 164,-24 164,-24 164,-30 158,-36 152,-36" />
+<ns0:text text-anchor="middle" x="82" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.10</ns0:text>
+<ns0:text text-anchor="middle" x="82" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law V: Triple Spread, Triple Cr...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>W.08-&gt;W.10</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M653.98,-83.32C541.92,-75.51 342.5,-59.68 173,-36 172.46,-35.92 171.92,-35.85 171.38,-35.77" />
+<ns0:polygon fill="#888888" stroke="#888888" points="171.57,-33.32 164.28,-34.72 170.85,-38.17 171.57,-33.32" />
+</ns0:g>
+
+<ns0:g id="node6" class="node">
+<ns0:title>W.11</ns0:title>
+<ns0:g id="a_node6"><ns0:a ns1:href="../topics/w-11/index.html" ns1:title="W.11\nIsosceles, Equilateral &amp; Kepler...">
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M336,-36C336,-36 194,-36 194,-36 188,-36 182,-30 182,-24 182,-24 182,-12 182,-12 182,-6 188,0 194,0 194,0 336,0 336,0 342,0 348,-6 348,-12 348,-12 348,-24 348,-24 348,-30 342,-36 336,-36" />
+<ns0:text text-anchor="middle" x="265" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.11</ns0:text>
+<ns0:text text-anchor="middle" x="265" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Isosceles, Equilateral &amp; Kepler...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge5" class="edge">
+<ns0:title>W.08-&gt;W.11</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M653.91,-78.04C575.76,-68.04 458.58,-52.37 357,-36 356.46,-35.91 355.92,-35.82 355.37,-35.74" />
+<ns0:polygon fill="#888888" stroke="#888888" points="355.52,-33.28 348.22,-34.55 354.72,-38.11 355.52,-33.28" />
+</ns0:g>
+
+<ns0:g id="node7" class="node">
+<ns0:title>W.14</ns0:title>
+<ns0:g id="a_node7"><ns0:a ns1:href="../topics/w-14/index.html" ns1:title="W.14\nMenelaus, Ceva &amp; The Alternate...">
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M527.5,-36C527.5,-36 378.5,-36 378.5,-36 372.5,-36 366.5,-30 366.5,-24 366.5,-24 366.5,-12 366.5,-12 366.5,-6 372.5,0 378.5,0 378.5,0 527.5,0 527.5,0 533.5,0 539.5,-6 539.5,-12 539.5,-12 539.5,-24 539.5,-24 539.5,-30 533.5,-36 527.5,-36" />
+<ns0:text text-anchor="middle" x="453" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.14</ns0:text>
+<ns0:text text-anchor="middle" x="453" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Menelaus, Ceva &amp; The Alternate...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge6" class="edge">
+<ns0:title>W.08-&gt;W.14</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M671.67,-71.97C628.93,-61.61 574.31,-48.38 530.35,-37.74" />
+<ns0:polygon fill="#888888" stroke="#888888" points="530.77,-35.32 523.39,-36.05 529.62,-40.08 530.77,-35.32" />
+</ns0:g>
+
+<ns0:g id="node8" class="node">
+<ns0:title>W.15</ns0:title>
+<ns0:g id="a_node8"><ns0:a ns1:href="../topics/w-15/index.html" ns1:title="W.15\nCircumcenter, Orthocenter &amp; Uni...">
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M720.5,-36C720.5,-36 569.5,-36 569.5,-36 563.5,-36 557.5,-30 557.5,-24 557.5,-24 557.5,-12 557.5,-12 557.5,-6 563.5,0 569.5,0 569.5,0 720.5,0 720.5,0 726.5,0 732.5,-6 732.5,-12 732.5,-12 732.5,-24 732.5,-24 732.5,-30 726.5,-36 720.5,-36" />
+<ns0:text text-anchor="middle" x="645" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.15</ns0:text>
+<ns0:text text-anchor="middle" x="645" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Circumcenter, Orthocenter &amp; Uni...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge7" class="edge">
+<ns0:title>W.08-&gt;W.15</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M718.02,-71.7C704.87,-62.2 688.44,-50.35 674.51,-40.29" />
+<ns0:polygon fill="#888888" stroke="#888888" points="675.81,-38.21 668.7,-36.1 672.94,-42.19 675.81,-38.21" />
+</ns0:g>
+
+<ns0:g id="node9" class="node">
+<ns0:title>W.17</ns0:title>
+<ns0:g id="a_node9"><ns0:a ns1:href="../topics/w-17/index.html" ns1:title="W.17\nCircle Geometry: Subtended Spre...">
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M917.5,-36C917.5,-36 762.5,-36 762.5,-36 756.5,-36 750.5,-30 750.5,-24 750.5,-24 750.5,-12 750.5,-12 750.5,-6 756.5,0 762.5,0 762.5,0 917.5,0 917.5,0 923.5,0 929.5,-6 929.5,-12 929.5,-12 929.5,-24 929.5,-24 929.5,-30 923.5,-36 917.5,-36" />
+<ns0:text text-anchor="middle" x="840" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.17</ns0:text>
+<ns0:text text-anchor="middle" x="840" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Circle Geometry: Subtended Spre...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge8" class="edge">
+<ns0:title>W.08-&gt;W.17</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M765.97,-71.88C779.26,-62.38 795.91,-50.5 810.05,-40.4" />
+<ns0:polygon fill="#888888" stroke="#888888" points="811.66,-42.25 815.93,-36.19 808.81,-38.26 811.66,-42.25" />
+</ns0:g>
+
+<ns0:g id="node10" class="node">
+<ns0:title>W.22</ns0:title>
+<ns0:g id="a_node10"><ns0:a ns1:href="../topics/w-22/index.html" ns1:title="W.22\nProjective Cross-Ratio, Harmoni...">
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M1108.5,-36C1108.5,-36 959.5,-36 959.5,-36 953.5,-36 947.5,-30 947.5,-24 947.5,-24 947.5,-12 947.5,-12 947.5,-6 953.5,0 959.5,0 959.5,0 1108.5,0 1108.5,0 1114.5,0 1120.5,-6 1120.5,-12 1120.5,-12 1120.5,-24 1120.5,-24 1120.5,-30 1114.5,-36 1108.5,-36" />
+<ns0:text text-anchor="middle" x="1034" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.22</ns0:text>
+<ns0:text text-anchor="middle" x="1034" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Projective Cross-Ratio, Harmoni...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge9" class="edge">
+<ns0:title>W.08-&gt;W.22</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M813.06,-71.97C856.24,-61.61 911.43,-48.38 955.84,-37.74" />
+<ns0:polygon fill="#888888" stroke="#888888" points="956.64,-40.06 962.88,-36.05 955.5,-35.3 956.64,-40.06" />
+</ns0:g>
+
+<ns0:g id="node11" class="node">
+<ns0:title>W.23</ns0:title>
+<ns0:g id="a_node11"><ns0:a ns1:href="../topics/w-23/index.html" ns1:title="W.23\nChromogeometry &amp; Universal Symm...">
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M1319,-36C1319,-36 1151,-36 1151,-36 1145,-36 1139,-30 1139,-24 1139,-24 1139,-12 1139,-12 1139,-6 1145,0 1151,0 1151,0 1319,0 1319,0 1325,0 1331,-6 1331,-12 1331,-12 1331,-24 1331,-24 1331,-30 1325,-36 1319,-36" />
+<ns0:text text-anchor="middle" x="1235" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.23</ns0:text>
+<ns0:text text-anchor="middle" x="1235" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Chromogeometry &amp; Universal Symm...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge10" class="edge">
+<ns0:title>W.08-&gt;W.23</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M830.31,-77.57C909.01,-67.23 1027.29,-51.33 1130,-36 1130.64,-35.9 1131.28,-35.81 1131.92,-35.71" />
+<ns0:polygon fill="#888888" stroke="#888888" points="1132.33,-38.13 1138.88,-34.66 1131.6,-33.28 1132.33,-38.13" />
+</ns0:g>
+
+<ns0:g id="node12" class="node">
+<ns0:title>W.24</ns0:title>
+<ns0:g id="a_node12"><ns0:a ns1:href="../topics/w-24/index.html" ns1:title="W.24\nExact Triangle Solvers &amp; Survey...">
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M1510.5,-36C1510.5,-36 1361.5,-36 1361.5,-36 1355.5,-36 1349.5,-30 1349.5,-24 1349.5,-24 1349.5,-12 1349.5,-12 1349.5,-6 1355.5,0 1361.5,0 1361.5,0 1510.5,0 1510.5,0 1516.5,0 1522.5,-6 1522.5,-12 1522.5,-12 1522.5,-24 1522.5,-24 1522.5,-30 1516.5,-36 1510.5,-36" />
+<ns0:text text-anchor="middle" x="1436" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.24</ns0:text>
+<ns0:text text-anchor="middle" x="1436" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Exact Triangle Solvers &amp; Survey...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge11" class="edge">
+<ns0:title>W.08-&gt;W.24</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M830.16,-83.59C947.05,-75.87 1159.57,-59.92 1340,-36 1340.78,-35.9 1341.56,-35.79 1342.34,-35.69" />
+<ns0:polygon fill="#888888" stroke="#888888" points="1342.86,-38.09 1349.45,-34.68 1342.17,-33.23 1342.86,-38.09" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

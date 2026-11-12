@@ -1,0 +1,95 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="940pt" height="116pt" viewBox="0.00 0.00 939.50 116.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112)">
+<ns0:title>dependency</ns0:title>
+
+<ns0:g id="node1" class="node">
+<ns0:title>W.03</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../topics/w-03/index.html" ns1:title="W.03\nQuadrance, Midpoints &amp; Point-to...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M161,-108C161,-108 12,-108 12,-108 6,-108 0,-102 0,-96 0,-96 0,-84 0,-84 0,-78 6,-72 12,-72 12,-72 161,-72 161,-72 167,-72 173,-78 173,-84 173,-84 173,-96 173,-96 173,-102 167,-108 161,-108" />
+<ns0:text text-anchor="middle" x="86.5" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.03</ns0:text>
+<ns0:text text-anchor="middle" x="86.5" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Quadrance, Midpoints &amp; Point-to...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node6" class="node">
+<ns0:title>W.28</ns0:title>
+<ns0:g id="a_node6"><ns0:a ns1:href="../topics/w-28/index.html" ns1:title="W.28\nRational Polar Coordinates, Cla...">
+<ns0:path fill="#ffff99" stroke="#d4a017" stroke-width="2" d="M538.5,-36C538.5,-36 392.5,-36 392.5,-36 386.5,-36 380.5,-30 380.5,-24 380.5,-24 380.5,-12 380.5,-12 380.5,-6 386.5,0 392.5,0 392.5,0 538.5,0 538.5,0 544.5,0 550.5,-6 550.5,-12 550.5,-12 550.5,-24 550.5,-24 550.5,-30 544.5,-36 538.5,-36" />
+<ns0:text text-anchor="middle" x="465.5" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.28</ns0:text>
+<ns0:text text-anchor="middle" x="465.5" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Rational Polar Coordinates, Cla...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>W.03-&gt;W.28</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M173.45,-72.94C233.21,-61.9 312.45,-47.27 373.31,-36.03" />
+<ns0:polygon fill="#888888" stroke="#888888" points="373.82,-38.42 380.26,-34.74 372.93,-33.61 373.82,-38.42" />
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>W.04</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../topics/w-04/index.html" ns1:title="W.04\nSpread, Cross, Twist &amp; Line Sep...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M353.5,-108C353.5,-108 203.5,-108 203.5,-108 197.5,-108 191.5,-102 191.5,-96 191.5,-96 191.5,-84 191.5,-84 191.5,-78 197.5,-72 203.5,-72 203.5,-72 353.5,-72 353.5,-72 359.5,-72 365.5,-78 365.5,-84 365.5,-84 365.5,-96 365.5,-96 365.5,-102 359.5,-108 353.5,-108" />
+<ns0:text text-anchor="middle" x="278.5" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.04</ns0:text>
+<ns0:text text-anchor="middle" x="278.5" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Spread, Cross, Twist &amp; Line Sep...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>W.04-&gt;W.28</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M324.25,-71.88C351.17,-61.8 385.32,-49.01 413.3,-38.54" />
+<ns0:polygon fill="#888888" stroke="#888888" points="414.21,-40.82 419.9,-36.07 412.49,-36.23 414.21,-40.82" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>W.10</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../topics/w-10/index.html" ns1:title="W.10\nLaw V: Triple Spread, Triple Cr...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M535.5,-108C535.5,-108 395.5,-108 395.5,-108 389.5,-108 383.5,-102 383.5,-96 383.5,-96 383.5,-84 383.5,-84 383.5,-78 389.5,-72 395.5,-72 395.5,-72 535.5,-72 535.5,-72 541.5,-72 547.5,-78 547.5,-84 547.5,-84 547.5,-96 547.5,-96 547.5,-102 541.5,-108 535.5,-108" />
+<ns0:text text-anchor="middle" x="465.5" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.10</ns0:text>
+<ns0:text text-anchor="middle" x="465.5" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law V: Triple Spread, Triple Cr...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>W.10-&gt;W.28</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M465.5,-71.7C465.5,-63.14 465.5,-52.66 465.5,-43.3" />
+<ns0:polygon fill="#888888" stroke="#888888" points="467.95,-43.1 465.5,-36.1 463.05,-43.1 467.95,-43.1" />
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>W.17</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../topics/w-17/index.html" ns1:title="W.17\nCircle Geometry: Subtended Spre...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M733,-108C733,-108 578,-108 578,-108 572,-108 566,-102 566,-96 566,-96 566,-84 566,-84 566,-78 572,-72 578,-72 578,-72 733,-72 733,-72 739,-72 745,-78 745,-84 745,-84 745,-96 745,-96 745,-102 739,-108 733,-108" />
+<ns0:text text-anchor="middle" x="655.5" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.17</ns0:text>
+<ns0:text text-anchor="middle" x="655.5" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Circle Geometry: Subtended Spre...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>W.17-&gt;W.28</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M609.02,-71.88C581.66,-61.8 546.96,-49.01 518.54,-38.54" />
+<ns0:polygon fill="#888888" stroke="#888888" points="519.24,-36.19 511.83,-36.07 517.55,-40.79 519.24,-36.19" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>W.20</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="../topics/w-20/index.html" ns1:title="W.20\nMetrical Conics: Circles, Ribbo...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M919.5,-108C919.5,-108 775.5,-108 775.5,-108 769.5,-108 763.5,-102 763.5,-96 763.5,-96 763.5,-84 763.5,-84 763.5,-78 769.5,-72 775.5,-72 775.5,-72 919.5,-72 919.5,-72 925.5,-72 931.5,-78 931.5,-84 931.5,-84 931.5,-96 931.5,-96 931.5,-102 925.5,-108 919.5,-108" />
+<ns0:text text-anchor="middle" x="847.5" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.20</ns0:text>
+<ns0:text text-anchor="middle" x="847.5" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Metrical Conics: Circles, Ribbo...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge5" class="edge">
+<ns0:title>W.20-&gt;W.28</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M763.2,-73.55C702.37,-62.41 620.29,-47.37 557.72,-35.9" />
+<ns0:polygon fill="#888888" stroke="#888888" points="557.91,-33.44 550.58,-34.59 557.02,-38.26 557.91,-33.44" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

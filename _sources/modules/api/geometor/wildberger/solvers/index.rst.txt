@@ -1,0 +1,271 @@
+geometor.wildberger.solvers
+===========================
+
+.. py:module:: geometor.wildberger.solvers
+
+.. autoapi-nested-parse::
+
+   Exact polynomial triangle and surveying solvers for Rational Trigonometry.
+
+   Replaces classical inverse trigonometric solvers (`arcsin`, `arccos`, `arctan`)
+   with exact linear and quadratic polynomial equations over `SymPy` rationals and
+   algebraic extensions, covering QQQ, QQS, QSS, SQQ, SSS, Regiomontanus' problem,
+   inaccessible-base triangulation, Snellius-Pothenot resection, and Hansen's
+   two-station problem.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.wildberger.solvers.SolvedTriangle
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.wildberger.solvers.solve_qqq
+   geometor.wildberger.solvers.solve_qqs
+   geometor.wildberger.solvers.solve_qss
+   geometor.wildberger.solvers.solve_sqq
+   geometor.wildberger.solvers.solve_sss_proportional
+   geometor.wildberger.solvers.two_spread_triples_common
+   geometor.wildberger.solvers.spread_from_ratio
+   geometor.wildberger.solvers.solve_inaccessible_height
+   geometor.wildberger.solvers.solve_regiomontanus
+   geometor.wildberger.solvers.solve_snellius_pothenot_coordinates
+   geometor.wildberger.solvers.solve_hansen_benchmark
+
+
+Module Contents
+---------------
+
+.. py:class:: SolvedTriangle
+
+   Exact algebraic solution of a planar triangle `(Q1, Q2, Q3, s1, s2, s3)`.
+
+   .. attribute:: q1
+
+      Quadrance opposite vertex 1.
+
+   .. attribute:: q2
+
+      Quadrance opposite vertex 2.
+
+   .. attribute:: q3
+
+      Quadrance opposite vertex 3.
+
+   .. attribute:: s1
+
+      Spread at vertex 1.
+
+   .. attribute:: s2
+
+      Spread at vertex 2.
+
+   .. attribute:: s3
+
+      Spread at vertex 3.
+
+   .. attribute:: quadrea
+
+      Triangle quadrea `A(Q1, Q2, Q3)`.
+
+   .. attribute:: circumquadrance
+
+      Circumquadrance `K = Q1*Q2*Q3 / A`.
+
+
+   .. py:attribute:: q1
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: q2
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: q3
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: s1
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: s2
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: s3
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: quadrea
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: circumquadrance
+      :type:  sympy.Expr
+
+
+.. py:function:: solve_qqq(q1: geometor.wildberger.invariants.CoordScalar, q2: geometor.wildberger.invariants.CoordScalar, q3: geometor.wildberger.invariants.CoordScalar) -> SolvedTriangle
+
+   Solve a non-collinear triangle uniquely from three side quadrances `(Q1, Q2, Q3)`.
+
+   Uses the Cross Law `s_3 = 1 - (Q_1 + Q_2 - Q_3)^2 / (4*Q_1*Q_2) = A / (4*Q_1*Q_2)`.
+
+   :param q1: First side quadrance `Q1`.
+   :param q2: Second side quadrance `Q2`.
+   :param q3: Third side quadrance `Q3`.
+
+   :returns: Exact `SolvedTriangle`.
+
+   :raises ValueError: If `A(Q1, Q2, Q3) == 0` (collinear/degenerate triple) or `Qi == 0`.
+
+
+.. py:function:: solve_qqs(q1: geometor.wildberger.invariants.CoordScalar, q2: geometor.wildberger.invariants.CoordScalar, s3: geometor.wildberger.invariants.CoordScalar) -> list[SolvedTriangle]
+
+   Solve for both acute/obtuse triangle branches given `(Q1, Q2, s3)`.
+
+   Solves the quadratic Cross Law `(Q1 + Q2 - Q3)^2 = 4*Q1*Q2*(1 - s3)` for `Q3`,
+   returning one solution when `s3 == 1` (right vertex) and two solutions
+   (acute and obtuse sectors) when `0 < s3 < 1`.
+
+   :param q1: First side quadrance `Q1`.
+   :param q2: Second side quadrance `Q2`.
+   :param s3: Included vertex spread `s3`.
+
+   :returns: List of 1 or 2 exact `SolvedTriangle` branches.
+
+
+.. py:function:: solve_qss(q1: geometor.wildberger.invariants.CoordScalar, s1: geometor.wildberger.invariants.CoordScalar, s2: geometor.wildberger.invariants.CoordScalar) -> list[SolvedTriangle]
+
+   Solve for triangle branches given `(Q1, s1, s2)` via Triple Spread + Spread Law.
+
+   Solves `(s1 + s2 + s3)^2 = 2*(s1^2 + s2^2 + s3^2) + 4*s1*s2*s3`, which in normal
+   quadratic form is `(s3 - (s1 + s2 - 2*s1*s2))^2 = 4*s1*s2*(1 - s1)*(1 - s2)`.
+
+   :param q1: Known side quadrance `Q1` opposite `s1`.
+   :param s1: Non-zero spread `s1` opposite `Q1`.
+   :param s2: Second spread `s2`.
+
+   :returns: List of exact `SolvedTriangle` branches.
+
+
+.. py:function:: solve_sqq(s1: geometor.wildberger.invariants.CoordScalar, q1: geometor.wildberger.invariants.CoordScalar, q2: geometor.wildberger.invariants.CoordScalar) -> list[SolvedTriangle]
+
+   Solve the rational SSA case `(s1, Q1, Q2)` via Spread Law + Triple Spread.
+
+   :param s1: Non-zero spread `s1` opposite `Q1`.
+   :param q1: Side quadrance `Q1`.
+   :param q2: Adjacent side quadrance `Q2`.
+
+   :returns: List of exact `SolvedTriangle` branches.
+
+
+.. py:function:: solve_sss_proportional(s1: geometor.wildberger.invariants.CoordScalar, s2: geometor.wildberger.invariants.CoordScalar, s3: geometor.wildberger.invariants.CoordScalar, q1: geometor.wildberger.invariants.CoordScalar = 1) -> SolvedTriangle
+
+   Validate a spread triple `(s1, s2, s3)` and solve the similar triangle with `Q1 = q1`.
+
+   :param s1: First spread.
+   :param s2: Second spread.
+   :param s3: Third spread.
+   :param q1: Scale quadrance `Q1` (`default 1`).
+
+   :returns: Exact `SolvedTriangle` at scale `Q1 = q1`.
+
+   :raises ValueError: If `S(s1, s2, s3) != 0`.
+
+
+.. py:function:: two_spread_triples_common(a: geometor.wildberger.invariants.CoordScalar, b: geometor.wildberger.invariants.CoordScalar, c: geometor.wildberger.invariants.CoordScalar, d: geometor.wildberger.invariants.CoordScalar) -> sympy.Expr
+
+   Compute the unique common spread `x = P(a, b, c, d)` of `{a, b, x}` and `{c, d, x}`.
+
+   Implements Wildberger's Two Spread Triples Theorem (Theorem 53, p. 98 & p. 256):
+   `P(a, b, c, d) = ((a - b)^2 - (c - d)^2) / (2*(a + b - c - d - 2*a*b + 2*c*d))`.
+
+   :param a: First spread of first triple.
+   :param b: Second spread of first triple.
+   :param c: First spread of second triple.
+   :param d: Second spread of second triple.
+
+   :returns: Exact common spread `x`.
+
+
+.. py:function:: spread_from_ratio(s_total: geometor.wildberger.invariants.CoordScalar, ratio_a: geometor.wildberger.invariants.CoordScalar) -> list[tuple[sympy.Expr, sympy.Expr]]
+
+   Solve `{x, y, s_total}` being a spread triple with `x / y = ratio_a` (Theorem 48, p. 91).
+
+   Returns both algebraic branches `y = s / (a + 1 +/- 2*sqrt(a*(1 - s)))` and `x = a * y`.
+
+   :param s_total: Third spread `s` in `{x, y, s}`.
+   :param ratio_a: Known spread ratio `a = x / y`.
+
+   :returns: List of exact `(x, y)` spread pairs.
+
+
+.. py:function:: solve_inaccessible_height(step_quadrance: geometor.wildberger.invariants.CoordScalar, s1: geometor.wildberger.invariants.CoordScalar, s2: geometor.wildberger.invariants.CoordScalar) -> list[sympy.Expr]
+
+   Solve Surveying Problem 24.2: vertical cliff height quadrance `H` from two station spreads.
+
+   Two collinear ground stations separated by `step_quadrance = D` observe the top
+   of a vertical cliff with elevation spreads `s1` and `s2` relative to the horizontal.
+   Horizontal base quadrances are `X1 = H*(1 - s1)/s1` and `X2 = H*(1 - s2)/s2`,
+   and collinearity `A(X1, X2, D) = 0` yields the two exact branches (same side vs
+   opposite sides of the cliff base):
+   `H = D * s1 * s2 / ((sqrt(s2*(1 - s1)) -/+ sqrt(s1*(1 - s2)))^2)`.
+
+   :param step_quadrance: Quadrance `D` between the two observation stations.
+   :param s1: Elevation spread at station 1.
+   :param s2: Elevation spread at station 2.
+
+   :returns: Exact roots for the vertical height quadrance `H`.
+
+
+.. py:function:: solve_regiomontanus(lower_height: geometor.wildberger.invariants.CoordScalar, upper_height: geometor.wildberger.invariants.CoordScalar) -> dict[str, sympy.Expr]
+
+   Solve Regiomontanus' maximum-spread statue problem algebraically without calculus (Section 24.4).
+
+   A vertical segment from `y = a` to `y = b` (`0 < a < b`, quadrances `A = a^2, B = b^2`)
+   viewed from `[x, 0]` (`X = x^2`) subtends maximum spread at exact horizontal
+   quadrance `X_opt = a * b`, attaining maximum spread `s_max = (b - a)^2 / (b + a)^2`.
+
+   :param lower_height: Lower height `a > 0`.
+   :param upper_height: Upper height `b > a`.
+
+   :returns: Dictionary with `optimal_x_quadrance`, `optimal_x`, and `max_spread`.
+
+
+.. py:function:: solve_snellius_pothenot_coordinates(beacon_a: geometor.wildberger.invariants.Point2DInput, beacon_b: geometor.wildberger.invariants.Point2DInput, beacon_c: geometor.wildberger.invariants.Point2DInput, station_p: geometor.wildberger.invariants.Point2DInput) -> dict[str, sympy.Expr]
+
+   Execute Wildberger's Collins-Point / Subtended-Spread resection verification (Section 25.1).
+
+   Given three known beacons `A, B, C` and an observer `P` measuring only the
+   rational spreads `r1 = s(PA, PB)` and `r2 = s(PB, PC)`, computes the exact
+   measured spreads, beacon quadrances, and verifies the resection equations.
+
+   :param beacon_a: First beacon `A`.
+   :param beacon_b: Second beacon `B`.
+   :param beacon_c: Third beacon `C`.
+   :param station_p: Observer station `P`.
+
+   :returns: Dictionary of exact beacon quadrances, observed spreads, and station quadrances.
+
+
+.. py:function:: solve_hansen_benchmark() -> dict[str, sympy.Expr]
+
+   Execute Wildberger's complete rational solution of Hansen's Two-Station Problem (Section 25.2).
+
+   Reconstructs all unknown quadrances between known baseline `A=[0,0], B=[1,5]`
+   (`Q(A,B) = 26`) and unknown stations `C=[5,4], D=[4,1]` strictly from the four
+   measured spreads at `C` and `D` using `two_spread_triples_common`, Alternate Spreads,
+   `spread_from_ratio`, and the Spread Law—zero transcendental functions!
+
+   :returns: Dictionary of exact intermediate spreads and recovered quadrances.
+
+

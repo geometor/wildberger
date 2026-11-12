@@ -1,0 +1,79 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="568pt" height="188pt" viewBox="0.00 0.00 568.00 188.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<ns0:title>dependency</ns0:title>
+
+<ns0:g id="node1" class="node">
+<ns0:title>W.08</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../topics/w-08/index.html" ns1:title="W.08\nLaw III: The Spread Law &amp; Exten...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M164,-180C164,-180 12,-180 12,-180 6,-180 0,-174 0,-168 0,-168 0,-156 0,-156 0,-150 6,-144 12,-144 12,-144 164,-144 164,-144 170,-144 176,-150 176,-156 176,-156 176,-168 176,-168 176,-174 170,-180 164,-180" />
+<ns0:text text-anchor="middle" x="88" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.08</ns0:text>
+<ns0:text text-anchor="middle" x="88" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law III: The Spread Law &amp; Exten...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>W.24</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../topics/w-24/index.html" ns1:title="W.24\nExact Triangle Solvers &amp; Survey...">
+<ns0:path fill="#ffff99" stroke="#d4a017" stroke-width="2" d="M360.5,-108C360.5,-108 211.5,-108 211.5,-108 205.5,-108 199.5,-102 199.5,-96 199.5,-96 199.5,-84 199.5,-84 199.5,-78 205.5,-72 211.5,-72 211.5,-72 360.5,-72 360.5,-72 366.5,-72 372.5,-78 372.5,-84 372.5,-84 372.5,-96 372.5,-96 372.5,-102 366.5,-108 360.5,-108" />
+<ns0:text text-anchor="middle" x="286" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.24</ns0:text>
+<ns0:text text-anchor="middle" x="286" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Exact Triangle Solvers &amp; Survey...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>W.08-&gt;W.24</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M136.18,-143.97C164.81,-133.84 201.22,-120.97 230.97,-110.45" />
+<ns0:polygon fill="#888888" stroke="#888888" points="231.82,-112.75 237.6,-108.11 230.18,-108.13 231.82,-112.75" />
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>W.09</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../topics/w-09/index.html" ns1:title="W.09\nLaw IV: The Cross Law &amp; Quadrea...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M365.5,-180C365.5,-180 206.5,-180 206.5,-180 200.5,-180 194.5,-174 194.5,-168 194.5,-168 194.5,-156 194.5,-156 194.5,-150 200.5,-144 206.5,-144 206.5,-144 365.5,-144 365.5,-144 371.5,-144 377.5,-150 377.5,-156 377.5,-156 377.5,-168 377.5,-168 377.5,-174 371.5,-180 365.5,-180" />
+<ns0:text text-anchor="middle" x="286" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.09</ns0:text>
+<ns0:text text-anchor="middle" x="286" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law IV: The Cross Law &amp; Quadrea...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>W.09-&gt;W.24</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M286,-143.7C286,-135.14 286,-124.66 286,-115.3" />
+<ns0:polygon fill="#888888" stroke="#888888" points="288.45,-115.1 286,-108.1 283.55,-115.1 288.45,-115.1" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>W.10</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../topics/w-10/index.html" ns1:title="W.10\nLaw V: Triple Spread, Triple Cr...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M548,-180C548,-180 408,-180 408,-180 402,-180 396,-174 396,-168 396,-168 396,-156 396,-156 396,-150 402,-144 408,-144 408,-144 548,-144 548,-144 554,-144 560,-150 560,-156 560,-156 560,-168 560,-168 560,-174 554,-180 548,-180" />
+<ns0:text text-anchor="middle" x="478" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.10</ns0:text>
+<ns0:text text-anchor="middle" x="478" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law V: Triple Spread, Triple Cr...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>W.10-&gt;W.24</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M431.03,-143.88C403.38,-133.8 368.32,-121.01 339.6,-110.54" />
+<ns0:polygon fill="#888888" stroke="#888888" points="340.23,-108.16 332.82,-108.07 338.55,-112.77 340.23,-108.16" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>W.25</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="../topics/w-25/index.html" ns1:title="W.25\nSnellius&#8211;Pothenot Resection &amp; H...">
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M363,-36C363,-36 209,-36 209,-36 203,-36 197,-30 197,-24 197,-24 197,-12 197,-12 197,-6 203,0 209,0 209,0 363,0 363,0 369,0 375,-6 375,-12 375,-12 375,-24 375,-24 375,-30 369,-36 363,-36" />
+<ns0:text text-anchor="middle" x="286" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.25</ns0:text>
+<ns0:text text-anchor="middle" x="286" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Snellius&#8211;Pothenot Resection &amp; H...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>W.24-&gt;W.25</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M286,-71.7C286,-63.14 286,-52.66 286,-43.3" />
+<ns0:polygon fill="#888888" stroke="#888888" points="288.45,-43.1 286,-36.1 283.55,-43.1 288.45,-43.1" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

@@ -1,0 +1,79 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="564pt" height="188pt" viewBox="0.00 0.00 563.50 188.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<ns0:title>dependency</ns0:title>
+
+<ns0:g id="node1" class="node">
+<ns0:title>W.01</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../topics/w-01/index.html" ns1:title="W.01\nPlanar Points, Line Proportions...">
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M353.5,-180C353.5,-180 210.5,-180 210.5,-180 204.5,-180 198.5,-174 198.5,-168 198.5,-168 198.5,-156 198.5,-156 198.5,-150 204.5,-144 210.5,-144 210.5,-144 353.5,-144 353.5,-144 359.5,-144 365.5,-150 365.5,-156 365.5,-156 365.5,-168 365.5,-168 365.5,-174 359.5,-180 353.5,-180" />
+<ns0:text text-anchor="middle" x="282" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.01</ns0:text>
+<ns0:text text-anchor="middle" x="282" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Planar Points, Line Proportions...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>W.02</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../topics/w-02/index.html" ns1:title="W.02\nLineations, Central Rotations &amp;...">
+<ns0:path fill="#ffff99" stroke="#d4a017" stroke-width="2" d="M354,-108C354,-108 210,-108 210,-108 204,-108 198,-102 198,-96 198,-96 198,-84 198,-84 198,-78 204,-72 210,-72 210,-72 354,-72 354,-72 360,-72 366,-78 366,-84 366,-84 366,-96 366,-96 366,-102 360,-108 354,-108" />
+<ns0:text text-anchor="middle" x="282" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.02</ns0:text>
+<ns0:text text-anchor="middle" x="282" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Lineations, Central Rotations &amp;...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>W.01-&gt;W.02</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M282,-143.7C282,-135.14 282,-124.66 282,-115.3" />
+<ns0:polygon fill="#888888" stroke="#888888" points="284.45,-115.1 282,-108.1 279.55,-115.1 284.45,-115.1" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>W.05</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../topics/w-05/index.html" ns1:title="W.05\nSpread Polynomials S_n(s) &amp; Pen...">
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M168,-36C168,-36 12,-36 12,-36 6,-36 0,-30 0,-24 0,-24 0,-12 0,-12 0,-6 6,0 12,0 12,0 168,0 168,0 174,0 180,-6 180,-12 180,-12 180,-24 180,-24 180,-30 174,-36 168,-36" />
+<ns0:text text-anchor="middle" x="90" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.05</ns0:text>
+<ns0:text text-anchor="middle" x="90" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Spread Polynomials S_n(s) &amp; Pen...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>W.02-&gt;W.05</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M235.03,-71.88C207.38,-61.8 172.32,-49.01 143.6,-38.54" />
+<ns0:polygon fill="#888888" stroke="#888888" points="144.23,-36.16 136.82,-36.07 142.55,-40.77 144.23,-36.16" />
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>W.12</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../topics/w-12/index.html" ns1:title="W.12\nVertex Bisectors, Square Vertic...">
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M354,-36C354,-36 210,-36 210,-36 204,-36 198,-30 198,-24 198,-24 198,-12 198,-12 198,-6 204,0 210,0 210,0 354,0 354,0 360,0 366,-6 366,-12 366,-12 366,-24 366,-24 366,-30 360,-36 354,-36" />
+<ns0:text text-anchor="middle" x="282" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.12</ns0:text>
+<ns0:text text-anchor="middle" x="282" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Vertex Bisectors, Square Vertic...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>W.02-&gt;W.12</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M282,-71.7C282,-63.14 282,-52.66 282,-43.3" />
+<ns0:polygon fill="#888888" stroke="#888888" points="284.45,-43.1 282,-36.1 279.55,-43.1 284.45,-43.1" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>W.21</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="../topics/w-21/index.html" ns1:title="W.21\nTaylor Conics, Algebraic Tangen...">
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M543.5,-36C543.5,-36 396.5,-36 396.5,-36 390.5,-36 384.5,-30 384.5,-24 384.5,-24 384.5,-12 384.5,-12 384.5,-6 390.5,0 396.5,0 396.5,0 543.5,0 543.5,0 549.5,0 555.5,-6 555.5,-12 555.5,-12 555.5,-24 555.5,-24 555.5,-30 549.5,-36 543.5,-36" />
+<ns0:text text-anchor="middle" x="470" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.21</ns0:text>
+<ns0:text text-anchor="middle" x="470" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Taylor Conics, Algebraic Tangen...</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>W.02-&gt;W.21</ns0:title>
+<ns0:path fill="none" stroke="#888888" d="M327.99,-71.88C355.06,-61.8 389.39,-49.01 417.52,-38.54" />
+<ns0:polygon fill="#888888" stroke="#888888" points="418.45,-40.81 424.16,-36.07 416.74,-36.21 418.45,-40.81" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

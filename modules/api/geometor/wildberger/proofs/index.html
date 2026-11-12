@@ -1,0 +1,750 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.wildberger.proofs &mdash; GEOMETOR • wildberger</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • wildberger</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">wildberger</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../../../../../topics/index.html"  >Principles</a>
+        </li>
+        <li>
+          <a href="../../../../../usage/index.html"  >Usage</a>
+        </li>
+        <li>
+          <a href="../../../../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../../../../persons.html"  >Persons</a>
+        </li>
+        <li>
+          <a href="../../../../../bibliography.html"  >Bibliography</a>
+        </li>
+        <li>
+          <a href="../../../../../log/index.html"  >Log</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; wildberger</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • wildberger</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.wildberger.proofs">
+        <span id="geometor-wildberger-proofs"></span><h1>geometor.wildberger.proofs<a class="headerlink" href="#module-geometor.wildberger.proofs" title="Link to this heading">¶</a></h1>
+        <p>Symbolic SymPy theorem provers for Rational Trigonometry and Universal Geometry.</p>
+        <p>Every prover constructs an algebraic identity in general symbolic indeterminates
+        (or over algebraic number fields Q(phi) and finite fields GF(p)), simplifies the
+        difference <cite>LHS - RHS</cite> to exact polynomial <cite>0</cite> without floating-point shortcuts,
+        and returns a structured <cite>ProofCertificate</cite>.</p>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProofCertificate</span></code></a></p></td>
+        <td><p>Symbolic verification certificate for a Rational Trigonometry theorem.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_pythagoras" title="geometor.wildberger.proofs.prove_pythagoras"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_pythagoras</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove Pythagoras' Theorem (<cite>Q1 + Q2 = Q3 &lt;=&gt; s3 = 1</cite>) symbolically.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_triple_quad" title="geometor.wildberger.proofs.prove_triple_quad"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_triple_quad</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove the Triple Quad Formula and Quadrea determinant identity <cite>A = 16 * Area^2</cite>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_cross_law" title="geometor.wildberger.proofs.prove_cross_law"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_cross_law</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove the Cross Law <cite>(Q1 + Q2 - Q3)^2 = 4 * Q1 * Q2 * (1 - s3)</cite> symbolically.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_spread_law" title="geometor.wildberger.proofs.prove_spread_law"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_spread_law</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove the Spread Law and Extended Circumquadrance Law <cite>s_i / Q_i = A / (4*Q1*Q2*Q3) = 1 / (4*K)</cite>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_triple_spread" title="geometor.wildberger.proofs.prove_triple_spread"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_triple_spread</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove the Triple Spread Formula for three arbitrary planar lines <cite>&lt;ai : bi : ci&gt;</cite>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_universal_laws" title="geometor.wildberger.proofs.prove_universal_laws"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_universal_laws</span></code></a>([metric_matrix]) → ProofCertificate</p></td>
+        <td><p>Prove all 5 Fundamental Laws over an arbitrary symmetric bilinear form <cite>M = [[alpha, beta], [beta, gamma]]</cite>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_spread_polynomial_composition" title="geometor.wildberger.proofs.prove_spread_polynomial_composition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_spread_polynomial_composition</span></code></a>([max_n]) → ProofCertificate</p></td>
+        <td><p>Prove Spread Polynomial composition <cite>S_n(S_m(s)) = S_{nm}(s)</cite>, recursion, and Pentagonal Golden Spreads.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_kepler_golden_triangle" title="geometor.wildberger.proofs.prove_kepler_golden_triangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_kepler_golden_triangle</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove exact quadrance and spread identities of Kepler's Golden Right Triangle.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_stewart_and_apollonius" title="geometor.wildberger.proofs.prove_stewart_and_apollonius"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_stewart_and_apollonius</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove Stewart's Theorem in Quadrances (Theorem 75) and Apollonius' Median Formula (Theorem 76).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_menelaus_and_ceva" title="geometor.wildberger.proofs.prove_menelaus_and_ceva"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_menelaus_and_ceva</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove Menelaus' Theorem (Theorem 78) and Ceva's Theorem (Theorem 80) in quadrances.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_euler_nine_point" title="geometor.wildberger.proofs.prove_euler_nine_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_euler_nine_point</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove the Euler Line (<cite>G = 2/3 C + 1/3 O</cite>) and Nine-Point Circle (<cite>K_9 = K/4</cite>) symbolically.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_chromogeometry_theorems" title="geometor.wildberger.proofs.prove_chromogeometry_theorems"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_chromogeometry_theorems</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove Wildberger's Chromogeometry Parallelogram &amp; Medial Nine-Point Theorem symbolically.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_parabola_and_quadrola_reflection" title="geometor.wildberger.proofs.prove_parabola_and_quadrola_reflection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_parabola_and_quadrola_reflection</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove the Parabola Reflection Theorem (<cite>s(k, AF) = s(k, n)</cite>) and Quadrola Reflection Property.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_cross_ratio_invariance" title="geometor.wildberger.proofs.prove_cross_ratio_invariance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_cross_ratio_invariance</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove Projective Cross-Ratio Invariance between Collinear Quadrances and Pencil Spreads.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_euler_four_point_and_ptolemy" title="geometor.wildberger.proofs.prove_euler_four_point_and_ptolemy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_euler_four_point_and_ptolemy</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove Euler's Four-Point Relation (<cite>E = 0</cite>) and Ptolemy's Theorem in Quadrances.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_platonic_dihedral_spreads" title="geometor.wildberger.proofs.prove_platonic_dihedral_spreads"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_platonic_dihedral_spreads</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove from 3D coordinates and 2D sections that all 5 Platonic solids have purely rational dihedral spreads!</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_finite_field_universal_geometry" title="geometor.wildberger.proofs.prove_finite_field_universal_geometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_finite_field_universal_geometry</span></code></a>([p]) → ProofCertificate</p></td>
+        <td><p>Verify Universal Geometry over finite fields <cite>GF(17)</cite> (Null Nine-Point Circle) and <cite>GF(19)</cite> (Regular Pentagon).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.prove_rational_polar_and_ellipson" title="geometor.wildberger.proofs.prove_rational_polar_and_ellipson"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_rational_polar_and_ellipson</span></code></a>() → ProofCertificate</p></td>
+        <td><p>Prove rational polar identities (<cite>[s, Q]</cite>) for Bernoulli's Lemniscate, Descartes' Folium, and the Ellipson slice.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.wildberger.proofs.verify_all_proofs" title="geometor.wildberger.proofs.verify_all_proofs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_all_proofs</span></code></a>() → list[ProofCertificate]</p></td>
+        <td><p>Execute the complete suite of symbolic SymPy theorem provers.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.ProofCertificate">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">ProofCertificate</span></span><a class="headerlink" href="#geometor.wildberger.proofs.ProofCertificate" title="Link to this definition">¶</a></dt>
+        <dd><p>Symbolic verification certificate for a Rational Trigonometry theorem.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.ProofCertificate.theorem_id">
+        <span class="sig-name descname"><span class="pre">theorem_id</span></span><a class="headerlink" href="#geometor.wildberger.proofs.ProofCertificate.theorem_id" title="Link to this definition">¶</a></dt>
+        <dd><p>Short identifier of the theorem proof.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.ProofCertificate.title">
+        <span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#geometor.wildberger.proofs.ProofCertificate.title" title="Link to this definition">¶</a></dt>
+        <dd><p>Human-readable theorem title.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.ProofCertificate.statement">
+        <span class="sig-name descname"><span class="pre">statement</span></span><a class="headerlink" href="#geometor.wildberger.proofs.ProofCertificate.statement" title="Link to this definition">¶</a></dt>
+        <dd><p>Concise algebraic statement proved.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.ProofCertificate.lhs">
+        <span class="sig-name descname"><span class="pre">lhs</span></span><a class="headerlink" href="#geometor.wildberger.proofs.ProofCertificate.lhs" title="Link to this definition">¶</a></dt>
+        <dd><p>Symbolic left-hand side expression.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.ProofCertificate.rhs">
+        <span class="sig-name descname"><span class="pre">rhs</span></span><a class="headerlink" href="#geometor.wildberger.proofs.ProofCertificate.rhs" title="Link to this definition">¶</a></dt>
+        <dd><p>Symbolic right-hand side expression.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.ProofCertificate.residual">
+        <span class="sig-name descname"><span class="pre">residual</span></span><a class="headerlink" href="#geometor.wildberger.proofs.ProofCertificate.residual" title="Link to this definition">¶</a></dt>
+        <dd><p>Simplified <cite>lhs - rhs</cite> (must equal exact <cite>0</cite>).</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.ProofCertificate.verified">
+        <span class="sig-name descname"><span class="pre">verified</span></span><a class="headerlink" href="#geometor.wildberger.proofs.ProofCertificate.verified" title="Link to this definition">¶</a></dt>
+        <dd><p>True if <cite>residual == 0</cite> and all auxiliary checks hold.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.ProofCertificate.witness">
+        <span class="sig-name descname"><span class="pre">witness</span></span><a class="headerlink" href="#geometor.wildberger.proofs.ProofCertificate.witness" title="Link to this definition">¶</a></dt>
+        <dd><p>Concrete exact rational, golden, or finite-field instantiation.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id0">
+        <span class="sig-name descname"><span class="pre">theorem_id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#id0" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id1">
+        <span class="sig-name descname"><span class="pre">title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#id1" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id2">
+        <span class="sig-name descname"><span class="pre">statement</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#id2" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id3">
+        <span class="sig-name descname"><span class="pre">lhs</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#id3" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id4">
+        <span class="sig-name descname"><span class="pre">rhs</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#id4" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id5">
+        <span class="sig-name descname"><span class="pre">residual</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#id5" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id6">
+        <span class="sig-name descname"><span class="pre">verified</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#id6" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id7">
+        <span class="sig-name descname"><span class="pre">witness</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#id7" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_pythagoras">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_pythagoras</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_pythagoras" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Pythagoras’ Theorem (<cite>Q1 + Q2 = Q3 &lt;=&gt; s3 = 1</cite>) symbolically.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_triple_quad">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_triple_quad</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_triple_quad" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove the Triple Quad Formula and Quadrea determinant identity <cite>A = 16 * Area^2</cite>.</p>
+        <p>Proves for general planar points <cite>A1, A2, A3</cite> that
+        <cite>A(Q1, Q2, Q3) == 4 * det(A1, A2, A3)^2</cite>, vanishing iff <cite>A1, A2, A3</cite> are collinear.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_cross_law">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_cross_law</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_cross_law" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove the Cross Law <cite>(Q1 + Q2 - Q3)^2 = 4 * Q1 * Q2 * (1 - s3)</cite> symbolically.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_spread_law">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_spread_law</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_spread_law" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove the Spread Law and Extended Circumquadrance Law <cite>s_i / Q_i = A / (4*Q1*Q2*Q3) = 1 / (4*K)</cite>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_triple_spread">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_triple_spread</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_triple_spread" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove the Triple Spread Formula for three arbitrary planar lines <cite>&lt;ai : bi : ci&gt;</cite>.</p>
+        <p>Also verifies the Quadruple Spread/Cross self-duality <cite>R(a,b,c,d) == R(1-a,1-b,1-c,1-d)</cite>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_universal_laws">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_universal_laws</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">metric_matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Matrix</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_universal_laws" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove all 5 Fundamental Laws over an arbitrary symmetric bilinear form <cite>M = [[alpha, beta], [beta, gamma]]</cite>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>metric_matrix</strong> – Optional custom 2x2 symmetric <cite>sp.Matrix</cite>. Defaults to symbolic
+        <cite>[[alpha, beta], [beta, gamma]]</cite>.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_spread_polynomial_composition">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_spread_polynomial_composition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">6</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_spread_polynomial_composition" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Spread Polynomial composition <cite>S_n(S_m(s)) = S_{nm}(s)</cite>, recursion, and Pentagonal Golden Spreads.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>max_n</strong> – Maximum degree index <cite>n, m</cite> to verify composition across (<cite>default 6</cite>).</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_kepler_golden_triangle">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_kepler_golden_triangle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_kepler_golden_triangle" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove exact quadrance and spread identities of Kepler’s Golden Right Triangle.</p>
+        <p>In classical geometry, Kepler’s triangle has irrational nested-radical side
+        lengths <cite>(1, sqrt(phi), phi)</cite>. In Rational Trigonometry, its quadrances are
+        purely powers of <cite>phi</cite> (<cite>Q = (1, phi, phi^2)</cite>) and its spreads are
+        <cite>(1/phi^2, 1/phi, 1) = (2 - phi, phi - 1, 1)</cite>!</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_stewart_and_apollonius">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_stewart_and_apollonius</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_stewart_and_apollonius" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Stewart’s Theorem in Quadrances (Theorem 75) and Apollonius’ Median Formula (Theorem 76).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_menelaus_and_ceva">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_menelaus_and_ceva</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_menelaus_and_ceva" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Menelaus’ Theorem (Theorem 78) and Ceva’s Theorem (Theorem 80) in quadrances.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_euler_nine_point">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_euler_nine_point</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_euler_nine_point" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove the Euler Line (<cite>G = 2/3 C + 1/3 O</cite>) and Nine-Point Circle (<cite>K_9 = K/4</cite>) symbolically.</p>
+        <p>By affine translational equivariance (<cite>tau_{-A_3}</cite>), placing <cite>A_3 = [0, 0]</cite> with free
+        symbolic vertices <cite>A_1 = [x_1, y_1], A_2 = [x_2, y_2]</cite> establishes the theorem over
+        every field <cite>F</cite> (<cite>char F != 2, 3</cite>).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_chromogeometry_theorems">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_chromogeometry_theorems</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_chromogeometry_theorems" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Wildberger’s Chromogeometry Parallelogram &amp; Medial Nine-Point Theorem symbolically.</p>
+        <p>Proves for ANY planar triangle <cite>A1 A2 A3</cite> (via translational frame <cite>A_3 = [0, 0]</cite>)
+        across Blue (<cite>dx^2 + dy^2</cite>), Red (<cite>dx^2 - dy^2</cite>), and Green (<cite>2*dx*dy</cite>) geometries:
+        1. <cite>N_B = (C_R + C_G) / 2</cite>, <cite>N_R = (C_B + C_G) / 2</cite>, <cite>N_G = (C_B + C_R) / 2</cite>!
+        2. <cite>C_B + O_B = C_R + C_G</cite> (so <cite>C_B C_R O_B C_G</cite> is always a parallelogram)!
+        3. All three Euler lines <cite>C_B O_B</cite>, <cite>C_R O_R</cite>, <cite>C_G O_G</cite> concur at Centroid <cite>G</cite>!</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_parabola_and_quadrola_reflection">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_parabola_and_quadrola_reflection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_parabola_and_quadrola_reflection" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove the Parabola Reflection Theorem (<cite>s(k, AF) = s(k, n)</cite>) and Quadrola Reflection Property.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_cross_ratio_invariance">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_cross_ratio_invariance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_cross_ratio_invariance" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Projective Cross-Ratio Invariance between Collinear Quadrances and Pencil Spreads.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_euler_four_point_and_ptolemy">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_euler_four_point_and_ptolemy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_euler_four_point_and_ptolemy" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Euler’s Four-Point Relation (<cite>E = 0</cite>) and Ptolemy’s Theorem in Quadrances.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_platonic_dihedral_spreads">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_platonic_dihedral_spreads</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_platonic_dihedral_spreads" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove from 3D coordinates and 2D sections that all 5 Platonic solids have purely rational dihedral spreads!</p>
+        <p>Exact Face (Dihedral) Spreads (Chapter 26):
+        - Regular Tetrahedron:  S = 8/9
+        - Cube (Hexahedron):    S = 1
+        - Regular Octahedron:   S = 8/9
+        - Regular Icosahedron:  S = 4/9
+        - Regular Dodecahedron: S = 4/5</p>
+        <p>Even for the Golden Ratio polyhedra (Icosahedron and Dodecahedron), <cite>sqrt(5)</cite>
+        cancels completely in the quadratic dihedral spread! Also proves 3D Pythagoras
+        (De Gua’s Theorem in Quadreas): <cite>A_ABC = A_OAB + A_OBC + A_OCA</cite>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_finite_field_universal_geometry">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_finite_field_universal_geometry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">17</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_finite_field_universal_geometry" title="Link to this definition">¶</a></dt>
+        <dd><p>Verify Universal Geometry over finite fields <cite>GF(17)</cite> (Null Nine-Point Circle) and <cite>GF(19)</cite> (Regular Pentagon).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>p</strong> – Prime modulus for the primary Nine-Point Circle test (<cite>default 17</cite>, Wildberger Example 18.1).</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.prove_rational_polar_and_ellipson">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">prove_rational_polar_and_ellipson</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a></span></span><a class="headerlink" href="#geometor.wildberger.proofs.prove_rational_polar_and_ellipson" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove rational polar identities (<cite>[s, Q]</cite>) for Bernoulli’s Lemniscate, Descartes’ Folium, and the Ellipson slice.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Verified <cite>ProofCertificate</cite>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.wildberger.proofs.verify_all_proofs">
+        <span class="sig-prename descclassname"><span class="pre">geometor.wildberger.proofs.</span></span><span class="sig-name descname"><span class="pre">verify_all_proofs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.wildberger.proofs.ProofCertificate" title="geometor.wildberger.proofs.ProofCertificate"><span class="pre">ProofCertificate</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.wildberger.proofs.verify_all_proofs" title="Link to this definition">¶</a></dt>
+        <dd><p>Execute the complete suite of symbolic SymPy theorem provers.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>List of <cite>ProofCertificate</cite> instances across all foundational laws and domains.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • wildberger</a>
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../log/26.315-initial-codex.html">Initial 28-Principle Rational Trigonometry & Universal Codex</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-tags">
+      <h3>Tags</h3>
+      <ul>
+        <li><a href="../../../../../tags/Alternate%20Spreads.html">Alternate Spreads</a></li>
+        <li><a href="../../../../../tags/alternate%20spreads.html">alternate spreads</a></li>
+        <li><a href="../../../../../tags/altitude.html">altitude</a></li>
+        <li><a href="../../../../../tags/angle%20sum.html">angle sum</a></li>
+        <li><a href="../../../../../tags/Apollonius.html">Apollonius</a></li>
+        <li><a href="../../../../../tags/Archimedes.html">Archimedes</a></li>
+        <li><a href="../../../../../tags/barycentric.html">barycentric</a></li>
+        <li><a href="../../../../../tags/blue%20metric.html">blue metric</a></li>
+        <li><a href="../../../../../tags/Brahmagupta.html">Brahmagupta</a></li>
+        <li><a href="../../../../../tags/cardioid.html">cardioid</a></li>
+        <li><a href="../../../../../tags/centroid.html">centroid</a></li>
+        <li><a href="../../../../../tags/Ceva%E2%80%99s%20theorem.html">Ceva’s theorem</a></li>
+        <li><a href="../../../../../tags/cevians.html">cevians</a></li>
+        <li><a href="../../../../../tags/Chebyshev.html">Chebyshev</a></li>
+        <li><a href="../../../../../tags/Chromogeometry.html">Chromogeometry</a></li>
+        <li><a href="../../../../../tags/chromogeometry.html">chromogeometry</a></li>
+        <li><a href="../../../../../tags/circumcenter.html">circumcenter</a></li>
+        <li><a href="../../../../../tags/circumquadrance.html">circumquadrance</a></li>
+        <li><a href="../../../../../tags/collinearity.html">collinearity</a></li>
+        <li><a href="../../../../../tags/complementary%20spreads.html">complementary spreads</a></li>
+        <li><a href="../../../../../tags/concurrency.html">concurrency</a></li>
+        <li><a href="../../../../../tags/conic.html">conic</a></li>
+        <li><a href="../../../../../tags/Conway%20notation.html">Conway notation</a></li>
+        <li><a href="../../../../../tags/cosine%20law.html">cosine law</a></li>
+        <li><a href="../../../../../tags/cross.html">cross</a></li>
+        <li><a href="../../../../../tags/Cross%20Law.html">Cross Law</a></li>
+        <li><a href="../../../../../tags/cross-ratio.html">cross-ratio</a></li>
+        <li><a href="../../../../../tags/cyclic%20quadrilateral.html">cyclic quadrilateral</a></li>
+        <li><a href="../../../../../tags/De%20Gua.html">De Gua</a></li>
+        <li><a href="../../../../../tags/determinants.html">determinants</a></li>
+        <li><a href="../../../../../tags/dihedral%20spread.html">dihedral spread</a></li>
+        <li><a href="../../../../../tags/dodecahedron.html">dodecahedron</a></li>
+        <li><a href="../../../../../tags/Egyptian%20triangle.html">Egyptian triangle</a></li>
+        <li><a href="../../../../../tags/ellipson.html">ellipson</a></li>
+        <li><a href="../../../../../tags/equilateral.html">equilateral</a></li>
+        <li><a href="../../../../../tags/Euler%20four-point.html">Euler four-point</a></li>
+        <li><a href="../../../../../tags/Euler%20line.html">Euler line</a></li>
+        <li><a href="../../../../../tags/excenters.html">excenters</a></li>
+        <li><a href="../../../../../tags/extended%20spread%20law.html">extended spread law</a></li>
+        <li><a href="../../../../../tags/Feuerbach.html">Feuerbach</a></li>
+        <li><a href="../../../../../tags/finite%20field.html">finite field</a></li>
+        <li><a href="../../../../../tags/finite%20fields.html">finite fields</a></li>
+        <li><a href="../../../../../tags/focus-directrix.html">focus-directrix</a></li>
+        <li><a href="../../../../../tags/folium%20of%20Descartes.html">folium of Descartes</a></li>
+        <li><a href="../../../../../tags/GF%2819%29.html">GF(19)</a></li>
+        <li><a href="../../../../../tags/golden%20ratio.html">golden ratio</a></li>
+        <li><a href="../../../../../tags/grammola.html">grammola</a></li>
+        <li><a href="../../../../../tags/green%20metric.html">green metric</a></li>
+        <li><a href="../../../../../tags/Hansen%E2%80%99s%20problem.html">Hansen’s problem</a></li>
+        <li><a href="../../../../../tags/harmonic%20range.html">harmonic range</a></li>
+        <li><a href="../../../../../tags/Heron.html">Heron</a></li>
+        <li><a href="../../../../../tags/icosahedron.html">icosahedron</a></li>
+        <li><a href="../../../../../tags/incenter.html">incenter</a></li>
+        <li><a href="../../../../../tags/inquadrance.html">inquadrance</a></li>
+        <li><a href="../../../../../tags/inscribed%20spread.html">inscribed spread</a></li>
+        <li><a href="../../../../../tags/isometries.html">isometries</a></li>
+        <li><a href="../../../../../tags/isosceles.html">isosceles</a></li>
+        <li><a href="../../../../../tags/Kepler%20triangle.html">Kepler triangle</a></li>
+        <li><a href="../../../../../tags/lemniscate.html">lemniscate</a></li>
+        <li><a href="../../../../../tags/lineations.html">lineations</a></li>
+        <li><a href="../../../../../tags/lines.html">lines</a></li>
+        <li><a href="../../../../../tags/logistic%20map.html">logistic map</a></li>
+        <li><a href="../../../../../tags/medial%20triangle.html">medial triangle</a></li>
+        <li><a href="../../../../../tags/medians.html">medians</a></li>
+        <li><a href="../../../../../tags/Menelaus%E2%80%99%20theorem.html">Menelaus’ theorem</a></li>
+        <li><a href="../../../../../tags/midpoint.html">midpoint</a></li>
+        <li><a href="../../../../../tags/Minkowski.html">Minkowski</a></li>
+        <li><a href="../../../../../tags/nine-point%20center.html">nine-point center</a></li>
+        <li><a href="../../../../../tags/nine-point%20circle.html">nine-point circle</a></li>
+        <li><a href="../../../../../tags/null%20line.html">null line</a></li>
+        <li><a href="../../../../../tags/optics.html">optics</a></li>
+        <li><a href="../../../../../tags/orthic%20triangle.html">orthic triangle</a></li>
+        <li><a href="../../../../../tags/orthocenter.html">orthocenter</a></li>
+        <li><a href="../../../../../tags/Pappus.html">Pappus</a></li>
+        <li><a href="../../../../../tags/parabola.html">parabola</a></li>
+        <li><a href="../../../../../tags/parabola%20reflection.html">parabola reflection</a></li>
+        <li><a href="../../../../../tags/parallelogram.html">parallelogram</a></li>
+        <li><a href="../../../../../tags/pentagon.html">pentagon</a></li>
+        <li><a href="../../../../../tags/pentagram.html">pentagram</a></li>
+        <li><a href="../../../../../tags/perpendicular%20bisector.html">perpendicular bisector</a></li>
+        <li><a href="../../../../../tags/perspectivity.html">perspectivity</a></li>
+        <li><a href="../../../../../tags/Platonic%20solids.html">Platonic solids</a></li>
+        <li><a href="../../../../../tags/Pons%20Asinorum.html">Pons Asinorum</a></li>
+        <li><a href="../../../../../tags/power%20of%20a%20point.html">power of a point</a></li>
+        <li><a href="../../../../../tags/projectile%20motion.html">projectile motion</a></li>
+        <li><a href="../../../../../tags/projective%20invariance.html">projective invariance</a></li>
+        <li><a href="../../../../../tags/proportions.html">proportions</a></li>
+        <li><a href="../../../../../tags/Ptolemy.html">Ptolemy</a></li>
+        <li><a href="../../../../../tags/Pythagoras.html">Pythagoras</a></li>
+        <li><a href="../../../../../tags/QQQ.html">QQQ</a></li>
+        <li><a href="../../../../../tags/QQS.html">QQS</a></li>
+        <li><a href="../../../../../tags/QSS.html">QSS</a></li>
+        <li><a href="../../../../../tags/quadrance.html">quadrance</a></li>
+        <li><a href="../../../../../tags/quadrea.html">quadrea</a></li>
+        <li><a href="../../../../../tags/quadrea%20spread.html">quadrea spread</a></li>
+        <li><a href="../../../../../tags/quadrola.html">quadrola</a></li>
+        <li><a href="../../../../../tags/quadrola%20reflection.html">quadrola reflection</a></li>
+        <li><a href="../../../../../tags/Quadruple%20Quad%20Formula.html">Quadruple Quad Formula</a></li>
+        <li><a href="../../../../../tags/quadruple%20spread.html">quadruple spread</a></li>
+        <li><a href="../../../../../tags/rational%20circle.html">rational circle</a></li>
+        <li><a href="../../../../../tags/rational%20polar.html">rational polar</a></li>
+        <li><a href="../../../../../tags/rational-trigonometry.html">rational-trigonometry</a></li>
+        <li><a href="../../../../../tags/red%20metric.html">red metric</a></li>
+        <li><a href="../../../../../tags/reflections.html">reflections</a></li>
+        <li><a href="../../../../../tags/refraction.html">refraction</a></li>
+        <li><a href="../../../../../tags/Regiomontanus.html">Regiomontanus</a></li>
+        <li><a href="../../../../../tags/regular%20pentagon.html">regular pentagon</a></li>
+        <li><a href="../../../../../tags/resection.html">resection</a></li>
+        <li><a href="../../../../../tags/ribbon.html">ribbon</a></li>
+        <li><a href="../../../../../tags/right%20midpoint.html">right midpoint</a></li>
+        <li><a href="../../../../../tags/right%20triangle.html">right triangle</a></li>
+        <li><a href="../../../../../tags/rotations.html">rotations</a></li>
+        <li><a href="../../../../../tags/sine%20law.html">sine law</a></li>
+        <li><a href="../../../../../tags/Snellius-Pothenot.html">Snellius-Pothenot</a></li>
+        <li><a href="../../../../../tags/Snell%E2%80%99s%20law.html">Snell’s law</a></li>
+        <li><a href="../../../../../tags/special%20relativity.html">special relativity</a></li>
+        <li><a href="../../../../../tags/spread.html">spread</a></li>
+        <li><a href="../../../../../tags/Spread%20Law.html">Spread Law</a></li>
+        <li><a href="../../../../../tags/spread%20polynomials.html">spread polynomials</a></li>
+        <li><a href="../../../../../tags/spread%20sequence.html">spread sequence</a></li>
+        <li><a href="../../../../../tags/SQQ.html">SQQ</a></li>
+        <li><a href="../../../../../tags/square%20vertex.html">square vertex</a></li>
+        <li><a href="../../../../../tags/stereographic.html">stereographic</a></li>
+        <li><a href="../../../../../tags/Stewart%E2%80%99s%20theorem.html">Stewart’s theorem</a></li>
+        <li><a href="../../../../../tags/surveying.html">surveying</a></li>
+        <li><a href="../../../../../tags/symmetry.html">symmetry</a></li>
+        <li><a href="../../../../../tags/sympy.html">sympy</a></li>
+        <li><a href="../../../../../tags/tangent.html">tangent</a></li>
+        <li><a href="../../../../../tags/Taylor%20conic.html">Taylor conic</a></li>
+        <li><a href="../../../../../tags/tetrahedron.html">tetrahedron</a></li>
+        <li><a href="../../../../../tags/Thales.html">Thales</a></li>
+        <li><a href="../../../../../tags/transversal.html">transversal</a></li>
+        <li><a href="../../../../../tags/triangulation.html">triangulation</a></li>
+        <li><a href="../../../../../tags/triple%20cross.html">triple cross</a></li>
+        <li><a href="../../../../../tags/Triple%20Quad%20Formula.html">Triple Quad Formula</a></li>
+        <li><a href="../../../../../tags/Triple%20Spread%20Formula.html">Triple Spread Formula</a></li>
+        <li><a href="../../../../../tags/turn.html">turn</a></li>
+        <li><a href="../../../../../tags/twist.html">twist</a></li>
+        <li><a href="../../../../../tags/universal-geometry.html">universal-geometry</a></li>
+        <li><a href="../../../../../tags/vertex%20bisector.html">vertex bisector</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-categories">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="../../../../../categories/3D%20Solid%20Geometry%20%26%20The%20Five%20Platonic%20Solids.html">3D Solid Geometry & The Five Platonic Solids</a></li>
+        <li><a href="../../../../../categories/Affine%20%26%20Projective%20Incidence.html">Affine & Projective Incidence</a></li>
+        <li><a href="../../../../../categories/Algebraic%20Mechanics.html">Algebraic Mechanics</a></li>
+        <li><a href="../../../../../categories/Algebraic%20Tangents%20%26%20Optical%20Reflection.html">Algebraic Tangents & Optical Reflection</a></li>
+        <li><a href="../../../../../categories/Cevians%20%26%20Medians.html">Cevians & Medians</a></li>
+        <li><a href="../../../../../categories/Circle%20Geometry%20%26%20Rational%20Parametrization.html">Circle Geometry & Rational Parametrization</a></li>
+        <li><a href="../../../../../categories/Cyclic%20Polygons%20%26%20Four-Point%20Invariants.html">Cyclic Polygons & Four-Point Invariants</a></li>
+        <li><a href="../../../../../categories/Foundational%20Quadratic%20Invariants.html">Foundational Quadratic Invariants</a></li>
+        <li><a href="../../../../../categories/Geodetic%20Resection%20%26%20Two-Station%20Surveying.html">Geodetic Resection & Two-Station Surveying</a></li>
+        <li><a href="../../../../../categories/Golden%20Stars%20%26%20Finite%20Fields.html">Golden Stars & Finite Fields</a></li>
+        <li><a href="../../../../../categories/Isometries%20%26%20Lineations.html">Isometries & Lineations</a></li>
+        <li><a href="../../../../../categories/Metrical%20Conics%20%26%20Quadratic%20Loci.html">Metrical Conics & Quadratic Loci</a></li>
+        <li><a href="../../../../../categories/Optics%20%26%20Relativity.html">Optics & Relativity</a></li>
+        <li><a href="../../../../../categories/Polynomial%20Families%20%26%20Golden%20Proportion.html">Polynomial Families & Golden Proportion</a></li>
+        <li><a href="../../../../../categories/Practical%20Triangle%20Solvers%20%26%20Surveying.html">Practical Triangle Solvers & Surveying</a></li>
+        <li><a href="../../../../../categories/Projective%20%26%20Cevian%20Proportions.html">Projective & Cevian Proportions</a></li>
+        <li><a href="../../../../../categories/Projective%20Geometry%20%26%20Harmonic%20Ranges.html">Projective Geometry & Harmonic Ranges</a></li>
+        <li><a href="../../../../../categories/Proportions.html">Proportions</a></li>
+        <li><a href="../../../../../categories/Rational%20Polar%20Coordinates%20%26%20Algebraic%20Surfaces.html">Rational Polar Coordinates & Algebraic Surfaces</a></li>
+        <li><a href="../../../../../categories/Regular%20Polygons.html">Regular Polygons</a></li>
+        <li><a href="../../../../../categories/Special%20%26%20Golden%20Triangles.html">Special & Golden Triangles</a></li>
+        <li><a href="../../../../../categories/The%20Five%20Fundamental%20Laws.html">The Five Fundamental Laws</a></li>
+        <li><a href="../../../../../categories/Triangle%20Centers%20%26%20Classical%20Circles.html">Triangle Centers & Classical Circles</a></li>
+        <li><a href="../../../../../categories/Triangle%20Centers%20%26%20Classical%20Lines.html">Triangle Centers & Classical Lines</a></li>
+        <li><a href="../../../../../categories/Triangle%20Centers%20%26%20Number%20Theory.html">Triangle Centers & Number Theory</a></li>
+        <li><a href="../../../../../categories/Universal%20Bilinear%20Forms%20%26%20Chromogeometry.html">Universal Bilinear Forms & Chromogeometry</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/log.html">log</a></li>
+        <li><a href="../../../../../types/topic.html">topic</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../changelog.html"  >changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

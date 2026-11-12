@@ -1,0 +1,31 @@
+geometor.wildberger.models_b
+============================
+
+.. py:module:: geometor.wildberger.models_b
+
+.. autoapi-nested-parse::
+
+   Exact `geometor.model.Model` builders and SymPy verifiers for `W.15`..`W.28`.
+
+   Implements constructive geometric diagrams, rational-parametrized algebraic
+   curves, and exact symbolic verifications for Part III (Centers, Euler/Nine-Point,
+   Circles, Cyclic Quadrilaterals, Golden Pentagons, Conics, Tangents, Cross-Ratio,
+   Chromogeometry) and Part IV (Solvers, Resection/Hansen, Physics, 3D Platonic
+   Solids, Rational Polar Curves & The Ellipson).
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.wildberger.models_b.BUILDERS_B
+
+
+Module Contents
+---------------
+
+.. py:data:: BUILDERS_B
+   :type:  dict[str, collections.abc.Callable[[], geometor.wildberger.models.TopicBuildResult]]
+

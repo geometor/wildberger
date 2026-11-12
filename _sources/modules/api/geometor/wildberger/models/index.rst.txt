@@ -1,0 +1,165 @@
+geometor.wildberger.models
+==========================
+
+.. py:module:: geometor.wildberger.models
+
+.. autoapi-nested-parse::
+
+   Exact `geometor.model.Model` builders and SymPy verifiers for `W.01`..`W.28`.
+
+   Provides `TopicBuildResult` and `build_principle_model(code)` dispatching to
+   `models_a` (`W.01`..`W.14`) and `models_b` (`W.15`..`W.28`). Every geometric
+   coordinate in every `Model` is 100% exact (`sp.Integer`, `sp.Rational`,
+   `sp.GoldenRatio`, `sp.sqrt`), containing zero `sp.Float` approximations.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.wildberger.models.TopicBuildResult
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.wildberger.models.foot_on_line
+   geometor.wildberger.models.midpoint_xy
+   geometor.wildberger.models.second_point_on_line
+   geometor.wildberger.models.add_line_from_proportion
+   geometor.wildberger.models.finalize_model_guides
+   geometor.wildberger.models.assert_zero_floats
+   geometor.wildberger.models.build_principle_model
+
+
+Module Contents
+---------------
+
+.. py:class:: TopicBuildResult
+
+   Complete exact geometric model and SymPy verification bundle for a Principle.
+
+   .. attribute:: code
+
+      Canonical principle code `'W.01'`..`'W.28'`.
+
+   .. attribute:: model
+
+      Populated exact `geometor.model.Model`.
+
+   .. attribute:: extra_curves
+
+      Optional rational-sampled curves for SVG rendering.
+
+   .. attribute:: annotations
+
+      Quadrance and Spread callout badges for SVG rendering.
+
+   .. attribute:: verifications
+
+      List of `(label, exact_expression_str, status_str)` rows.
+
+   .. attribute:: invariants
+
+      Dictionary of named exact `SymPy` invariants.
+
+
+   .. py:attribute:: code
+      :type:  str
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: extra_curves
+      :type:  list[dict[str, object]]
+
+
+   .. py:attribute:: annotations
+      :type:  list[dict[str, object]]
+
+
+   .. py:attribute:: verifications
+      :type:  list[tuple[str, str, str]]
+
+
+   .. py:attribute:: invariants
+      :type:  dict[str, sympy.Expr | str]
+
+
+.. py:function:: foot_on_line(pt: tuple[sympy.Expr, sympy.Expr], line: geometor.wildberger.invariants.LineProportion) -> tuple[sympy.Expr, sympy.Expr]
+
+   Return the exact rational foot of the altitude from `pt` to `line`.
+
+   :param pt: External point `(x0, y0)`.
+   :param line: Target non-null `LineProportion`.
+
+   :returns: Exact coordinate pair `(fx, fy)`.
+
+
+.. py:function:: midpoint_xy(p1: tuple[sympy.Expr, sympy.Expr], p2: tuple[sympy.Expr, sympy.Expr]) -> tuple[sympy.Expr, sympy.Expr]
+
+   Return the exact midpoint of two planar coordinate pairs.
+
+   :param p1: First point `(x1, y1)`.
+   :param p2: Second point `(x2, y2)`.
+
+   :returns: Exact midpoint `(mx, my)`.
+
+
+.. py:function:: second_point_on_line(line: geometor.wildberger.invariants.LineProportion, avoid: tuple[sympy.Expr, sympy.Expr]) -> tuple[sympy.Expr, sympy.Expr]
+
+   Pick a deterministic exact rational point on `line` distinct from `avoid`.
+
+   :param line: Homogeneous `LineProportion` `<a : b : c>`.
+   :param avoid: Point `(x0, y0)` to stay distinct from.
+
+   :returns: Exact point `(x1, y1)` lying on `line`.
+
+
+.. py:function:: add_line_from_proportion(model: geometor.model.Model, line: geometor.wildberger.invariants.LineProportion, anchor: tuple[sympy.Expr, sympy.Expr], line_id: str, classes: list[str] | None = None) -> sympy.geometry.Line
+
+   Register a `LineProportion` in `model` using two exact guide/anchor points.
+
+   :param model: Target `geometor.model.Model`.
+   :param line: Exact `LineProportion` to add.
+   :param anchor: Known point `(x0, y0)` on `line`.
+   :param line_id: Element `ID` for `:g:` hover synchronization.
+   :param classes: Optional CSS class list.
+
+   :returns: Constructed `sympy.geometry.Line`.
+
+
+.. py:function:: finalize_model_guides(model: geometor.model.Model, named_point_ids: set[str]) -> None
+
+   Ensure named points stay visible and mark unlisted intersection points as guides.
+
+   :param model: Populated `geometor.model.Model`.
+   :param named_point_ids: Explicit point IDs intended for visible diagram labels.
+
+
+.. py:function:: assert_zero_floats(model: geometor.model.Model) -> None
+
+   Verify that no element in `model` contains `sp.Float` approximations.
+
+   :param model: Populated `geometor.model.Model`.
+
+   :raises AssertionError: If any `sp.Float` atom is detected in `model`.
+
+
+.. py:function:: build_principle_model(code: str) -> TopicBuildResult
+
+   Build the exact `Model`, SVG callouts, and `SymPy` verifications for `code`.
+
+   :param code: Canonical code `'W.01'`..`'W.28'` or slug `'w-01'`..`'w-28'`.
+
+   :returns: Populated `TopicBuildResult` verified to contain zero `sp.Float` atoms.
+
+   :raises KeyError: If `code` does not match `W.01`..`W.28`.
+
+

@@ -1,0 +1,30 @@
+geometor.wildberger.models_a
+============================
+
+.. py:module:: geometor.wildberger.models_a
+
+.. autoapi-nested-parse::
+
+   Exact `geometor.model.Model` builders and SymPy verifiers for `W.01`..`W.14`.
+
+   Implements constructive geometric diagrams and exact symbolic verifications for
+   Part I (Preliminaries & Invariants), Part II (The Five Fundamental Laws &
+   Kepler's Golden Triangle), and early Part III (Incenters, Stewart/Centroid,
+   Menelaus/Ceva).
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.wildberger.models_a.BUILDERS_A
+
+
+Module Contents
+---------------
+
+.. py:data:: BUILDERS_A
+   :type:  dict[str, collections.abc.Callable[[], geometor.wildberger.models.TopicBuildResult]]
+
