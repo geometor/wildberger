@@ -4,7 +4,7 @@
    :maxdepth: 2
    :hidden:
 
-   mission/index
+   about/index
    topics/index
    usage/index
    glossary
