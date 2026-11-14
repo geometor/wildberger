@@ -1,28 +1,33 @@
 :navigation: header
-:order: 40
+:order: 5
+:nav_title: People
 
 .. _persons:
 
-=======
-Persons
-=======
+People
+======
 
-Mathematicians, geometers, astronomers, and physicists connected to
-Rational Trigonometry and Universal Geometry.
+.. rubric:: Mathematicians, Geometers, Philosophers & Scholars of Rational and Universal Geometry
+
+Authors & Contemporary Architects
+---------------------------------
 
 .. _person-wildberger:
 .. _wildberger:
 
 Norman J. Wildberger (b. 1955)
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Canadian-Australian mathematician at UNSW Sydney who formulated Rational Trigonometry, Universal Geometry (*Divine Proportions*, 2005), and Chromogeometry (2008).
+Canadian-Australian pure mathematician and Associate Professor at the School of Mathematics and Statistics, UNSW Sydney. Creator of **Rational Trigonometry** and **Universal Geometry** (*Divine Proportions: Rational Trigonometry to Universal Geometry*, Wild Egg Books, 2005), which reformulated metric Euclidean and non-Euclidean planar and solid geometry over arbitrary fields without transcendental angles, irrational distances, limits, or trigonometric series. Originator of **Chromogeometry** (2008), which simultaneously investigates three coupled planar quadratic forms (Blue, Red, Green metrics), and **Universal Hyperbolic Geometry** (2008–2013).
+
+Cited Geometers, Philosophers & Scholars
+----------------------------------------
 
 .. _person-euclid:
 .. _euclid:
 
 Euclid of Alexandria (fl. 300 BCE)
-----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Author of the thirteen books of the *Elements*, whose synthetic propositions from Books I–IV, VI, and XIII gain field-independent algebraic proofs in Universal Geometry.
 
