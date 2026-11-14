@@ -1,12 +1,30 @@
-:layout: book
 :navigation: header
-:order: 10
+:order: 1
+:nav_title: Principles
+:layout: book
+:book_title: Principles of Rational Trigonometry & Universal Geometry
+:book_subtitle: Inspired by Norman J. Wildberger — 28 Executable Principles (W.01–W.28)
+:author: Norman J. Wildberger • Formalized by GEOMETOR
+:year: 2005–2026
 
 .. _topics:
 
-==========
-Principles
-==========
+Principles of Rational Trigonometry
+===================================
+
+.. rubric:: Principles of Rational Trigonometry & Universal Geometry — Norman J. Wildberger
+
+.. container:: title-page
+
+   | **Inspiration:** :person:`Norman J. Wildberger <wildberger>`
+   | **Primary Treatises:** *Divine Proportions: Rational Trigonometry to Universal Geometry* (2005) & *Universal Hyperbolic Geometry* (2008).
+   | **Executable Formalization:** 28 executable principles (W.01–W.28) formalized in SymPy by the GEOMETOR Project.
+   | **Digital Edition:** 2-track codex (*Synthesis · Code*) with interactive SVG diagrams and exact symbolic proofs.
+
+----
+
+Table of Contents
+-----------------
 
 The **GEOMETOR Wildberger Codex** gathers **28 foundational principles**
 (:math:`\text{W.01}` through :math:`\text{W.28}`) of **Rational Trigonometry** and
@@ -146,3 +164,10 @@ Master Index of Principles (W.01 – W.28)
      - :ref:`Rational Polar Coordinates, Classical Curves & The Ellipson <w-28>`
      - Rational Polar Coordinates & Algebraic Surfaces
      - Part IV: Practical Solvers, 3D Platonic Geometry & Polar Curves
+
+----
+
+Scholarly Apparatus
+-------------------
+
+* :ref:`People <persons>` · :ref:`Bibliography <bibliography>` · :ref:`Glossary <glossary>`

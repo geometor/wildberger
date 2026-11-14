@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>W.17 Circle Geometry: Subtended Spreads, Secant Products &amp; Rational Points &mdash; Principles</title>
+  <title>W.17 Circle Geometry: Subtended Spreads, Secant Products &amp; Rational Points &mdash; Principles of Rational Trigonometry &amp; Universal Geometry</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
@@ -37,22 +37,19 @@
       <label for="nav-Header-toggle" >Header</label>
       <ul>
         <li>
-          <a href="../../mission/index.html"  >Mission</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Principles of Rational Trigonometry</a>
         </li>
         <li>
-          <a href="../index.html" class="is-active" aria-selected="true" >Principles</a>
-        </li>
-        <li>
-          <a href="../../usage/index.html"  >Usage</a>
-        </li>
-        <li>
-          <a href="../../glossary.html"  >Glossary</a>
-        </li>
-        <li>
-          <a href="../../persons.html"  >Persons</a>
+          <a href="../../persons.html"  >People</a>
         </li>
         <li>
           <a href="../../bibliography.html"  >Bibliography</a>
+        </li>
+        <li>
+          <a href="../../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../../usage/index.html"  >Using This Edition</a>
         </li>
         <li>
           <a href="../../log/index.html"  >Log</a>
@@ -71,7 +68,7 @@
           <div class="book-header-identity">
             <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; wildberger</a>
             <span class="book-header-sep">/</span>
-            <a class="book-title-link" href="../index.html">Principles</a>
+            <a class="book-title-link" href="../index.html">Principles of Rational Trigonometry & Universal Geometry</a>
           </div>
         </div>
         <div class="book-header-nav">
@@ -484,7 +481,7 @@
         <section class="level-2" id="mathematical-synthesis">
         <h2>Mathematical Synthesis<a class="headerlink" href="#mathematical-synthesis" title="Link to this heading">¶</a></h2>
         <p>Classical circle theorems suffer from case distinctions between acute and obtuse inscribed angles (<span class="math notranslate nohighlight">\(\theta\)</span> vs. <span class="math notranslate nohighlight">\(\pi - \theta\)</span>). Because supplementary rays define the <strong>same line</strong>, every point <span class="geom-ref" data-ref="B" title="B">B</span> on circle <span class="geom-ref" data-ref="c" title="c">c</span> (centered at <span class="geom-ref" data-ref="O_c" title="O_c">Oc</span>) subtends the <strong>exact same spread</strong> <span class="math notranslate nohighlight">\(s(B P_1, B P_2) = Q(P_1, P_2) / (4 K)\)</span> on chord <span class="math notranslate nohighlight">\(P_1 P_2\)</span>, regardless of which arc <span class="geom-ref" data-ref="B" title="B">B</span> inhabits (<a class="citation-ref" id="occ-cite-wildberger2005-1" href="../../bibliography.html#cite-wildberger2005" data-cite="wildberger2005" title="Citation: wildberger2005">Wildberger2005</a>)! And the central spread at <span class="geom-ref" data-ref="O_c" title="O_c">Oc</span> is governed by the second <a class="term-ref glossary-term" id="occ-term-spread-polynomial-1" href="../../glossary.html#term-spread-polynomial" data-term="spread-polynomial" title="Term: spread-polynomial">spread polynomial</a> <span class="math notranslate nohighlight">\(S_2(s_3) = 4 s_3 (1 - s_3)\)</span>.</p>
-        <p>Similarly, Euclid’s intersecting chords/secants theorem (<a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/35/index.html#iii-35" title="(in geometor • euclid v0.3.6)"><span class="xref std std-ref">III.35</span></a>, <a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/36/index.html#iii-36" title="(in geometor • euclid v0.3.6)"><span class="xref std std-ref">III.36</span></a>) becomes the <strong>Equal Products Theorem</strong>: lines <span class="geom-ref" data-ref="l_sec1" title="l_sec1">lsec1</span> and <span class="geom-ref" data-ref="l_sec2" title="l_sec2">lsec2</span> through <span class="geom-ref" data-ref="A_0" title="A_0">A0</span> cut <span class="geom-ref" data-ref="c" title="c">c</span> at (<span class="geom-ref" data-ref="P_1" title="P_1">P1</span>, <span class="geom-ref" data-ref="Q_1" title="Q_1">Q1</span>) and (<span class="geom-ref" data-ref="B" title="B">B</span>, <span class="geom-ref" data-ref="Q_2" title="Q_2">Q2</span>) with invariant quadrance product <span class="math notranslate nohighlight">\((Q(A_0, O_c) - K)^2\)</span>. Projecting from <span class="math notranslate nohighlight">\([-1, 0]\)</span> parametrizes the unit circle by <span class="math notranslate nohighlight">\(\left[\frac{1 - t^2}{1 + t^2}, \frac{2 t}{1 + t^2}\right]\)</span>, generating all Pythagorean triples over <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span> and counting <span class="math notranslate nohighlight">\(p \mp 1\)</span> points on circles over <span class="math notranslate nohighlight">\(\mathbb{F}_p\)</span>.</p>
+        <p>Similarly, Euclid’s intersecting chords/secants theorem (<a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/35/index.html#iii-35" title="(in geometor • euclid v0.4.1)"><span class="xref std std-ref">III.35</span></a>, <a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/36/index.html#iii-36" title="(in geometor • euclid v0.4.1)"><span class="xref std std-ref">III.36</span></a>) becomes the <strong>Equal Products Theorem</strong>: lines <span class="geom-ref" data-ref="l_sec1" title="l_sec1">lsec1</span> and <span class="geom-ref" data-ref="l_sec2" title="l_sec2">lsec2</span> through <span class="geom-ref" data-ref="A_0" title="A_0">A0</span> cut <span class="geom-ref" data-ref="c" title="c">c</span> at (<span class="geom-ref" data-ref="P_1" title="P_1">P1</span>, <span class="geom-ref" data-ref="Q_1" title="Q_1">Q1</span>) and (<span class="geom-ref" data-ref="B" title="B">B</span>, <span class="geom-ref" data-ref="Q_2" title="Q_2">Q2</span>) with invariant quadrance product <span class="math notranslate nohighlight">\((Q(A_0, O_c) - K)^2\)</span>. Projecting from <span class="math notranslate nohighlight">\([-1, 0]\)</span> parametrizes the unit circle by <span class="math notranslate nohighlight">\(\left[\frac{1 - t^2}{1 + t^2}, \frac{2 t}{1 + t^2}\right]\)</span>, generating all Pythagorean triples over <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span> and counting <span class="math notranslate nohighlight">\(p \mp 1\)</span> points on circles over <span class="math notranslate nohighlight">\(\mathbb{F}_p\)</span>.</p>
         </section>
         <section class="level-2" id="key-algebraic-identities">
         <h2>Key Algebraic Identities<a class="headerlink" href="#key-algebraic-identities" title="Link to this heading">¶</a></h2>
@@ -542,7 +539,7 @@
         <td><p>Part III: Universal Triangle, Conic &amp; Chromogeometry</p></td>
         </tr>
         <tr class="row-odd"><td><p><strong>Euclid’s Elements</strong></p></td>
-        <td><p><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/20/index.html#iii-20" title="(in geometor • euclid v0.3.6)"><span class="xref std std-ref">III.20</span></a>, <a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/21/index.html#iii-21" title="(in geometor • euclid v0.3.6)"><span class="xref std std-ref">III.21</span></a>, <a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/31/index.html#iii-31" title="(in geometor • euclid v0.3.6)"><span class="xref std std-ref">III.31</span></a>, <a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/35/index.html#iii-35" title="(in geometor • euclid v0.3.6)"><span class="xref std std-ref">III.35</span></a>, <a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/36/index.html#iii-36" title="(in geometor • euclid v0.3.6)"><span class="xref std std-ref">III.36</span></a>, <a class="reference external" href="https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/029/index.html#x-29" title="(in geometor • euclid v0.3.6)"><span class="xref std std-ref">X.29</span></a> (<a class="citation-ref" id="occ-cite-euclidelements-1" href="../../bibliography.html#cite-euclidelements" data-cite="euclidelements" title="Citation: euclidelements">EuclidElements</a>)</p></td>
+        <td><p><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/20/index.html#iii-20" title="(in geometor • euclid v0.4.1)"><span class="xref std std-ref">III.20</span></a>, <a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/21/index.html#iii-21" title="(in geometor • euclid v0.4.1)"><span class="xref std std-ref">III.21</span></a>, <a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/31/index.html#iii-31" title="(in geometor • euclid v0.4.1)"><span class="xref std std-ref">III.31</span></a>, <a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/35/index.html#iii-35" title="(in geometor • euclid v0.4.1)"><span class="xref std std-ref">III.35</span></a>, <a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/36/index.html#iii-36" title="(in geometor • euclid v0.4.1)"><span class="xref std std-ref">III.36</span></a>, <a class="reference external" href="https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/029/index.html#x-29" title="(in geometor • euclid v0.4.1)"><span class="xref std std-ref">X.29</span></a> (<a class="citation-ref" id="occ-cite-euclidelements-1" href="../../bibliography.html#cite-euclidelements" data-cite="euclidelements" title="Citation: euclidelements">EuclidElements</a>)</p></td>
         </tr>
         <tr class="row-even"><td><p><strong>GEOMETOR Elements</strong></p></td>
         <td><p><a class="reference external" href="https://geometor.github.io/elements/elements2/G.3/index.html#g-3" title="(in GEOMETOR • elements v0.4.0)"><span>G.3 extremities of a segment</span></a>, <a class="reference external" href="https://geometor.github.io/elements/elements2/G.7/index.html#g-7" title="(in GEOMETOR • elements v0.4.0)"><span>G.7 plane surface</span></a>, <a class="reference external" href="https://geometor.github.io/elements/elements2/G.11/index.html#g-11" title="(in GEOMETOR • elements v0.4.0)"><span>G.11 center of a circle</span></a></p></td>
@@ -608,7 +605,7 @@
             <a class="book-nav-btn" href="../w-16/index.html" title="W.16 The Euler Line &amp; Nine-Point Circle Over Arbitrary Fields">&larr; <span class="nav-label">W.16 The Euler Line & Nine-Point Circle Over Arbitrary Fields</span></a>
           </div>
           <div class="book-nav-center">
-            <a class="book-toc-link" href="../index.html">Principles</a>
+            <a class="book-toc-link" href="../index.html">Principles of Rational Trigonometry & Universal Geometry</a>
           </div>
           <div class="book-nav-next">
             <a class="book-nav-btn" href="../w-18/index.html" title="W.18 Cyclic Quadrilaterals, Ptolemy &amp; Euler’s Four-Point Relation"><span class="nav-label">W.18 Cyclic Quadrilaterals, Ptolemy & Euler’s Four-Point Relation</span> &rarr;</a>
@@ -829,6 +826,7 @@
   <footer>
     <div class="footer-nav">
       <ul>
+        <li><a href="../../glossary.html"  >Glossary</a></li>
         <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
@@ -842,7 +840,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/documentation_options.js?v=a58bc63e"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
