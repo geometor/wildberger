@@ -1,5 +1,5 @@
 ==========
-wildberger
+Wildberger
 ==========
 
 **Rational Trigonometry, Universal Geometry & Chromogeometry in Exact SymPy Algebra**
