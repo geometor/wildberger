@@ -32,6 +32,10 @@ repo_name = "wildberger"
 
 setup_globals(org, org_name, repo, repo_name)  # noqa: F405
 
+site_title = "Norman J. Wildberger"
+project = site_title
+html_title = f"{site_title} • {org_name}"
+
 # Configure offline local intersphinx inventories across the GEOMETOR workspace
 intersphinx_mapping.pop("python", None)  # noqa: F405
 intersphinx_mapping.pop("sympy", None)  # noqa: F405

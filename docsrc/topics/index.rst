@@ -1,11 +1,14 @@
 :navigation: header
 :order: 1
+:type: book
 :nav_title: Principles
+:breadcrumb_title: Principles
 :layout: book
 :book_title: Principles of Rational Trigonometry & Universal Geometry
 :book_subtitle: Inspired by Norman J. Wildberger — 28 Executable Principles (W.01–W.28)
 :author: Norman J. Wildberger • Formalized by GEOMETOR
 :year: 2005–2026
+:excerpt: A 28-principle executable codex formalizing Rational Trigonometry, Universal Geometry, and Chromogeometry in exact SymPy algebra and interactive vector models.
 
 .. _topics:
 
