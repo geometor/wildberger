@@ -2,13 +2,13 @@
 
 .. container:: author-overline
 
-   the works of
+   semantic digital archive • mathematical catalog
 
 ====================
 Norman J. Wildberger
 ====================
 
-The mission of this project is to capture a semantic digital library of the works and constructive mathematics of **Norman J. Wildberger** (b. 1955), pioneer of Rational Trigonometry, Universal Hyperbolic Geometry, and Chromogeometry.
+The mathematical catalog formalizes the constructive breakthroughs of :person:`Norman J. Wildberger` (b. 1955), replacing transcendental circular functions and irrational distances with exact quadratic invariants—quadrance and spread—across arbitrary fields. Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, these principles are liberated into 28 executable symbolic certificates, calibrated vector diagrams, and algebraic proof pipelines speaking one shared geometric language.
 
 .. collection::
    :type: book
