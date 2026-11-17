@@ -18,7 +18,7 @@ Mission
 Catalogs in This Archive
 ------------------------
 
-- **`Principles of Rational Trigonometry & Universal Geometry <https://geometor.github.io/wildberger/topics/>`_** — 28 executable geometric principles (``W.01``–``W.28``) proved in exact SymPy algebra with interactive dark-canvas vector figures.
+- `Principles of Rational Trigonometry & Universal Geometry <https://geometor.github.io/wildberger/topics/>`_ — 28 executable geometric principles (``W.01``–``W.28``) proved in exact SymPy algebra with interactive dark-canvas vector figures.
 
 Repository Contents
 -------------------
