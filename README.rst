@@ -3,6 +3,11 @@ GEOMETOR • wildberger
 
 **Visit the Online Archive:** https://geometor.github.io/wildberger/
 
+.. image:: docsrc/topics/w-01/w-01.svg
+   :alt: GEOMETOR • wildberger featured geometric construction
+   :target: https://geometor.github.io/wildberger/
+   :align: center
+
 **Norman J. Wildberger • Divine Proportions & Rational Trigonometry • semantic digital archive**
 
 Mission
