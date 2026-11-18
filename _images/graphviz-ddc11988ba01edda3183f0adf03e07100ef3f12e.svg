@@ -1,13 +1,13 @@
-<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="551pt" height="188pt" viewBox="0.00 0.00 550.50 188.00">
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="546pt" height="188pt" viewBox="0.00 0.00 546.00 188.00">
 <ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <ns0:title>dependency</ns0:title>
 
 <ns0:g id="node1" class="node">
 <ns0:title>W.03</ns0:title>
 <ns0:g id="a_node1"><ns0:a ns1:href="../topics/w-03/index.html" ns1:title="W.03\nQuadrance, Midpoints &amp; Point-to...">
-<ns0:path fill="#d8dee9" stroke="#4c566a" d="M252,-180C252,-180 103,-180 103,-180 97,-180 91,-174 91,-168 91,-168 91,-156 91,-156 91,-150 97,-144 103,-144 103,-144 252,-144 252,-144 258,-144 264,-150 264,-156 264,-156 264,-168 264,-168 264,-174 258,-180 252,-180" />
-<ns0:text text-anchor="middle" x="177.5" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.03</ns0:text>
-<ns0:text text-anchor="middle" x="177.5" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Quadrance, Midpoints &amp; Point-to...</ns0:text>
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M251.23,-180C251.23,-180 102.88,-180 102.88,-180 96.88,-180 90.88,-174 90.88,-168 90.88,-168 90.88,-156 90.88,-156 90.88,-150 96.88,-144 102.88,-144 102.88,-144 251.23,-144 251.23,-144 257.23,-144 263.23,-150 263.23,-156 263.23,-156 263.23,-168 263.23,-168 263.23,-174 257.23,-180 251.23,-180" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="177.05" y="-164.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.03</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="177.05" y="-152.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Quadrance, Midpoints &amp; Point-to...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
@@ -15,81 +15,81 @@
 <ns0:g id="node3" class="node">
 <ns0:title>W.20</ns0:title>
 <ns0:g id="a_node3"><ns0:a ns1:href="../topics/w-20/index.html" ns1:title="W.20\nMetrical Conics: Circles, Ribbo...">
-<ns0:path fill="#ffff99" stroke="#d4a017" stroke-width="2" d="M343.5,-108C343.5,-108 199.5,-108 199.5,-108 193.5,-108 187.5,-102 187.5,-96 187.5,-96 187.5,-84 187.5,-84 187.5,-78 193.5,-72 199.5,-72 199.5,-72 343.5,-72 343.5,-72 349.5,-72 355.5,-78 355.5,-84 355.5,-84 355.5,-96 355.5,-96 355.5,-102 349.5,-108 343.5,-108" />
-<ns0:text text-anchor="middle" x="271.5" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.20</ns0:text>
-<ns0:text text-anchor="middle" x="271.5" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Metrical Conics: Circles, Ribbo...</ns0:text>
+<ns0:path fill="#ffff99" stroke="#d4a017" stroke-width="2" d="M341.6,-108C341.6,-108 198.5,-108 198.5,-108 192.5,-108 186.5,-102 186.5,-96 186.5,-96 186.5,-84 186.5,-84 186.5,-78 192.5,-72 198.5,-72 198.5,-72 341.6,-72 341.6,-72 347.6,-72 353.6,-78 353.6,-84 353.6,-84 353.6,-96 353.6,-96 353.6,-102 347.6,-108 341.6,-108" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="270.05" y="-92.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.20</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="270.05" y="-80.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Metrical Conics: Circles, Ribbo...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge1" class="edge">
 <ns0:title>W.03-&gt;W.20</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M200.74,-143.7C213.49,-134.2 229.4,-122.35 242.91,-112.29" />
-<ns0:polygon fill="#888888" stroke="#888888" points="244.38,-114.25 248.53,-108.1 241.45,-110.32 244.38,-114.25" />
+<ns0:path fill="none" stroke="#888888" d="M200.04,-143.7C212.04,-134.66 226.88,-123.5 239.8,-113.77" />
+<ns0:polygon fill="#888888" stroke="#888888" points="241.03,-115.91 245.15,-109.75 238.08,-112 241.03,-115.91" />
 </ns0:g>
 
 <ns0:g id="node2" class="node">
 <ns0:title>W.07</ns0:title>
 <ns0:g id="a_node2"><ns0:a ns1:href="../topics/w-07/index.html" ns1:title="W.07\nLaw II: Triple Quad Formula, Ar...">
-<ns0:path fill="#d8dee9" stroke="#4c566a" d="M437,-180C437,-180 294,-180 294,-180 288,-180 282,-174 282,-168 282,-168 282,-156 282,-156 282,-150 288,-144 294,-144 294,-144 437,-144 437,-144 443,-144 449,-150 449,-156 449,-156 449,-168 449,-168 449,-174 443,-180 437,-180" />
-<ns0:text text-anchor="middle" x="365.5" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.07</ns0:text>
-<ns0:text text-anchor="middle" x="365.5" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law II: Triple Quad Formula, Ar...</ns0:text>
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M435.23,-180C435.23,-180 292.88,-180 292.88,-180 286.88,-180 280.88,-174 280.88,-168 280.88,-168 280.88,-156 280.88,-156 280.88,-150 286.88,-144 292.88,-144 292.88,-144 435.23,-144 435.23,-144 441.23,-144 447.23,-150 447.23,-156 447.23,-156 447.23,-168 447.23,-168 447.23,-174 441.23,-180 435.23,-180" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="364.05" y="-164.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.07</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="364.05" y="-152.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law II: Triple Quad Formula, Ar...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge2" class="edge">
 <ns0:title>W.07-&gt;W.20</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M342.26,-143.7C329.51,-134.2 313.6,-122.35 300.09,-112.29" />
-<ns0:polygon fill="#888888" stroke="#888888" points="301.55,-110.32 294.47,-108.1 298.62,-114.25 301.55,-110.32" />
+<ns0:path fill="none" stroke="#888888" d="M340.81,-143.7C328.68,-134.66 313.69,-123.5 300.63,-113.77" />
+<ns0:polygon fill="#888888" stroke="#888888" points="302.29,-111.96 295.21,-109.74 299.36,-115.89 302.29,-111.96" />
 </ns0:g>
 
 <ns0:g id="node4" class="node">
 <ns0:title>W.21</ns0:title>
 <ns0:g id="a_node4"><ns0:a ns1:href="../topics/w-21/index.html" ns1:title="W.21\nTaylor Conics, Algebraic Tangen...">
-<ns0:path fill="#e5e9f0" stroke="#777777" d="M159,-36C159,-36 12,-36 12,-36 6,-36 0,-30 0,-24 0,-24 0,-12 0,-12 0,-6 6,0 12,0 12,0 159,0 159,0 165,0 171,-6 171,-12 171,-12 171,-24 171,-24 171,-30 165,-36 159,-36" />
-<ns0:text text-anchor="middle" x="85.5" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.21</ns0:text>
-<ns0:text text-anchor="middle" x="85.5" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Taylor Conics, Algebraic Tangen...</ns0:text>
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M158.1,-36C158.1,-36 12,-36 12,-36 6,-36 0,-30 0,-24 0,-24 0,-12 0,-12 0,-6 6,0 12,0 12,0 158.1,0 158.1,0 164.1,0 170.1,-6 170.1,-12 170.1,-12 170.1,-24 170.1,-24 170.1,-30 164.1,-36 158.1,-36" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="85.05" y="-20.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.21</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="85.05" y="-8.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Taylor Conics, Algebraic Tangen...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge3" class="edge">
 <ns0:title>W.20-&gt;W.21</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M226,-71.88C199.22,-61.8 165.25,-49.01 137.42,-38.54" />
-<ns0:polygon fill="#888888" stroke="#888888" points="138.27,-36.24 130.85,-36.07 136.54,-40.83 138.27,-36.24" />
+<ns0:path fill="none" stroke="#888888" d="M222.89,-71.15C197.26,-61.46 165.47,-49.43 138.88,-39.37" />
+<ns0:polygon fill="#888888" stroke="#888888" points="140,-37.17 132.58,-36.98 138.26,-41.75 140,-37.17" />
 </ns0:g>
 
 <ns0:g id="node5" class="node">
 <ns0:title>W.26</ns0:title>
 <ns0:g id="a_node5"><ns0:a ns1:href="../topics/w-26/index.html" ns1:title="W.26\nAlgebraic Physics: Projectile P...">
-<ns0:path fill="#e5e9f0" stroke="#777777" d="M342,-36C342,-36 201,-36 201,-36 195,-36 189,-30 189,-24 189,-24 189,-12 189,-12 189,-6 195,0 201,0 201,0 342,0 342,0 348,0 354,-6 354,-12 354,-12 354,-24 354,-24 354,-30 348,-36 342,-36" />
-<ns0:text text-anchor="middle" x="271.5" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.26</ns0:text>
-<ns0:text text-anchor="middle" x="271.5" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Algebraic Physics: Projectile P...</ns0:text>
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M340.1,-36C340.1,-36 200,-36 200,-36 194,-36 188,-30 188,-24 188,-24 188,-12 188,-12 188,-6 194,0 200,0 200,0 340.1,0 340.1,0 346.1,0 352.1,-6 352.1,-12 352.1,-12 352.1,-24 352.1,-24 352.1,-30 346.1,-36 340.1,-36" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="270.05" y="-20.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.26</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="270.05" y="-8.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Algebraic Physics: Projectile P...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge4" class="edge">
 <ns0:title>W.20-&gt;W.26</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M271.5,-71.7C271.5,-63.14 271.5,-52.66 271.5,-43.3" />
-<ns0:polygon fill="#888888" stroke="#888888" points="273.95,-43.1 271.5,-36.1 269.05,-43.1 273.95,-43.1" />
+<ns0:path fill="none" stroke="#888888" d="M270.05,-71.34C270.05,-63.32 270.05,-53.67 270.05,-44.86" />
+<ns0:polygon fill="#888888" stroke="#888888" points="272.5,-44.93 270.05,-37.93 267.6,-44.93 272.5,-44.93" />
 </ns0:g>
 
 <ns0:g id="node6" class="node">
 <ns0:title>W.28</ns0:title>
 <ns0:g id="a_node6"><ns0:a ns1:href="../topics/w-28/index.html" ns1:title="W.28\nRational Polar Coordinates, Cla...">
-<ns0:path fill="#e5e9f0" stroke="#777777" d="M530.5,-36C530.5,-36 384.5,-36 384.5,-36 378.5,-36 372.5,-30 372.5,-24 372.5,-24 372.5,-12 372.5,-12 372.5,-6 378.5,0 384.5,0 384.5,0 530.5,0 530.5,0 536.5,0 542.5,-6 542.5,-12 542.5,-12 542.5,-24 542.5,-24 542.5,-30 536.5,-36 530.5,-36" />
-<ns0:text text-anchor="middle" x="457.5" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.28</ns0:text>
-<ns0:text text-anchor="middle" x="457.5" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Rational Polar Coordinates, Cla...</ns0:text>
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M526.35,-36C526.35,-36 381.75,-36 381.75,-36 375.75,-36 369.75,-30 369.75,-24 369.75,-24 369.75,-12 369.75,-12 369.75,-6 375.75,0 381.75,0 381.75,0 526.35,0 526.35,0 532.35,0 538.35,-6 538.35,-12 538.35,-12 538.35,-24 538.35,-24 538.35,-30 532.35,-36 526.35,-36" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="454.05" y="-20.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.28</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="454.05" y="-8.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Rational Polar Coordinates, Cla...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge5" class="edge">
 <ns0:title>W.20-&gt;W.28</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M317,-71.88C343.78,-61.8 377.75,-49.01 405.58,-38.54" />
-<ns0:polygon fill="#888888" stroke="#888888" points="406.46,-40.83 412.15,-36.07 404.73,-36.24 406.46,-40.83" />
+<ns0:path fill="none" stroke="#888888" d="M316.96,-71.15C342.44,-61.46 374.06,-49.43 400.51,-39.37" />
+<ns0:polygon fill="#888888" stroke="#888888" points="401.1,-41.77 406.77,-36.99 399.36,-37.19 401.1,-41.77" />
 </ns0:g>
 </ns0:g>
 </ns0:svg>

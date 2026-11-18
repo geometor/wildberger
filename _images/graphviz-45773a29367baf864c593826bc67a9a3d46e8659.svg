@@ -1,13 +1,13 @@
-<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="369pt" height="188pt" viewBox="0.00 0.00 368.50 188.00">
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="366pt" height="188pt" viewBox="0.00 0.00 366.00 188.00">
 <ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <ns0:title>dependency</ns0:title>
 
 <ns0:g id="node1" class="node">
 <ns0:title>W.01</ns0:title>
 <ns0:g id="a_node1"><ns0:a ns1:href="../topics/w-01/index.html" ns1:title="W.01\nPlanar Points, Line Proportions...">
-<ns0:path fill="#d8dee9" stroke="#4c566a" d="M155,-180C155,-180 12,-180 12,-180 6,-180 0,-174 0,-168 0,-168 0,-156 0,-156 0,-150 6,-144 12,-144 12,-144 155,-144 155,-144 161,-144 167,-150 167,-156 167,-156 167,-168 167,-168 167,-174 161,-180 155,-180" />
-<ns0:text text-anchor="middle" x="83.5" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.01</ns0:text>
-<ns0:text text-anchor="middle" x="83.5" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Planar Points, Line Proportions...</ns0:text>
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M153.6,-180C153.6,-180 12,-180 12,-180 6,-180 0,-174 0,-168 0,-168 0,-156 0,-156 0,-150 6,-144 12,-144 12,-144 153.6,-144 153.6,-144 159.6,-144 165.6,-150 165.6,-156 165.6,-156 165.6,-168 165.6,-168 165.6,-174 159.6,-180 153.6,-180" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="82.8" y="-164.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.01</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="82.8" y="-152.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Planar Points, Line Proportions...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
@@ -15,49 +15,49 @@
 <ns0:g id="node3" class="node">
 <ns0:title>W.14</ns0:title>
 <ns0:g id="a_node3"><ns0:a ns1:href="../topics/w-14/index.html" ns1:title="W.14\nMenelaus, Ceva &amp; The Alternate...">
-<ns0:path fill="#ffff99" stroke="#d4a017" stroke-width="2" d="M252,-108C252,-108 103,-108 103,-108 97,-108 91,-102 91,-96 91,-96 91,-84 91,-84 91,-78 97,-72 103,-72 103,-72 252,-72 252,-72 258,-72 264,-78 264,-84 264,-84 264,-96 264,-96 264,-102 258,-108 252,-108" />
-<ns0:text text-anchor="middle" x="177.5" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.14</ns0:text>
-<ns0:text text-anchor="middle" x="177.5" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Menelaus, Ceva &amp; The Alternate...</ns0:text>
+<ns0:path fill="#ffff99" stroke="#d4a017" stroke-width="2" d="M250.6,-108C250.6,-108 103,-108 103,-108 97,-108 91,-102 91,-96 91,-96 91,-84 91,-84 91,-78 97,-72 103,-72 103,-72 250.6,-72 250.6,-72 256.6,-72 262.6,-78 262.6,-84 262.6,-84 262.6,-96 262.6,-96 262.6,-102 256.6,-108 250.6,-108" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="176.8" y="-92.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.14</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="176.8" y="-80.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Menelaus, Ceva &amp; The Alternate...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge1" class="edge">
 <ns0:title>W.01-&gt;W.14</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M106.74,-143.7C119.49,-134.2 135.4,-122.35 148.91,-112.29" />
-<ns0:polygon fill="#888888" stroke="#888888" points="150.38,-114.25 154.53,-108.1 147.45,-110.32 150.38,-114.25" />
+<ns0:path fill="none" stroke="#888888" d="M106.04,-143.7C118.17,-134.66 133.16,-123.5 146.22,-113.77" />
+<ns0:polygon fill="#888888" stroke="#888888" points="147.49,-115.89 151.64,-109.74 144.56,-111.96 147.49,-115.89" />
 </ns0:g>
 
 <ns0:g id="node2" class="node">
 <ns0:title>W.08</ns0:title>
 <ns0:g id="a_node2"><ns0:a ns1:href="../topics/w-08/index.html" ns1:title="W.08\nLaw III: The Spread Law &amp; Exten...">
-<ns0:path fill="#d8dee9" stroke="#4c566a" d="M348.5,-180C348.5,-180 196.5,-180 196.5,-180 190.5,-180 184.5,-174 184.5,-168 184.5,-168 184.5,-156 184.5,-156 184.5,-150 190.5,-144 196.5,-144 196.5,-144 348.5,-144 348.5,-144 354.5,-144 360.5,-150 360.5,-156 360.5,-156 360.5,-168 360.5,-168 360.5,-174 354.5,-180 348.5,-180" />
-<ns0:text text-anchor="middle" x="272.5" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.08</ns0:text>
-<ns0:text text-anchor="middle" x="272.5" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law III: The Spread Law &amp; Exten...</ns0:text>
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M346.48,-180C346.48,-180 195.12,-180 195.12,-180 189.12,-180 183.12,-174 183.12,-168 183.12,-168 183.12,-156 183.12,-156 183.12,-150 189.12,-144 195.12,-144 195.12,-144 346.48,-144 346.48,-144 352.48,-144 358.48,-150 358.48,-156 358.48,-156 358.48,-168 358.48,-168 358.48,-174 352.48,-180 346.48,-180" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="270.8" y="-164.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.08</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="270.8" y="-152.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law III: The Spread Law &amp; Exten...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge2" class="edge">
 <ns0:title>W.08-&gt;W.14</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M249.02,-143.7C236.13,-134.2 220.05,-122.35 206.4,-112.29" />
-<ns0:polygon fill="#888888" stroke="#888888" points="207.8,-110.28 200.71,-108.1 204.9,-114.23 207.8,-110.28" />
+<ns0:path fill="none" stroke="#888888" d="M247.56,-143.7C235.43,-134.66 220.44,-123.5 207.38,-113.77" />
+<ns0:polygon fill="#888888" stroke="#888888" points="209.04,-111.96 201.96,-109.74 206.11,-115.89 209.04,-111.96" />
 </ns0:g>
 
 <ns0:g id="node4" class="node">
 <ns0:title>W.25</ns0:title>
 <ns0:g id="a_node4"><ns0:a ns1:href="../topics/w-25/index.html" ns1:title="W.25\nSnellius&#8211;Pothenot Resection &amp; H...">
-<ns0:path fill="#e5e9f0" stroke="#777777" d="M254.5,-36C254.5,-36 100.5,-36 100.5,-36 94.5,-36 88.5,-30 88.5,-24 88.5,-24 88.5,-12 88.5,-12 88.5,-6 94.5,0 100.5,0 100.5,0 254.5,0 254.5,0 260.5,0 266.5,-6 266.5,-12 266.5,-12 266.5,-24 266.5,-24 266.5,-30 260.5,-36 254.5,-36" />
-<ns0:text text-anchor="middle" x="177.5" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.25</ns0:text>
-<ns0:text text-anchor="middle" x="177.5" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Snellius&#8211;Pothenot Resection &amp; H...</ns0:text>
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M253.23,-36C253.23,-36 100.38,-36 100.38,-36 94.38,-36 88.38,-30 88.38,-24 88.38,-24 88.38,-12 88.38,-12 88.38,-6 94.38,0 100.38,0 100.38,0 253.23,0 253.23,0 259.23,0 265.23,-6 265.23,-12 265.23,-12 265.23,-24 265.23,-24 265.23,-30 259.23,-36 253.23,-36" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="176.8" y="-20.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.25</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="176.8" y="-8.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Snellius&#8211;Pothenot Resection &amp; H...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge3" class="edge">
 <ns0:title>W.14-&gt;W.25</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M177.5,-71.7C177.5,-63.14 177.5,-52.66 177.5,-43.3" />
-<ns0:polygon fill="#888888" stroke="#888888" points="179.95,-43.1 177.5,-36.1 175.05,-43.1 179.95,-43.1" />
+<ns0:path fill="none" stroke="#888888" d="M176.8,-71.34C176.8,-63.32 176.8,-53.67 176.8,-44.86" />
+<ns0:polygon fill="#888888" stroke="#888888" points="179.25,-44.93 176.8,-37.93 174.35,-44.93 179.25,-44.93" />
 </ns0:g>
 </ns0:g>
 </ns0:svg>

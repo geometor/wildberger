@@ -1,13 +1,13 @@
-<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="1134pt" height="188pt" viewBox="0.00 0.00 1133.50 188.00">
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="1130pt" height="188pt" viewBox="0.00 0.00 1130.00 188.00">
 <ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <ns0:title>dependency</ns0:title>
 
 <ns0:g id="node1" class="node">
 <ns0:title>W.06</ns0:title>
 <ns0:g id="a_node1"><ns0:a ns1:href="../topics/w-06/index.html" ns1:title="W.06\nLaw I: Pythagoras' Theorem &amp; Ri...">
-<ns0:path fill="#d8dee9" stroke="#4c566a" d="M164,-180C164,-180 12,-180 12,-180 6,-180 0,-174 0,-168 0,-168 0,-156 0,-156 0,-150 6,-144 12,-144 12,-144 164,-144 164,-144 170,-144 176,-150 176,-156 176,-156 176,-168 176,-168 176,-174 170,-180 164,-180" />
-<ns0:text text-anchor="middle" x="88" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.06</ns0:text>
-<ns0:text text-anchor="middle" x="88" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law I: Pythagoras' Theorem &amp; Ri...</ns0:text>
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M163.35,-180C163.35,-180 12,-180 12,-180 6,-180 0,-174 0,-168 0,-168 0,-156 0,-156 0,-150 6,-144 12,-144 12,-144 163.35,-144 163.35,-144 169.35,-144 175.35,-150 175.35,-156 175.35,-156 175.35,-168 175.35,-168 175.35,-174 169.35,-180 163.35,-180" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="87.67" y="-164.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.06</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="87.67" y="-152.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law I: Pythagoras' Theorem &amp; Ri...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
@@ -15,113 +15,113 @@
 <ns0:g id="node7" class="node">
 <ns0:title>W.23</ns0:title>
 <ns0:g id="a_node7"><ns0:a ns1:href="../topics/w-23/index.html" ns1:title="W.23\nChromogeometry &amp; Universal Symm...">
-<ns0:path fill="#ffff99" stroke="#d4a017" stroke-width="2" d="M649,-108C649,-108 481,-108 481,-108 475,-108 469,-102 469,-96 469,-96 469,-84 469,-84 469,-78 475,-72 481,-72 481,-72 649,-72 649,-72 655,-72 661,-78 661,-84 661,-84 661,-96 661,-96 661,-102 655,-108 649,-108" />
-<ns0:text text-anchor="middle" x="565" y="-93" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.23</ns0:text>
-<ns0:text text-anchor="middle" x="565" y="-82" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Chromogeometry &amp; Universal Symm...</ns0:text>
+<ns0:path fill="#ffff99" stroke="#d4a017" stroke-width="2" d="M647.22,-108C647.22,-108 480.12,-108 480.12,-108 474.12,-108 468.12,-102 468.12,-96 468.12,-96 468.12,-84 468.12,-84 468.12,-78 474.12,-72 480.12,-72 480.12,-72 647.22,-72 647.22,-72 653.22,-72 659.22,-78 659.22,-84 659.22,-84 659.22,-96 659.22,-96 659.22,-102 653.22,-108 647.22,-108" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="563.67" y="-92.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.23</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="563.67" y="-80.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Chromogeometry &amp; Universal Symm...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge1" class="edge">
 <ns0:title>W.06-&gt;W.23</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M176.13,-145.26C178.78,-144.83 181.41,-144.41 184,-144 277.78,-129.18 384.9,-114.47 461.62,-104.33" />
-<ns0:polygon fill="#888888" stroke="#888888" points="462.33,-106.71 468.95,-103.36 461.69,-101.85 462.33,-106.71" />
+<ns0:path fill="none" stroke="#888888" d="M175.68,-145.44C178.71,-144.95 181.72,-144.47 184.67,-144 277.28,-129.41 382.95,-114.8 459.14,-104.63" />
+<ns0:polygon fill="#888888" stroke="#888888" points="459.24,-107.09 465.85,-103.74 458.59,-102.23 459.24,-107.09" />
 </ns0:g>
 
 <ns0:g id="node2" class="node">
 <ns0:title>W.07</ns0:title>
 <ns0:g id="a_node2"><ns0:a ns1:href="../topics/w-07/index.html" ns1:title="W.07\nLaw II: Triple Quad Formula, Ar...">
-<ns0:path fill="#d8dee9" stroke="#4c566a" d="M348.5,-180C348.5,-180 205.5,-180 205.5,-180 199.5,-180 193.5,-174 193.5,-168 193.5,-168 193.5,-156 193.5,-156 193.5,-150 199.5,-144 205.5,-144 205.5,-144 348.5,-144 348.5,-144 354.5,-144 360.5,-150 360.5,-156 360.5,-156 360.5,-168 360.5,-168 360.5,-174 354.5,-180 348.5,-180" />
-<ns0:text text-anchor="middle" x="277" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.07</ns0:text>
-<ns0:text text-anchor="middle" x="277" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law II: Triple Quad Formula, Ar...</ns0:text>
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M347.85,-180C347.85,-180 205.5,-180 205.5,-180 199.5,-180 193.5,-174 193.5,-168 193.5,-168 193.5,-156 193.5,-156 193.5,-150 199.5,-144 205.5,-144 205.5,-144 347.85,-144 347.85,-144 353.85,-144 359.85,-150 359.85,-156 359.85,-156 359.85,-168 359.85,-168 359.85,-174 353.85,-180 347.85,-180" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="276.67" y="-164.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.07</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="276.67" y="-152.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law II: Triple Quad Formula, Ar...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge2" class="edge">
 <ns0:title>W.07-&gt;W.23</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M347.08,-143.97C389.6,-133.63 443.91,-120.43 487.67,-109.8" />
-<ns0:polygon fill="#888888" stroke="#888888" points="488.38,-112.14 494.6,-108.11 487.22,-107.38 488.38,-112.14" />
+<ns0:path fill="none" stroke="#888888" d="M348.36,-143.52C388.91,-133.63 439.78,-121.22 481.88,-110.95" />
+<ns0:polygon fill="#888888" stroke="#888888" points="482.22,-113.39 488.44,-109.35 481.06,-108.63 482.22,-113.39" />
 </ns0:g>
 
 <ns0:g id="node3" class="node">
 <ns0:title>W.08</ns0:title>
 <ns0:g id="a_node3"><ns0:a ns1:href="../topics/w-08/index.html" ns1:title="W.08\nLaw III: The Spread Law &amp; Exten...">
-<ns0:path fill="#d8dee9" stroke="#4c566a" d="M542,-180C542,-180 390,-180 390,-180 384,-180 378,-174 378,-168 378,-168 378,-156 378,-156 378,-150 384,-144 390,-144 390,-144 542,-144 542,-144 548,-144 554,-150 554,-156 554,-156 554,-168 554,-168 554,-174 548,-180 542,-180" />
-<ns0:text text-anchor="middle" x="466" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.08</ns0:text>
-<ns0:text text-anchor="middle" x="466" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law III: The Spread Law &amp; Exten...</ns0:text>
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M541.35,-180C541.35,-180 390,-180 390,-180 384,-180 378,-174 378,-168 378,-168 378,-156 378,-156 378,-150 384,-144 390,-144 390,-144 541.35,-144 541.35,-144 547.35,-144 553.35,-150 553.35,-156 553.35,-156 553.35,-168 553.35,-168 553.35,-174 547.35,-180 541.35,-180" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="465.67" y="-164.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.08</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="465.67" y="-152.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law III: The Spread Law &amp; Exten...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge3" class="edge">
 <ns0:title>W.08-&gt;W.23</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M490.22,-143.88C503.64,-134.38 520.46,-122.5 534.74,-112.4" />
-<ns0:polygon fill="#888888" stroke="#888888" points="536.39,-114.23 540.69,-108.19 533.56,-110.23 536.39,-114.23" />
+<ns0:path fill="none" stroke="#888888" d="M490.15,-143.52C502.7,-134.55 518.15,-123.52 531.64,-113.88" />
+<ns0:polygon fill="#888888" stroke="#888888" points="532.98,-115.93 537.26,-109.87 530.14,-111.95 532.98,-115.93" />
 </ns0:g>
 
 <ns0:g id="node4" class="node">
 <ns0:title>W.09</ns0:title>
 <ns0:g id="a_node4"><ns0:a ns1:href="../topics/w-09/index.html" ns1:title="W.09\nLaw IV: The Cross Law &amp; Quadrea...">
-<ns0:path fill="#d8dee9" stroke="#4c566a" d="M743.5,-180C743.5,-180 584.5,-180 584.5,-180 578.5,-180 572.5,-174 572.5,-168 572.5,-168 572.5,-156 572.5,-156 572.5,-150 578.5,-144 584.5,-144 584.5,-144 743.5,-144 743.5,-144 749.5,-144 755.5,-150 755.5,-156 755.5,-156 755.5,-168 755.5,-168 755.5,-174 749.5,-180 743.5,-180" />
-<ns0:text text-anchor="middle" x="664" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.09</ns0:text>
-<ns0:text text-anchor="middle" x="664" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law IV: The Cross Law &amp; Quadrea...</ns0:text>
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M741.72,-180C741.72,-180 583.62,-180 583.62,-180 577.62,-180 571.62,-174 571.62,-168 571.62,-168 571.62,-156 571.62,-156 571.62,-150 577.62,-144 583.62,-144 583.62,-144 741.72,-144 741.72,-144 747.72,-144 753.72,-150 753.72,-156 753.72,-156 753.72,-168 753.72,-168 753.72,-174 747.72,-180 741.72,-180" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="662.67" y="-164.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.09</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="662.67" y="-152.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law IV: The Cross Law &amp; Quadrea...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge4" class="edge">
 <ns0:title>W.09-&gt;W.23</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M639.78,-143.88C626.36,-134.38 609.54,-122.5 595.26,-112.4" />
-<ns0:polygon fill="#888888" stroke="#888888" points="596.44,-110.23 589.31,-108.19 593.61,-114.23 596.44,-110.23" />
+<ns0:path fill="none" stroke="#888888" d="M637.95,-143.52C625.27,-134.55 609.67,-123.52 596.04,-113.88" />
+<ns0:polygon fill="#888888" stroke="#888888" points="597.49,-111.91 590.36,-109.87 594.66,-115.91 597.49,-111.91" />
 </ns0:g>
 
 <ns0:g id="node5" class="node">
 <ns0:title>W.10</ns0:title>
 <ns0:g id="a_node5"><ns0:a ns1:href="../topics/w-10/index.html" ns1:title="W.10\nLaw V: Triple Spread, Triple Cr...">
-<ns0:path fill="#d8dee9" stroke="#4c566a" d="M926,-180C926,-180 786,-180 786,-180 780,-180 774,-174 774,-168 774,-168 774,-156 774,-156 774,-150 780,-144 786,-144 786,-144 926,-144 926,-144 932,-144 938,-150 938,-156 938,-156 938,-168 938,-168 938,-174 932,-180 926,-180" />
-<ns0:text text-anchor="middle" x="856" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.10</ns0:text>
-<ns0:text text-anchor="middle" x="856" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law V: Triple Spread, Triple Cr...</ns0:text>
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M923.35,-180C923.35,-180 784,-180 784,-180 778,-180 772,-174 772,-168 772,-168 772,-156 772,-156 772,-150 778,-144 784,-144 784,-144 923.35,-144 923.35,-144 929.35,-144 935.35,-150 935.35,-156 935.35,-156 935.35,-168 935.35,-168 935.35,-174 929.35,-180 923.35,-180" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="853.67" y="-164.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.10</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="853.67" y="-152.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Law V: Triple Spread, Triple Cr...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge5" class="edge">
 <ns0:title>W.10-&gt;W.23</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M785.19,-143.97C742.15,-133.61 687.15,-120.38 642.89,-109.74" />
-<ns0:polygon fill="#888888" stroke="#888888" points="643.26,-107.31 635.88,-108.05 642.11,-112.07 643.26,-107.31" />
+<ns0:path fill="none" stroke="#888888" d="M781.24,-143.52C740.27,-133.63 688.87,-121.22 646.32,-110.95" />
+<ns0:polygon fill="#888888" stroke="#888888" points="647.06,-108.61 639.68,-109.35 645.91,-113.37 647.06,-108.61" />
 </ns0:g>
 
 <ns0:g id="node6" class="node">
 <ns0:title>W.16</ns0:title>
 <ns0:g id="a_node6"><ns0:a ns1:href="../topics/w-16/index.html" ns1:title="W.16\nThe Euler Line &amp; Nine-Point Cir...">
-<ns0:path fill="#d8dee9" stroke="#4c566a" d="M1113.5,-180C1113.5,-180 968.5,-180 968.5,-180 962.5,-180 956.5,-174 956.5,-168 956.5,-168 956.5,-156 956.5,-156 956.5,-150 962.5,-144 968.5,-144 968.5,-144 1113.5,-144 1113.5,-144 1119.5,-144 1125.5,-150 1125.5,-156 1125.5,-156 1125.5,-168 1125.5,-168 1125.5,-174 1119.5,-180 1113.5,-180" />
-<ns0:text text-anchor="middle" x="1041" y="-165" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.16</ns0:text>
-<ns0:text text-anchor="middle" x="1041" y="-154" font-family="Helvetica,Arial,sans-serif" font-size="10.00">The Euler Line &amp; Nine-Point Cir...</ns0:text>
+<ns0:path fill="#d8dee9" stroke="#4c566a" d="M1109.6,-180C1109.6,-180 965.75,-180 965.75,-180 959.75,-180 953.75,-174 953.75,-168 953.75,-168 953.75,-156 953.75,-156 953.75,-150 959.75,-144 965.75,-144 965.75,-144 1109.6,-144 1109.6,-144 1115.6,-144 1121.6,-150 1121.6,-156 1121.6,-156 1121.6,-168 1121.6,-168 1121.6,-174 1115.6,-180 1109.6,-180" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1037.67" y="-164.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.16</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="1037.67" y="-152.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">The Euler Line &amp; Nine-Point Cir...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge6" class="edge">
 <ns0:title>W.16-&gt;W.23</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M956.48,-145.54C953.28,-145.01 950.11,-144.5 947,-144 853.01,-128.99 745.6,-114.3 668.67,-104.21" />
-<ns0:polygon fill="#888888" stroke="#888888" points="668.58,-101.73 661.32,-103.25 667.94,-106.59 668.58,-101.73" />
+<ns0:path fill="none" stroke="#888888" d="M953.55,-145.46C950.56,-144.96 947.59,-144.47 944.67,-144 851.48,-129.01 745.04,-114.41 668.4,-104.35" />
+<ns0:polygon fill="#888888" stroke="#888888" points="668.9,-101.94 661.65,-103.46 668.27,-106.8 668.9,-101.94" />
 </ns0:g>
 
 <ns0:g id="node8" class="node">
 <ns0:title>W.26</ns0:title>
 <ns0:g id="a_node8"><ns0:a ns1:href="../topics/w-26/index.html" ns1:title="W.26\nAlgebraic Physics: Projectile P...">
-<ns0:path fill="#e5e9f0" stroke="#777777" d="M635.5,-36C635.5,-36 494.5,-36 494.5,-36 488.5,-36 482.5,-30 482.5,-24 482.5,-24 482.5,-12 482.5,-12 482.5,-6 488.5,0 494.5,0 494.5,0 635.5,0 635.5,0 641.5,0 647.5,-6 647.5,-12 647.5,-12 647.5,-24 647.5,-24 647.5,-30 641.5,-36 635.5,-36" />
-<ns0:text text-anchor="middle" x="565" y="-21" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.26</ns0:text>
-<ns0:text text-anchor="middle" x="565" y="-10" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Algebraic Physics: Projectile P...</ns0:text>
+<ns0:path fill="#e5e9f0" stroke="#777777" d="M633.72,-36C633.72,-36 493.62,-36 493.62,-36 487.62,-36 481.62,-30 481.62,-24 481.62,-24 481.62,-12 481.62,-12 481.62,-6 487.62,0 493.62,0 493.62,0 633.72,0 633.72,0 639.72,0 645.72,-6 645.72,-12 645.72,-12 645.72,-24 645.72,-24 645.72,-30 639.72,-36 633.72,-36" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="563.67" y="-20.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">W.26</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="middle" x="563.67" y="-8.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00">Algebraic Physics: Projectile P...</ns0:text>
 </ns0:a>
 </ns0:g>
 </ns0:g>
 
 <ns0:g id="edge7" class="edge">
 <ns0:title>W.23-&gt;W.26</ns0:title>
-<ns0:path fill="none" stroke="#888888" d="M565,-71.7C565,-63.14 565,-52.66 565,-43.3" />
-<ns0:polygon fill="#888888" stroke="#888888" points="567.45,-43.1 565,-36.1 562.55,-43.1 567.45,-43.1" />
+<ns0:path fill="none" stroke="#888888" d="M563.67,-71.34C563.67,-63.32 563.67,-53.67 563.67,-44.86" />
+<ns0:polygon fill="#888888" stroke="#888888" points="566.13,-44.93 563.68,-37.93 561.23,-44.93 566.13,-44.93" />
 </ns0:g>
 </ns0:g>
 </ns0:svg>
