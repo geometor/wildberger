@@ -1,0 +1,22 @@
+{
+  "repository": "geometor/wildberger",
+  "rights_category": "non-derivative-catalog",
+  "sources": [
+    {
+      "id": "wildberger-2005-divine-proportions",
+      "title": "Divine Proportions: Rational Trigonometry to Universal Geometry (2005)",
+      "author": "Norman J. Wildberger",
+      "year": "2005",
+      "era": "17 U.S.C. § 102(b) Catalog",
+      "languages": [
+        "English"
+      ],
+      "site_url": "https://geometor.github.io/wildberger/",
+      "local_path": "resources/pdfs/Divine Proportions_ Rational Trigonometry - Norman J. Wildberger.pdf",
+      "pages": 321,
+      "publisher": "Wild Egg Books, Sydney",
+      "rights": "Modern Copyright (2005) — git-ignored study input; geometor/wildberger formalizes mathematical laws in SymPy",
+      "excerpt": "321-page study reference for Rational Trigonometry laws formalized in SymPy."
+    }
+  ]
+}
