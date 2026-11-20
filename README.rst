@@ -3,6 +3,12 @@ GEOMETOR • wildberger
 
 **Visit the Online Archive:** https://geometor.github.io/wildberger/
 
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • wildberger Medallion
+   :target: https://geometor.github.io/wildberger/
+   :width: 180px
+   :align: center
+
 .. image:: docsrc/topics/w-01/w-01.svg
    :alt: GEOMETOR • wildberger featured geometric construction
    :target: https://geometor.github.io/wildberger/
