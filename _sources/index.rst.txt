@@ -29,7 +29,7 @@ Catalog & Executable Principles
 
       .. rubric:: 2-Track Book Codex · W.01–W.28 · Synthesis & SymPy Code
 
-      **Principles of Rational Trigonometry & Universal Geometry** — Explore all 28 principles across four progressive parts—from affine incidence, quadrance, and spread polynomials through the Five Fundamental Laws, triangle centers over $\mathbb{Q}$ and $\mathbb{F}_p$, rational surveying, and Platonic dihedral spreads.
+      **Principles of Rational Trigonometry & Universal Geometry** — Explore all 28 principles across four progressive parts—from affine incidence, quadrance, and spread polynomials through the Five Fundamental Laws, triangle centers over :math:`\mathbb{Q}` and :math:`\mathbb{F}_p`, rational surveying, and Platonic dihedral spreads.
 
       .. container:: home-actions
 
@@ -66,7 +66,7 @@ Key Features
 
       **Purely Polynomial Invariants**
 
-      Replace $\sin$, $\cos$, and square roots with quadratic quadrance $Q$ and spread $s$ valid over $\mathbb{Q}$, finite fields $\mathbb{F}_p$, and symbolic rings.
+      Replace :math:`\sin`, :math:`\cos`, and square roots with quadratic quadrance :math:`Q` and spread :math:`s` valid over :math:`\mathbb{Q}`, finite fields :math:`\mathbb{F}_p`, and symbolic rings.
 
    .. container:: home-feature-card
 
